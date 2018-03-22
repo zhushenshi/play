@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>	
+	#wrap{
+		width: 500px;
+		height: 500px;
+		background: #ccc;
+		margin: 50px auto;
+		position: relative;    
+	}
+	#box{width: 100px;
+		height: 100px;
+		background: red;
+		position: absolute;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="box"></div>
+	</div>
+</body>
+<script>
+var timer1=null;
+var wrap=document.getElementById('wrap');
+var box=document.getElementById('box');
+var m=0,n=0;
+var a,b,c,d;
+timer1=setInterval(function() {               
+	if (a) {
+		m=box.offsetLeft-10;
+		if (m<=0) {
+			m=0;
+		};
+		box.style.left=m+'px';      
+	};
+	if (b) {
+		n=box.offsetTop-10;
+		if (n<=0) {
+			n=0;
+		};
+		box.style.top=n+'px';
+	};
+	if (c) {
+		m=box.offsetLeft+10;
+		if (m>=wrap.offsetWidth-box.offsetWidth) {
+			m=wrap.offsetWidth-box.offsetWidth;
+		};
+		box.style.left=m+'px';
+	};
+	if (d) {
+		n=box.offsetTop+10;
+		if (n>=wrap.offsetHeight-box.offsetHeight) {
+			n=wrap.offsetHeight-box.offsetHeight;
+		};
+		box.style.top=n+'px';
+	};
+},10)
+
+document.onkeydown=function(e) {
+	if (e.keyCode==37) {
+		a=true;
+	};
+	if (e.keyCode==38) {
+		b=true;
+	};
+	if (e.keyCode==39) {
+		c=true;
+	};
+	if (e.keyCode==40) {
+		d=true;
+	};
+};
+
+document.onkeyup=function(e) {
+	if (e.keyCode==37) {
+		a=false;
+	};
+	if (e.keyCode==38) {
+		b=false;
+	};
+	if (e.keyCode==39) {
+		c=false;
+	};
+	if (e.keyCode==40) {
+		d=false;
+	};
+};
+</script>
+</html>

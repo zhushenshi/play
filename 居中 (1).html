@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<style>
+		#d1{
+			display:inline-block;
+			width:500px;
+			height:500px; 
+			border:1px solid red;
+			text-align:center;
+		}
+			#d1:after{
+			content:"";
+				display:inline-block;
+				width:1px;
+				height:100%;
+				vertical-align:middle;
+				background:#000;
+			}
+		#d2{
+			display:inline-block;
+			width:200px;
+			height:200px; 
+			border:1px solid red;
+			vertical-align:middle;
+		}
+
+					.banner>a>i{
+				position:absolute;
+				top:50%;
+				transform:translateY(-50%);
+			}
+	</style>
+ </head>
+ <body>
+  <div id="d1">
+		<div id="d2"></div>		
+	</div>
+ </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<style>
+		.tran{
+			transition:all 1s linear;
+		}
+		.comm{
+			width:100px;
+			height:100px;
+			background:red;
+			transition:all 1s linear;
+		}
+		.big{
+			width:500px;
+			height:500px;
+			background:blue;
+			color:blue;
+		}
+	</style>
+ </head>
+ <body>
+		<div id="d1" class="comm">ewqr sadf</div>
+		<a href="javasctipt:;" id="a">这是一个a标记</a>	
+		<script src='js/jquery-3.2.1.js'></script>
+		<script>
+		//兼容性判断css动画
+		//兼容性判断css动画
+			function whichTransitionEvent(){
+				var t;
+				var el=document.createElement('fakeelement');
+				var transitions={
+					'transition':'transitionend',
+					'OtTransition':'oTransitionend',
+					'MozTransition':'transitionend',
+					'WebkitTransition':'webkitTransitionend',
+					'MSTransition':'msTransitionend'
+				}
+				for(t in transitions){
+					if(el.style[t]!==undefined){
+						return transitions[t];
+					}
+				}
+			}
+			//注意：如果子元素也有transition的话，transition事件会冒泡。
+
+
+
+
+			$("#d1").click((e)=>{
+				console.log($(e.target).is(":animated"));
+//				$(e.target).is(":animated");
+				$(e.target).addClass('big');
+				//移除事件
+				$(e.target).unbind()
+				$("#d1").on(whichTransitionEvent(),()=>{
+					return true;
+
+				})
+			});
+
+
+
+			$("#a").click((e)=>{
+				e.preventDefault();
+				$("#d1").animate({width:'500',height:'500',background:'blue'},500);
+				console.log($("#d1").is(":animated"));
+				console.log("hello");
+
+			})
+		</script>
+ </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<style>
+		a:hover{
+			color:red;
+		}
+	</style>
+ </head>
+ <body>
+		<p>超链接访问过后的hover样式就不出现   被点击访问过的超链接样式不在具有hover和active了，需要改变css属性的排列顺序  L-V-H-A  link visted hover active</p>
+		<a href="http://www.codeboy.com/">超链接</a>
+		<ul>
+			<li class="aa">1</li>
+			<li class="aa">2</li>
+			<li class="aa">3</li>
+			<li class="aa">4</li>
+			<li class="aa">5</li>
+			<li class="aa">6</li>
+		</ul>	
+		<script src='./js/jquery-3.2.1.js'></script>
+		<script>
+			console.log($('.aa:last-child'));
+		</script>
+ </body>
+</html>

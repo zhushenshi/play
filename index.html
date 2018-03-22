@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <style>
+        div.box{
+            border:0.5px solid #000;
+            width:300px;
+            height:300px;
+            margin:100px auto;
+            position:relative;
+            overflow:hidden;
+        }
+        div.box>div{
+            width:100%;
+            height:100%;
+            position:absolute;
+            background:lightcoral;
+        }
+        div.box>div.left{
+            top:0;
+           left:-100%;
+        }
+        #d2>div.right{
+            top:0;
+            left:100%;
+        }
+        #d2>div.top{
+            left:0;
+            top:-100%;
+        }
+        #d2>div.bottom{
+            left:0;
+            top:100%;
+        }
+        div.tran{
+            transition:all .1s;
+            backface-visibility: hidden;
+        }
+        #d2>div.comm{
+            left:0;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="d2">
+        <div id="d1" class="top"></div>
+    </div>
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+    $("div.box").hover(
+            (e)=>{
+        var x=e.offsetX;
+        var y=e.offsetY;
+        var k=(150-y)/(150-x);   //>-1和小于1 时从左右
+//        console.log(x);
+//        console.log(y);
+//        console.log(k);
+        if(k>-1&&k<1){
+            //鼠标是从左右移动的
+            if(x>150){
+//                从右边进入
+                $("#d1").removeAttr("class");
+                $("#d1").addClass("right");
+//                console.log($("#d1")[0].offsetWidth);
+                $("#d1")[0].offsetWidth;
+                $("#d1").addClass("tran");
+                $("#d1").addClass("comm");
+                console.log("右");
+
+            }else{
+//                从左边进入
+                $("#d1").removeAttr("class");
+                $("#d1").addClass("left");
+                $("#d1")[0].offsetWidth;
+                $("#d1").addClass("tran");
+                $("#d1").addClass("comm");
+                console.log("左");
+            }
+        }else{
+            if(y>150){
+//                从下边进入
+                $("#d1").removeAttr("class");
+                $("#d1").addClass("bottom");
+                $("#d1")[0].offsetWidth;
+                $("#d1").addClass("tran");
+                $("#d1").addClass("comm");
+                console.log("下");
+            }else{
+//                从上边进入
+                $("#d1").removeAttr("class");
+                $("#d1").addClass("top");
+                $("#d1")[0].offsetWidth;
+                $("#d1").addClass("tran");
+                $("#d1").addClass("comm");
+                console.log("上");
+            }
+        }
+
+        },
+    (e)=>{
+        //鼠标移出
+        var x=e.offsetX;
+        var y=e.offsetY;
+        var k=(150-y)/(150-x);   //>-1和小于1 时从左右
+//        console.log(x);
+//        console.log(y);
+//        console.log(k);
+        if(k>-1&&k<1){
+            //鼠标是从左右移出的
+            if(x>150){
+//                从右边移出的
+                $("#d1").removeClass("comm");
+                $("#d1").removeClass("left");
+                $("#d1").removeClass("top");
+                $("#d1").removeClass("bottom");
+                $("#d1").addClass("right");
+
+            }else{
+//                从左边移出
+                $("#d1").removeClass("right");
+                $("#d1").removeClass("top");
+                $("#d1").removeClass("bottom");
+                $("#d1").removeClass("comm");
+                $("#d1").addClass("left");
+            }
+        }else{
+            if(y>150){
+//                从下边移出
+                $("#d1").removeClass("left");
+                $("#d1").removeClass("top");
+                $("#d1").removeClass("right");
+                $("#d1").removeClass("comm");
+                $("#d1").addClass("bottom");
+            }else{
+//                从上边移出
+                $("#d1").removeClass("left");
+                $("#d1").removeClass("right");
+                $("#d1").removeClass("bottom");
+                $("#d1").removeClass("comm");
+                $("#d1").addClass("top");
+            }
+        }
+    }
+    )
+</script>
+</body>
+</html>
