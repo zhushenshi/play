@@ -27,16 +27,93 @@
 			vertical-align:middle;
 		}
 
-					.banner>a>i{
+/* 2222222222222222222222222 */
+			.box{width:300px;height:300px;border:1px solid red;position:relative;}
+			.content{
 				position:absolute;
-				top:50%;
-				transform:translateY(-50%);
+				width:100px;
+				height:100px;
+				border:1px solid red;
+				margin:0 auto;
+				top:50%;left:50%;
+				/* transform:translateY(-50%); 仅垂直居中*/
+				/* transform:translateX(-50%); 仅水平居中*/
+				transform: translate(-50%, -50%); 
+				/* 
+					若父容器下只有一个元素，且父元素设置了高度，则只需要使用相对定位即可    
+					parentElement{
+							height:xxx;
+						}
+
+						.childElement {
+						  position: relative;
+						  top: 50%;
+						  transform: translateY(-50%);
+						}
+				*/
+				
+
 			}
+/* 3333333333333333333333333333 */
+	.a{
+		border:1px solid red;
+		width:300px;height:300px;position:relative;
+	}
+	.b{
+		border:1px solid red;
+		width: 200px; height: 200px;
+		position: absolute; left: 50%; top: 50%;
+		margin-top: -100px;    /* 高度的一半 */
+		margin-left: -100px;    /* 宽度的一半 */	
+	}
+
+	/*  */
+
+.nine{position:absolute;;display:block;top:0;right:0;bottom:0;left:0;text-align:center;background:rgba(0,0,0,.5);border:1px solid red;}
+.nine:before{content:'';display:inline-block;vertical-align:middle;height:100%;}
+.nine .con{display:inline-block;vertical-align:middle;width:60px;height:60px;line-height:60px;color:red;background:yellow;}
 	</style>
  </head>
  <body>
-  <div id="d1">
+	<h1>第一种 借助inline-block的特点</h1>
+	<div id="d1">
 		<div id="d2"></div>		
 	</div>
+	<h1>第二种css的transform 好用但是兼容性不好</h1>
+	<h5>兼容性不好。IE10+以及其他现代浏览器才支持, IE9(-ms-), IE10+以及其他现代浏览器才支持。中国盛行的IE8浏览器被忽略是有些不适宜的（手机web开发可忽略）。</h5>
+	<div class="box">
+		<div class="content"></div>
+	</div>
+	<h1>第三种</h1>
+	<div class="a">
+		<div class="b"></div>
+	</div>
+	<h1>第四种 定位之后的margin： auto；</h1>
+	<div class="a">
+		<div style="width: 200px; height: 200px;position: absolute; left: 0; top: 0; right: 0; bottom: 0;margin: auto;border:1px solid red;">
+		position:absolute可换成position:fixed;
+	</div>
+	</div>
+	<h1>第五种flex布局</h1>
+	<div style="display:flex; display: -webkit-flex; justify-content:center;align-items:center;width: 300px; height: 300px;border:1px solid red;">
+		<div style="width: 200px; height: 200px;border:1px solid red;"></div>
+	</div>
+	<h1>第六种利用display:table-cell的vertical-align属性 子元素加上“display:inline-block;”可水平居中</h1>
+	<div style="display:table-cell;vertical-align:middle;text-align:center;width:300px;height:300px;border:1px solid red;">
+		<div style="border:1px solid red;width:200px;height:200px;display:inline-block;"></div>
+	</div>
+	<h1>999</h1>
+	<div style="position:relative;width:300px;height:300px;background:#ccc;">
+		<div class="nine">
+			<div class="con"></div>	
+		</div>
+	</div>
+		<p>
+			使用css3的display:-webkit-box属性，再设置-webkit-box-pack:center/-webkit-box-align:center.seven{             width:90px;             height:90px;             display:-webkit-box;             -webkit-box-pack:center;             -webkit-box-align:center;        background:yellow;             color:black;}
+		</p>
+
+		<p>
+			最简单的一种使行内元素居中的方法，使用line-height属性.six{             width:100px;             height:100px;             line-height:100px;             text-align:center;             background:gray;  }这种方法也很实用，比如使文字垂直居中对齐
+		</p>
  </body>
 </html>
