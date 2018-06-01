@@ -10,6 +10,7 @@
 	<style>
 		*{padding: 0;margin: 0;font-size:20px;}
 		html, body, #wrap {height: 100%;}
+
 		body > #wrap {height: auto; min-height: 100%;}
 		#main {padding-bottom: 150px;} /* 必须使用和footer相同的高度 */
 		#footer {position: relative;margin-top: -150px; /* footer高度的负值 */height: 150px;clear:both;}
@@ -21,16 +22,18 @@
 		/* End hide from IE-mac */
 	</style>
  </head>
- <body>
-	 <div id="wrap">
-			<div id="main" class="clearfix">
+ <body style="background-color:#ccc;">
+	 <div id="wrap" style="background-color:#eee;">
+			<div id="main" class="clearfix" style="background-color:red;">
 						<div id="content">
+							<h1>1</h1>	
 						</div>
 						<div id="side">
 						</div>
 			</div>
 		</div>
-		<div id="footer">
+		<div id="footer" style="background-color:yellow;">
+			footer
 		</div>
  </body>
 </html>
