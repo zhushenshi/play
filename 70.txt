@@ -1,5 +1,24 @@
 第一周
 	day01
+		1710班
+		课件地址：ftp://176.18.0.23/
+		用户名称：class3
+		密码：tarena
+		网络课程：
+		登录账号：邮箱
+		初始密码：身份证后四位电话号码后四位
+
+
+		ppt
+		8：:30-9:00
+		品保经理韩兰兰：13819118497
+
+
+
+
+		李文华
+		liwenhua@tedu.cn
+		QQ:1759496573
 		课程体系：web.tedu.cn
 
 		1.前端知识系统/前端技术栈
@@ -8015,4 +8034,193 @@ Day70
 				服务器:     app.post(“/userupdate”,(req,res)=>);
 				客户端:ajax type:”POST”
 									url:”http://127.0.0.1:3000/userupdate”
+day71
+	cn.vuejs.org
+	vuejs.org
+
+	框架：framework 有着自己的语法特点、都有对应的各个模块
+	库 library 专注于一点
+
+	框架的好处：
+		①提到代码的质量，开发速度
+		②提高代码的复用率
+		③降低模块之间的耦合度
+		（高内聚低耦合）
+
+	UI：user interface
+	GUI : graphical user interface
+	CLI : command line interface
+	API : application interface
+
+	在webStorm中创建一个模板的基本步骤：
+	①准备模板内容 全部选中 复制
+	②点击左上角的file -> new -> edit file templates
+	③点击弹窗中左上角+
+	④在输入框当中分别输入 模板名称、模板结尾的格式、模板内容
+	⑤点击ok ，保存，下次就可以使用
+
+		思维模式的转换：
+			从操作DOM的思维模式 切换到 以数据为主
+
+	一、Vue概述
+		1、what	
+			是一个渐进式的构建用户界面的js框架
+		2、where
+			小到的简单的表单处理，大到复杂的数据操作比较频繁的单页面应用程序
+		3、why
+			①方便阅读的中文文档
+			②容易上手 （学习曲线比较缓和）
+			③体积小
+			④基于组件化的开发方式
+			⑤代码的可读性、可维护性得到了提高
+		4、how
+			工作方式：可以通过丰富的指令扩展模板，可以通过各种各样的插件来增强功能
+
+			搭建环境：
+			方式1
+				 全局安装 vue-cli
+				$ npm install --global vue-cli
+				# 创建一个基于 webpack 模板的新项目
+				$ vue init webpack my-project
+				# 安装依赖，走你
+				$ cd my-project
+				$ npm install
+				$ npm run dev
+			方式2:
+				直接引入对应的js文件
+
+	二、Vue中基础知识
+
+		1、双花括号
+			mustache(胡子)/interpolation（插值表达式）
+
+			语法：
+			<any>{{表达式}}</any>
+			作用：
+			将表达式执行的结果 输出当调用元素的innerHTML中；还可以将数据绑定到视图
+
+			练习：
+			demo03_lianxi.html的文件
+
+			希望通过Vue去初始化一个学生对象(name/score)数组(5个)
+
+			将学生数组 渲染在table中
+
+		2、指令-循环指令
+			基本语法1：
+			<any v-for="tmp in array"></any>
+			基本语法2：
+			<any v-for="(value,index) in array"></any>
+			
+			作用：
+			在遍历array这个集合时，将临时变量保存在tmp中，创建多个any标签
+
+		3、指令-选择指令
+			语法：
+			  <any v-if="表达式"></any>
+			  <any v-else-if="表达式"></any>
+			  <any v-else="表达式"></any>
+			作用：
+			  根据表达式执行结果的真假，来决定是否要将当前的这个元素 挂载到DOM树
+
+			练习：demo06_lianxi.html 
+			通过v-for v-if来重构demo03_lianxi
+
+			要求：只显示成绩及格的同学
+			<tr v-for="stu in stuList" v-if="stu.score >= 60">
+			</tr>
+		
+		4、指令-事件绑定
+			语法：
+				<any v-on:eventName="handleEvent"></any>
+			作用：
+				给指定的元素 将handleEvent的方法绑定给指定eventName事件
+			
+			练习：
+			demo08_lianxi.html
+
+			在data中初始化一个整形数组（3条数据：100,200,300）
+
+			视图：将数组展示在ul，在ul的下边添加上一个按钮：加载更多；
+
+			在点击按钮时，ul中的尾部追加一条新的随机数显示li
+
+		5、指令-属性绑定
+		  基本语法：
+			<any v-bind:myProp="表达式"></any>
+			补充，支持简写：
+			<any :myProp="表达式"></any>
+		  作用：
+			将表达式执行的结果 绑定 到当前元素的myProp属性
+
+			<img v-bind:src="'img/'+myImg" alt="">
+		   动态样式绑定
+			<p :style="{backgroundColor:myBGColor}">动态样式绑定</p>
+
+		   动态样式类绑定
+			  <h1 :class="{myRed:false}">动态样式类的绑定</h1>
+
+		6、指令-双向数据绑定
+			方向1：数据绑定到视图
+			方向2：将视图中（表单元素）用户操作的结果绑定到数据
+
+			基本语法:
+			  <表单元素 v-model="变量">
+			  </表单元素>
+
+	练习： demo12_lianxi.html(-:16:40)
+	  在视图中：
+	  checkbox button
+
+	  实现的效果：
+	  checkbox被选中，button可以被点击
+	  checkbox取消选中，button不可操作
+
+	  checkbox 可以通过双向数据绑定，将操作的结果绑定到某个变量；
+	  变量绑定到button disabled
+	  <button :disabled=''>
+
+	三、组件化
+		组件：组件就是可被反复使用的，带有特定功能的视图
+		
+		所谓的组件化，就像玩积木一样，把封装的组件进行复用,把积木（组件）拼接在一起，构成一个复杂的页面应用程序。
+
+		组件树就是由各个组件构成的一种数据结构，它存在的意义是为了帮梳理应用程序
+
+		1、组件的创建
+		  ①全局组件
+			Vue.component('my-com',{
+			  template:`
+			    <h2>it is a header</h2>
+			  `
+			})
+		  ②局部组件
+			new Vue({
+				components:{
+				 'my-footer':{
+				   template:''
+				 }
+				}
+			})
+		2、组件使用
+			作为普通的标签去使用
+			<my-com></my-com>
+
+		
+		3、注意事项
+			①组件的id和使用方式 遵循烤串式命名方式：a-b-c 
+			②如果一个组件 要渲染多个元素，将多个元素放在一个顶层标签中，比如div、form
+			③全局组件可以用在id为example的范围内的任何一个组件内部，直接调用可以；但是局部组件只能在父模板中直接调用
+
+
+	每日一练：
+		分页功能
+
+		要求：
+			初始化一个数组pageList:[1,2,3,4,5],渲染一个按钮列表
+			nowPage:1
+
+			功能：
+			点击上一页、下一页，被选中的页码要高亮显示
+			（ <button :class="{}"></button> 条件是当前选中的页码和当前按钮的对应的页码一致）
 	
