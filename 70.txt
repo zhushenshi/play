@@ -8483,6 +8483,141 @@ day73
 		①要通过父-》子 告诉todoitem下标
 		②todoitem点击delete按钮时，将下标通知给todolist，
 		todolist接受到下标，从数组中移除指定位置的元素
+day74
+	一、路由模块
+
+	路由模块的本质 就是建立起url和页面之间的映射关系
+
+	1、SPA的基本概念和工作原理
+	 
+		SPA：single page application 单一页面应用程序，只有一个完整的页面；它在加载页面时，不会加载整个页面，而是只更新某个指定的容器中内容。
+		比如Gmail、移动的webApp
+
+
+		工作原理：
+		①解析地址栏 
+			完整的页面地址、路由地址
+		②根据路由地址 从路由词典中找到真正的要加载的页面
+		③发起ajax请求 
+			请求要加载的页面
+		④像指定的容器中 插入加载来的页面
+
+
+	2、路由模块的基本使用 
+		专业术语： 
+			router路由器 
+			route路由
+			routes 路由数组（路由词典）
+		①引入vue.js vue-router.js
+		②指定一个容器
+		<router-view></router-view>
+		③创建业务所需要用到的组件类
+			var MyLogin = Vue.component()
+		④配置路由词典
+		 const myRoutes = [
+		  {path:'',component:MyLogin},
+		  {path:'/login',component:MyLogin}
+		 ];
+
+		 const myRouter = new VueRouter({
+		  routes:myRoutes
+		 })
+
+		 new Vue({
+		   router:myRouter
+		 })
+		⑤测试
+			修改地址栏中的路由地址，测试看加载的组件是否正确
+		
+		注意事项：
+		 ①先引入vue，再引入插件
+		 ②一定要指定router-view
+		 ③route路由 {path:'',component:}
+		  routes 路由数组 []
+		  router 路由器:按照指定的路由规则去访问对应的组件 new VueRouter
+
+		练习：demo02_lianxi.html
+		创建一个SPA，有两个组件类，分别是login,main.
+
+
+	3、使用路由模块来实现页面跳转的方式
+
+		方式1：直接修改地址栏
+		方式2：js
+		this.$router.push(‘路由地址’);
+		方式3：
+		 <router-link 
+		 to="路由地址"></router-link>
+
+	4、完成参数的传递
+		在页面之间跳转的时候，在有些场景下，需要同时指定参数
+		
+		①明确发送方和接收方
+		list --20--> detail
+		②配置接收方的路由地址
+		/detail --》 /detail/:index
+
+		this.$route.params.index
+		③发送
+		routerLink to="/detail/20"
+		this.$router.push('/detail/20')
+		
+		练习：demo05_lianxi.html
+		SPA，有3个组件：
+		check/pay/send
+		check:button 点击跳转到pay,同时传递商品价格100给pay
+		pay: h1 显示商品价格信息 button 点击跳转send
+		send: routerLink-->check
+
+		步骤1:搭建架子，要求通过不同的url能够访问3个组件
+		步骤2：搞定跳转
+		步骤3：搞定传参
+			①明确发送方和接收方
+			check（发送） pay(接受)
+			②配置pay的路由地址
+			/pay --> /pay/:price
+			this.$route.params.price
+			③跳转的同时发送
+
+	5、路由嵌套
+		在一个路由中，path对应一个component，如果这个component需要根据不同的url再加载其他的component，称之为路由的嵌套
+
+		举例：比如A组件现在需要根据不同的url，加载B组件或者C组件
+		①给A组件指定一个容器
+		  <router-view></router-view>
+		②配置路由词典
+		  {
+		    path:'/a',
+		    component:A,
+		    children:[
+		      {path:'/b',component:B}
+		    ]
+		  }
+
+		  需求：现在有两个组件，分别是login/mail,建立SPA。
+		  在此基础上，希望mail组件 嵌套inbox/outbox/draft
+
+		  补充：在设置子路由，路由匹配规则依然是适用的，只不过路由地址为空和异常，要携带父组件的路由地址
+		  /mail /mail/draft
+
+	二、与远程服务器端的通信
+
+		①引入vue-resouce.js
+		②发请求
+			this.$http.get(url).then((result)=>{
+				//result.data
+			})
+
+	三、搭建基于CLI开发环境的方式
+		①指定一个文件夹
+		C:\xampp\htdocs\framework\vue\project
+		②将tpls.zip拷贝到project中 
+		③右键单击压缩包，解压缩到当前文件夹
+		④进入到tpls
+		⑤同时按下shift和鼠标右键，选择在此位置打开命令行串口
+		⑥执行npm install
+		⑦执行npm start
+
 
 	
 	
