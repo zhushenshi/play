@@ -8223,4 +8223,158 @@ day71
 			功能：
 			点击上一页、下一页，被选中的页码要高亮显示
 			（ <button :class="{}"></button> 条件是当前选中的页码和当前按钮的对应的页码一致）
+day72
+	
+	总结目前为止所掌握的指令：
+		v-for
+		v-if
+		v-else-if
+		v-else
+		v-on: @
+		v-bind: :
+		v-model
+		v-show
+		v-html
+
+	零、补充
+		v-model.number 	v-model.lazy 	v-model.trim
+
+		v-on.prevent
+
+		v-html
+
+	一、自定义指令
+		1、创建和使用
+		 Vue.directive('change',{
+			bind:function(el,bindings){
+			//首次调用
+			},
+			update:function(el,bindings){
+			//只要是有数据变化，都会调用
+			},
+			unbind:function(){
+			//解绑
+			}
+		 })
+		 <any v-change="count"></any>
+		
+		练习：
+		demo03_lianxi.html
+		创建一个自定义的指令，允许接受参数，将接受到的参数用来修改调用当前元素的背景色
+
+		el.style.backgroundColor = bindings.value;
+
+	二、过滤器
+	  过滤器是针对一些数据 进行筛选、过滤、格式化等相关的处理，变成我们想要的数据
+
+	  过滤器的本质 就是一个带有参数带有返回值的方法
+
+	  Vue1.* 支持内置的过滤器，但是Vue2.* 就不再内置过滤器，但是支持自定义过滤器。
+
+	  1、过滤器的创建和使用
+		①创建
+		   Vue.filter(
+			'myFilter',
+			function(myInput){
+			   //myInput是在调用过滤器时，管道前表达式执行的结果
+			   //针对myInput，按照业务需求做处理
+			   //返回
+			   return '处理后的结果'
+			})
+
+		②使用
+			<any>{{expression | myFilter}}</any>
+
+	  2、如何在调用过滤器时，完成参数的发送和接受
+		①发送
+		<any>{{expression | myFilter(参数1，参数2)}}</any>
+
+		②接受
+		Vue.filter('myFilter',function(myInput，参数1，参数2){
+			return '处理后的结果'
+		})
+		(-:14:55)
+		练习：demo05_lianxi.html
+		实现一个自定义的过滤器，在数据中有一个sex 0/1
+
+		h2 sex 0 | true/false--》女/girl
+		h2 sex 1 | --》男/boy  
+		
+		需要一个过滤器，根据管道传递来的数据，以及参数true/false来决定显示(true->中文 false->英文)
+
+
+	三、复合组件
+		知识回顾：
+		  Vue.component('my-header',{
+		    template:`<div></div>`
+		  });
+
+		  <my-header></my-header>
+
+		 复合组件：并不是新的概念，就是一个组件，只不过这个组件中 可以调用其他的组件
+
+		 注意事项：
+		  ①组件要渲染的内容 取决于在定义组件时template
+		  
+		  <my-list>
+			<my-item></my-item>
+		  </my-list>
+		  效果是出不来的
+		  ②允许在一个组件中，直接来调用另外一个组件
+
+		练习：
+		创建一个登录窗口
+		my-login
+			my-input label/input
+			my-button button
+
+	四、生命周期
+		四个阶段：
+			create 准备工作 （数据的初始化。。。）
+			mount  挂载前后针对元素进行操作
+			update 数据发生变化，
+			destroy 清理工作 (关闭定时器、集合清空..)
+
+			beforeCreate/created
+			beforeMount/mounted
+			beforeUpdate/updated
+			beforeDestroy/destroyed
+
+		练习：( -：17:00)
+			demo09_lianxi.html
+			创建一个组件（h1），在组件挂载完毕之后，启动一个周期性定时器，
+			实现的效果： h1 的透明度 0~1
+
+			①完成组件的创建和使用
+			②指定生命周期的处理函数
+			③动态样式绑定
+			④完成定时器的使用
+
+
+	五、常用属性
+		1、watch
+		   ① 表单元素的双向数据绑定
+		   v-model="myValue"
+		   ②监听
+		    watch:{
+			myValue:function(newValue,oldValue){
+			
+			}
+		    }
+		2、computed
+			计算属于是用于在模板中，搞定复杂的业务逻辑，因为有依赖缓存。
+			①指定计算属性
+				computed:{
+				  myHandle:function(){
+				   return 数据
+				  }
+				}
+
+			②调用
+				<any>{{myHandle}}</any>
+	 
+
+
+	每日一练：
+		
 	
