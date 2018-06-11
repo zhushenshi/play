@@ -8376,5 +8376,113 @@ day72
 
 
 	每日一练：
+day73
+	
+	一、组件间通信
+		1、父与子通信 （props down）
+			①发送
+				<son myName='zhangsan'>
+				</son>
+			②接受
+				到son组件：
+				Vue.component('son',{
+				  props:['myName'],
+				  template:`
+				   <p>{{myName}}</p>
+				  `
+				})
+			
+			练习：demo02_lianxi.html
+			(-: 10:40)
+
+			my-input
+			my-button
+			my-login
+		2、子与父通信 (events up)
+		     ①绑定
+			methods:{
+			 handleEvent:function(msg){}
+			}
+			<son @customEvent="handleEvent"></son>
+		    ②触发
+			子组件内部：
+			this.$emit(‘customEvent’,100);
+
+			练习：综合练习
+			my-chatroom:一个无序列表 和 两个my-user构成
+			my-user：label/input/button
+
+			①完成组件的创建和使用
+			②调用my-user指定mike lucy (父与子)
+			③点击发送 （子与父）
 		
+		3、ref(reference 引用/参考 外号)
+		 帮助在父组件中 得到子组件中的数据、方法。
+			①指定ref属性
+			<son ref="mySon"></son>
+
+			②根据ref得到子组件实例
+			this.$refs.mySon
+		
+		4、$parent
+			this.$parent得到父组件的实例
+		
+		5、兄弟组件通信
+			①var bus = new Vue();
+			②接收方
+			bus.$on('eventName',function(msg){})
+			③发送方
+			bus.$emit('eventName',123);
+
+			练习：
+			在熊大-》熊二通信的基础之上；再来实现熊二与熊大的通信
+			在熊二：添加一个按钮，点击按钮，发送数据
+			(知道了)给熊大（在控制台打印出来即可）
+
+			熊二（触发） --》熊大（绑定）
+
+	二、补充组件创建的方式
+		1、直接在template属性中指定模板内容
+			①全局组件
+			Vue.component
+			②局部组件
+			{
+			  components:{
+				'my-footer'：{template:``}
+			  }
+			}
+		2、.vue结尾的文件
+			<template></template>
+			<script></script>
+			<style></style>
+		3、单独指定一个模板内容
+			<script
+			id='myContent'
+			type='text/x-template'>
+			</script>
+
+			Vue.component('',{
+			  template:'#myContent'
+			})
+
+
+	综合练习：
+	完成ToDoBox的添加功能
+
+	①完成todoinput点击add，将数据发送todolist
+	todoinput（触发） --> todolist(绑定)
+	②todolist接受到数据，在控制台打印发送的数据
+	③在todolist中 保存每次添加进来的数据在数组中，根据数组元素的个数动态创建多个todoitem (v-for)
+	④在todolist中调用todoitem时，通过props down 来实现父与子的通信
+
+	can't read property push of undefined
+
+
+	每日一练：
+		实现删除功能（子-》父）
+		①要通过父-》子 告诉todoitem下标
+		②todoitem点击delete按钮时，将下标通知给todolist，
+		todolist接受到下标，从数组中移除指定位置的元素
+
+	
 	
