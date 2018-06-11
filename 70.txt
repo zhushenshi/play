@@ -1,0 +1,8037 @@
+第一周
+	day01
+		1710班
+		课件地址：ftp://176.18.0.23/
+		用户名称：class3
+		密码：tarena
+		网络课程：
+		登录账号：邮箱
+		初始密码：身份证后四位电话号码后四位
+
+
+		ppt
+		8：:30-9:00
+		品保经理韩兰兰：13819118497
+
+
+
+
+		李文华
+		liwenhua@tedu.cn
+		QQ:1759496573
+		课程体系：web.tedu.cn
+
+		1.前端知识系统/前端技术栈
+			1.软件工程/项目流程/数据库/服务器
+			2.html/css/js/ajax
+			3.js高级/dom&bom/jquery/ajax
+			4.HTML高级/bootstrap/vue.js
+			5.Angular/webapp/react/微信开发
+			6.node.js/项目管理/项目
+		键速：350/min	
+			3.windows常用快捷键
+			程序员的右手：放在键盘上！
+			windows+E打开我的电脑(字母键选择首字母文件夹)
+			windows+R运行窗口 cmd
+			Alt+Tab：切换窗口
+			Alt+Tab+Shift:切换窗口
+			windows：弹出/隐藏“开始菜单”
+			windows+D切换到桌面
+			shift+pagedown选择
+			ctrl+shift+n  新建文件夹
+			backspace
+			文件夹选项   F10
+			
+
+		4.软件工程
+			IBM  = 》 DOS（Bill Gates） = 》Microsoft = 》windows
+			软件工程学科包括：
+			（1）软件过程
+			（2）软件测试
+			（3）软件度量
+			（4）软件质量保证
+			（5）软件标准
+		5.软件的开发流程：
+			重量级开发方法
+			轻量级开发方法
+			软件的生命周期/软件过程：三个时期八个阶段	
+			一、软件定义期：
+				1.可行性研究阶段——————《可行性研究报告》  	
+					技术、人力、设备、时间、资金、回报、政策
+				2.需求分析阶段——————《软件需求规约/说明书》
+					功能性需求、非功能性需求、
+			二、软件开发期
+				3.概要设计阶段——————架构师
+					子系统、模块、各自的功能、模块间的接口
+				4.详细设计阶段————————设计师
+					页面、主题内容、对象、属性、方法、、、、
+				5.开发实现阶段—————————美工/前端/后端工程师
+					美工：出效果图
+					前端：把效果图转换为HTML/CSS/JS代码
+					后端：为前端页面提供数据			
+				6.测试阶段————测试工程师	
+			三、软件维护期：
+				7.部署阶段	
+				8.维护阶段
+				
+		目标项目：www.codeboy.com学子商城
+				1.前台子系统：商品模块、用户模块、购物车模块
+				2.后台子系统：商品模块、用户模块、订单模块
+				3.移动端子系统：商品模块、用户模块、购物车模块
+
+
+
+		6.web项目中的服务器
+			server：为客户端提供各种服务的强大的计算机。
+			如何访问服务器：
+				1.服务器地址：域名/ip地址
+				2.所对应服务的端口号
+				3.提供访问该服务器的协议
+		7.练习：访问web服务器上的网页
+			1.服务器端；下载并安装一款web服务器
+			2.服务器端：编写一个网页保存在web服务器上
+				必须保存在c:/xampp/htdocs目录下
+				注意：必须先清空此目录下xampp自带的文件
+			3.服务器端：启动web服务器端
+				保证80端口被打开即可
+
+			4.客户端：设法得知服务器的域名或ip地址
+				在命令行使用ipconfig命令可以查看自己电脑的ip地址
+			5.客户端：与服务器处于同一网络
+			xampp.org下载即可   官网
+		
+	day02		
+
+			B  KB MB GB TB PB EB ZB YB
+
+		数据存储方式：
+			1.内存
+			2.自定义结构的文件
+			3.Excel/access等格式化文件
+			4.专用文件服务器
+			5.数据库服务器
+
+		1.数据库概述
+			Database：数据库，用于永久存储数据的软件，海量存储，高效存取
+			数据库软件的种类
+				1.网状数据库
+				2.树形/层次型数据库
+				3.关系型数据库（Relational DB）
+				4.非关系型数据库（NoSQL）
+			RDBMS（R  DB Management System）部署结构：
+				1.服务器端：负责存储/管理数据，其中的数据都是二进制格式存储，人无法直接查看————如工商总行中的数据库服务器
+				2.客户端：负责连接到服务器，向服务器发送增删改查指令————如ATM机
+			
+			RDBMS服务器端数据的逻辑结构
+			Server=> Database=>table=>Row=>colum
+
+		2.MYSQL系统的使用
+			1.服务器端：下载并安装MySQL服务器软件
+				mysql.com
+				mariadb.com
+				套装：xampp.org=Apache+mariadb/mysql+PHP
+			2.服务器端：启动MySQL 服务器软件
+			c:/xampp/mysql/bin/mysqld.exe
+				保证3306窗口被打开
+						<mysqld,httpd,ftpd,sshd,smbd.....
+						Demon:精灵、守护者、守护程序、精灵程序、服务器程序>
+			3.客户端：下载并安装一款MySQL客户端软件
+					客户端：提供用户名和密码，登录到数据库服务器上
+					c:/xampp/mysql/bin/mysql.exe
+				作用相当于ATM终端客户机
+
+				登录mysql客户端：mysql.exe   -uroot   -p  不能加分号
+								mysql  -uroot	          不能加分号
+				退出客户端：quit;
+				3.mysql服务器常用的管理命令
+					提示：所有的管理命令都必须以;英文分号结尾！仅use和quit可以不写
+					1.quit;  退出到服务器的链接
+					2.show databases;    显示当前服务器上所有数据库
+					3.use 库名;			进入/开始使用指定的数据库
+					4.show tables;   显示当前数据库中有哪些表78 34 52 19 0
+					5.desc（cribe） 表名;  描述一下指定表头
+
+				常用的SQL命令
+					SQl“structured Qery language 结构化查询语言是一门编程语言。最早由IBM公司提出的，后来由ISO采纳为关系型数据库行业国际标准，先后推出多个版本SQl 87  SQl92  SQl99;目前各大数据库厂家所支持
+				SQL语句的执行方式：
+					1.交互模式：输入一行执行一行，......适合于临时的查看数据。
+						mysql  -uroot  回车
+					2.脚本模式：把要执行的多条命令编写在一个文本文件中一次性的提交给服务器执行适合批量反复执行的多条语句。
+
+					 mysql  -uroot  <   d:/xx.sql  回车
+				SQl 语言的语法：
+					1.所有SQL语句必须以分号结尾；
+					2.SQl语句不区分大小写；习惯上，系统预定义的关键字都大写，非关键字都小写。
+					3.SQl语句中可以使用单行注释#  和多行注释 /*注释内容*/
+
+					数据库中的乱码问题：
+						产生原因：计算机把每一个字符都分配一个数字，若存字符时与取字符时方案不一致就会出现乱码。
+						字符编码方案/字符集：把每一个需要呈现的字符都分配一个唯一的数字编码，世界上有几套常用的字符编码方案；
+							1.ASCII字符集：只对所有的英文字符进行编码128个（0-127）
+							2.GB2312/GBK：对常用的英文字符，中文简体字符都进行了编码（40000多个）
+							3.BIG5：对常用的英文字符、中文繁体字符都进行了编码
+							4.Unicode字符集：对常用的英文字符，简体汉字，日文，韩文，，，，主流语言的常用符号都进行了编码，具体存储时又分为UTF-8/UTF-16/UTF-32三种存储方案。
+
+					解决乱码问题的方法——————保证“三处统一”
+							1.sql文件的存储编码
+							2.mysql.exe连接mysqld.exe所用的编码
+							3.mysql.exe中存储数据的编码
+
+	day03
+		PHP100网上课程
+		
+		 1.常用的SQL语句
+			1.增：INSERT INTO 表 VALUES (值.值....);
+			2.删： DELETE FROM 表;#删除表中所有记录行
+				   DELETE FROM 表 WHERE lid=10; #删除满足条件的记录行;
+			3.改：UPDATE 表 SET 列='值',....列='值';更新所有记录行
+				  UPDATE 表 SET 列='值',....列='值' WHERE lid=值;
+			4.查：SELECT * FROM 表名
+		
+
+
+
+
+
+		2.MySQL 中的列类型是所有数据库中最丰富的！
+			看手册第十一章！
+			一个Byte字节8个bit
+
+			1.数值类————————————可以用引号也可以不加引号
+				整数数值类型：
+				 TINYINT:微整数，占一字节，-128~127
+				 SMALLINT:小整数 占两个字节，-32768~32767
+				 INT:整数，占四个字节-2147483648~2147483647  21亿
+				 BIGINT:大整数占八个字节
+				小数数值类型：
+				 FLOAT(M,D):单精度浮点型，占4字节，3.4E38，计算时可能产生四舍五入
+				 DOUBLE(M,D)：双精度浮点型，占8字节 1.8E308
+				 DECIMAL(M,D):定点小数，不会产生精度摄入
+				 M:一共几位数   D:小数位数
+				布尔数值类型：
+				 BOOL，布尔/真假类型，只能取值为TRUE或者FALSE
+				 MYSQL数据库中没有真正意义上的布尔类型，TRUE等同于1
+				 FALSE等同于0
+			2.日期时间：————————————————必须用引号括起来
+				DATE：日期类型,'2017-11-02'
+				TIME: 时间类型,'14:08:5'
+				DATATIME:日期/时间类型 '2017-11-02 14:08:5'
+				
+			3.字符串类型：——————————————必须用引号括起来
+				CHAR(M):定长字符串，比VARCHAR操作更快M不能超过255
+				VARCHAR(M):变长字符串比CHAR更能节约空间M不能超过65535
+				TEXT(M):大型变长字符串,M不能超过2G
+		
+		3.MYSQL 中的列约束
+			Constraint：约束，数据库中某列上的数据往往必须符合某种规范，
+			如编号不能重复，年龄必须在一定的范围之内，字符串有长度限制、员工所在部门必须存在......类似的限制/规范就称为“列约束”
+			1.主键约束————PRIMARY KEY
+				声明为主键的列上，不能出现重复值，也不能出现空值NULL，所有的记录会自动按照主键列上值由小到大排序；————因此一个表中至多有一个主键列。
+			2.非空约束—————NOT NULL
+				声明为非空的列，不能出现NULL，但可以出现重复值
+			
+			3.唯一约束—————UNIQUE  
+				声明为唯一约束的列，不能出现重复的值，但可以出现NULL且允许多个NULL出现（两个NULL不相等）
+			
+			4.检查约束————CHECK
+				检查约束可以检查新插入的数据是否满足指定条件，如：
+				student（age INT CHECK (age>=18 AND,age<=60)）
+				MYSQL 不支持此约束
+			5.DEFAULT 
+				student (sid INT,sex CHAR(1) DEFAULT '男')
+				使用默认值方式1	INSERT INTO student VALUE(10,DEFAULT )	
+							2.INSERT INTO student(SID) VALUES(20);
+			6.外界约束————FOREIGN KEY...REFERENCES
+				外键列上可以出现NULL，也可以有重复值，但必须保证‘所有出现的值在另外一个表的主键列上存在’————外键列上的值“参考了”另一个表上的主键值。
+			
+
+				程序中的NULL/空值的含义，表示应该有一个这样的一个数据，但是还没有确定值是什么，如新员工的部门编号（尚未确定）、尚未确定的部门经理、尚未发发到手的年终奖
+
+				面试题：数据库中主键约束和唯一且非空组合 约束 有何区别
+				PRIMARY KEY:是表中记录的排序一句，故一个表之多有一个
+				UNIQUE NOT:不会排序，故一个表可以有多个
+
+	day04	
+		  高阶面试题：
+			mysql中的存储引擎是什么？有哪些？
+		1.项目中如何存储日期时间数据
+			大体有如下三种方式
+			1.varchar存储：不足：不便于比较大小，格式不灵活
+			
+			2.DATE/TIME/DATETIME存储：不足：不便于实现国际化，不同的编程语言支持程度不同，
+			3.BIGINT存储：表示距离计算机元年经过了多少毫秒值;任何编程语言都可以把大数字转换为日期时间。
+		2.MYSQL 中使用自增列
+			AUTO_INCREMENT
+			自增列：只能用于整数列，且必须是主键列。自增列无需手工赋值，会自动采用1/2/3.....的数列，在当前最大值得基础上加1
+				注意SQL标准中没有此关键字，它是mysql专有的
+
+
+
+
+		i18n  internationalization，国际化，实现了国际化的项目应该应该区别对待
+		 计算机中如何存储日期时间：一个很大的数字，表示目标日期距离“计算机元年”（1970-1-1 0:0:0 GMT）经过了多少毫秒
+
+
+		1.简单查询————只查询特定的列
+			示例：查询出所有员工的姓名、工资、编号
+			SELECT ename,salary,eid FROM emp;
+		2.简单查询————查询所有的列
+
+		3.简单查询————给列取别名
+			示例：查询出员工的姓名，所在姓名编号，要求列名用中文显示
+			SELECT ename AS 姓名,deptId  `部门 编号` FROM emp;
+			注意：给列取别名用AS关键字，且可以省略，别名中若有空格，需要用`括起来
+			查询所有员工的编号姓名工资生日 列名称全部显示为中文
+			SELECT eid 编号,ename  姓名,salary 工资,birthday 生日 FROM emp;
+			查询所有员工的编号姓名工资生日 列名称全部显示为英文字符
+			SELECT eid i,ename  n,salary s,birthday b FROM emp;
+		4.简单查询————只显示不同的记录 
+			示例：显示出哪些部门编号下有员工
+			SELECT DISTINCT deptId FROM emp;
+			说明 DISTINCT:不同的
+			查询出公司中有哪些性别的员工
+			SELECT DISTINCT deptId FROM emp;
+		5.简单查询————在查询是执行计算
+			示例：计算2*3的乘积
+			SELECT 2*3;
+			示例：请查询出每个员工的姓名及其年薪
+			SELECT ename ,salary AS 月薪,salary*12
+			FROM emp;
+			每人每月加薪500，年终再发2000，每人一年一共到手多少钱？
+			SELECT ename ,salary AS 月薪,(salary+500)*12+2000 AS 年终到手
+			FROM emp;
+
+			每人美元交社保500，剩余月薪再交30%个人所得税，查询出每人每月工资
+			SELECT ename ,(salary-500)*(1-0.3) AS 月薪 FROM emp;
+		6.简单查询————查询结果集的排序
+			示例：查询出所有员工的信息，按照由小到大排列
+			 SELECT * FROM emp ORDER BY salary;     #ASC ascendant升序
+			示例：查询出所有员工的信息，按照由大到小排列
+			 SELECT * FROM emp ORDER BY salary DESC;  #descendant 降序
+			 查询出员工所有信息，按照年龄从小到大排序
+			SELECT * FROM emp ORDER BY birthday; 
+			查询出员工所有信息，按照姓名降序排序
+			SELECT * FROM emp ORDER BY ename DESC; 
+			查询出员工所有信息，按照工资降序排序排列，若两人工资相同，再按照姓名升序排列。
+			SELECT * FROM emp ORDER BY salary DESC, ename; 
+			查询出员工所有信息，按照员工升序排列，要求女员工排在男员工之前
+			SELECT * FROM emp ORDER BY sex ,ename;
+		7.简单查询————条件查询
+			示例：查询出编号为5的员工的所有信息
+			SELECT * FROM emp WHERE eid=5;  #*指所有列
+			查询出姓名为KING 的员工编号、工资、生日
+			SELECT eid,salary,birthday FROM emp WHERE ename='KING';
+			查询出20号部门下所有员工的信息
+			SELECT * FROM emp WHERE deptId=20;
+			查询出所有男员工的信息
+			SELECT * FROM emp WHERE sex=1;
+			查询工资>=5000的信息
+			SELECT * FROM emp WHERE salary>=5000;
+			= < > <=  >= !=或<>
+			查询1991-1-1之后出生的员工所有信息
+			SELECT * FROM emp WHERE birthday >'1991-1-1';
+			查询出不在10号部门的所有员工信息
+			SELECT * FROM emp WHERE deptId != 10;
+			
+		 IS NULL   IS NOT NULL    AND   OR   NOT
+		 #NULL 不能用等于也不能用不等于判断
+			查询出暂时没有部门的员工信息
+			SELECT * FROM emp WHERE deptId IS NULL;
+			查询出有明确部门的员工信息
+			SELECT * FROM emp WHERE deptId IS NOT NULL;
+			查询出工资大于6000的女员工所有信息
+			SELECT * FROM emp WHERE sex=0 AND salary>6000;
+			查询出工资在5000-5999之间的员工信息
+			SELECT * FROM emp WHERE salary>=5000 AND salary<=5999;
+			
+			等价于SELECT * FROM emp WHERE salary BETWEEN 5000 AND 5999;	包含5000和5999.
+
+			查询出工资小于4000和大于8000的员工信息
+			SELECT * FROM emp WHERE (salary<4000) OR (salary>8000);
+
+
+			查询出在1991年出生的员工信息
+			SELECT * FROM emp WHERE birthday>='1991-1-1' AND birthday <='1991-12-31';
+			该语句等价于
+			 SELECT * FROM emp WHERE birthday BETWEEN '1991-1-1' AND '1991-12-31';
+
+			查询出在1990年之前出生和1993年之后出生的员工信息
+			SELECT * FROM emp WHERE birthday<'1990-1-1' OR birthday>'1992-12-31';
+
+			查询出在10和30号部门的员工信息
+			SELECT * FROM emp WHERE deptId=10 OR deptId=30 ;
+
+			查询出在10，30,50,80号部门的员工信息
+			SELECT * FROM emp WHERE deptId=10 OR deptId=30 OR deptId=50 OR deptId=80 ;
+			该语句等价于
+			SELECT * FROM emp WHERE deptId IN (10,30,50,80);
+			
+			查询出不在10和30号部门的员工信息
+			SELECT * FROM emp WHERE deptId!=10 AND deptId!=30;
+			该语句等价于
+			SELECT * FROM emp WHERE deptId NOT IN (10,30);
+		8.简单查询  ————模糊条件查询
+			示例：查询出姓名中包含字母E的员工所有信息
+			SELECT * FROM emp 
+			WHERE ename='%E%';#错误写法
+			SELECT * FROM emp 
+			WHERE ename LIKE'%E%';
+
+			查询出姓名以E结尾的员工的所有信息
+			SELECT * FROM emp WHERE ename LIKE '%E';
+			查询出姓名中倒数第二个字符是E的员工的所有信息
+			SELECT * FROM emp WHERE ename LIKE '%E_';
+		
+		SQL 通配符：下面两个通配符必须与LIKE组合应用
+			% 匹配任意对个任意字符
+			_ 匹配一个任意字符
+		
+		9.简单查询—————分页查询
+			分页查询：若数据库中满足条件的记录行数太多，一般会采取‘一页一页’的方式逐步展现给用户。
+			不同的数据库实现分页查询的语法各不相同，MYsql 中查询是最简单的！
+			SELECT
+			FROM
+			WHERE
+			ORDER BY
+			LIMIT start, conut;
+			start:是从哪一行读取数据，数据库中的第一行数据成为第0行
+			count：一次最多读取的行数
+			假设每一页最多呈现6行记录（成为"页面大小" pageSize）
+			第1页：SELECT .... LIMIT 0,6;
+			第2页：SELECT .... LIMIT 6,6;
+			...........................
+			...........................
+			第1页：SELECT .... LIMIT 6(n-1),6;
+			查询出所有员工信息，只显示第一页，每页最多显示6条
+			SELECT * FROM emp  LIMIT 0,6;
+			查询出所有员工信息，只显示第二页，每页最多显示6条
+			SELECT * FROM emp ORDER BY ename LIMIT 6,6;
+			查询出所有员工信息，只显示第三页，每页最多显示6条
+			SELECT * FROM emp  ORDER BY ename  LIMIT 12,6;
+			查询出所有员工信息，只显示第四页，每页最多显示6条
+			SELECT * FROM emp ORDER BY ename LIMIT 18,6;
+		
+			查询出所有10部门员工信息，只显示第1页，每页最多显示5条
+			SELECT * FROM emp WHERE deptId=10 LIMIT 0,5; 
+DAY05
+		思维导图软件
+		show CREATE TABLE
+		SHOW ERRORS
+		SHOW WARNINGS
+
+	 1.复杂查询————聚合/分组查询
+	 函数：一个可以接收若干数据，加以处理，输出特定数据的功能体————饺子机
+	 MYSQL 提供的函数：COUNT(),SUM(),AVG(),MAX(),MIN()————聚合函数
+		示例：查询出所有员工的总数
+		SELECT COUNT(eid) AS 员工总数 FROM emp;
+		SELECT COUNT(deptId) FROM emp;  值为null不计数
+		SELECT COUNT(*) FROM emp;优化算法，推荐此使用查询行数
+		查询出所有员工的工资总和
+		SELECT SUM(salary) AS 工资总和 FROM emp;
+		查询10号部门员工的平均工资
+		SELECT AVG(salary) FROM emp WHERE deptId=10;
+		SELECT SUM(salary)/COUNT(*) FROM emp WHERE deptId=10;
+		查询年龄最大和年龄最小的员工生日
+		SELECT MIN(birthday),MAX(birthday) FROM emp;最小生日最大年龄
+					SELECT * FROM emp WHERE birthday=(SELECT MIN(birthday) FROM emp) OR  birthday=(SELECT MAX(birthday) FROM emp);
+		SELECT MIN(birthday),MAX(birthday) FROM emp;
+		查询出每一个部门的编号以及该部门的员工数量(先分组再聚合计算)
+		SELECT deptId,COUNT(*) FROM emp GROUP BY deptId;
+		
+
+	 注意：分组查询结果集中只能包含两种列：
+	   1.分组条件列
+	   2.其他列的聚合函数
+	   SELECT deptId,COUNT(ename),ename FROM emp GROUP BY deptId;错误写法！
+
+		查询出每个部门编号，该部门的工资最大值，最小值 平均值 
+		SELECT deptId,MAX(salary),MIN(salary),AVG(salary) FROM emp GROUP BY deptId;
+		查询出男员工和女员工的数量
+		SELECT sex,COUNT(*) FROM emp GROUP BY sex;
+	 2.复杂查询————子查询
+		子查询：在一条语句中（增删改查）中嵌入另一条语句
+		示例：查询出"研发部"所有员工的信息
+		分析：分两步完成
+			1.到部门表查询出研发部对应的部门编号，如10、
+			SELECT did FROM dept 
+			WHERE dname='研发部';
+			2.到员工表查询部门编号为10的员工信息
+			SELECT * FROM emp WHERE deptId=10;
+			综合两条语句：SELECT * FROM emp WHERE deptId=( SELECT did FROM deptId WHERE dname='研发部');
+			#父查询中需要的条件数据由子查询提供;
+		 查询出工资比汤姆高的员工信息
+			1.SELECT salary FROM emp WHERE ename='TOM'
+			2.SELECT * FROM emp WHERE salary>(SELECT salary FROM emp WHERE ename='TOM');
+		 查询出与JACK 在同一个部门的员工信息
+		 1.SELECT deptId FROM emp WHERE ename='JACK';
+		 2.SELECT * FROM emp WHERE deptId=(SELECT deptId FROM emp WHERE ename='JACK');
+
+		 查询与TOM在同一年出生的员工信息;
+		 1.SELECT YEAR(birthday) FROM emp WHERE ename='TOM';
+		 2.SELECT * FROM emp WHERE YEAR(birthday)=(SELECT YEAR(birthday) FROM emp WHERE ename='TOM');
+	 获取日期中的年份部分可以使用YEAR()函数
+	  SELECT YEAR('1998-5-13');# 返回值1998
+	  SELECT YEAR (birthday) FROM emp WHERE ename='TOM';
+	 3.复杂查询————跨表/多表查询
+
+	     查询出每一个员工的姓名及其所在的部门名称;
+	     SELECT ename,dname FROM emp,dept;#错误写法得到了“笛卡尔乘积”
+	    
+	     SELECT ename,deptId, did,dname FROM emp,dept;
+	     WHERE deptId=did;  #跨表查询必须防止"笛卡尔乘积"
+		 注意：上述语法是SQL-92标准中的跨表查询语法。
+		 缺陷：若某个表中的记录在对方中无对应项，则结果无法显示这样的记录。
+			   如deptId 为NULL 的员工没有部门的员工，没有员工的部门都无法显示
+		SQL-99中的跨表查询语法分为四种：
+			1.内连接查询 INNER JOIN 查询结果与SQL-92标准一样！
+				SELECT ename, dname 
+				FROM emp INNER JOIN dept 
+				ON depId=did;  #两个表的拼接条件用ON 声明。
+			2.左外链接查询 LEFT OUTER JOIN
+				SELECT ename, dname 
+				FROM emp LEFT  JOIN dept 
+				ON deptId=did;   #OUTER可以省略。 #显示左侧表中的所有记录！
+			3.右外连接查询 RIGHT OUTER JOIN
+				SELECT ename, dname 
+				FROM emp LEFT  JOIN dept 
+				ON deptId=did;   #OUTER可以省略。 #显示右侧表中的所有记录！
+			4.全连接查询 FULL JOIN
+				注意：MYSQL不支持全连接！
+			在MYSQL中解决“不支持全连接”的方法————结果集的合并：
+				(SELECT ename FROM emp_cn)
+				UNION
+				(SELECT ename FROM emp_US) #合并相同的记录！
+				-----------------------------------------------
+				(SELECT ename FROM emp_cn)
+				UNION ALL
+				(SELECT ename FROM emp_US) #不合并相同的记录！
+			查询出员工姓名及其所在部门的名字，要求显示所有员工（包括没有部门的员工）及所有部门（没有员工的部门）
+			(SELECT ename,dname FROM emp LEFT OUTER JOIN dept ON deptId=did)
+			UNION
+			(SELECT ename,dname FROM emp RIGHT OUTER JOIN dept ON deptId=did);
+	
+	 WEB 服务器：
+		WEB服务器的作用：接收客户端（pc/pad/phone）的请求，查找需要的数据（文件/数据库/其他系统）发送回客户端
+		1.静态web服务器：提供的内容任何人任何时间都是不变的
+			静态web内容：HTML/CSS/JS/Flash/GIF/音视频......
+			常见得静态web服务器：Apache Httpd，MS IIS NginX
+		2.动态web服务器：提供的内容不同人不同时间都可能变化
+			动态web内容：
+						 JSP:HTML+JAVA （静态web服务器+Java解释器）
+						 PHP:HTML+PHP（静态web服务器+PHP解释器）
+						 ASP.NET:HTML+C# （静态web服务器 +C#解释器）
+						 Node.JS:HTML+Node
+		面试题：如何自学一门新的编程语言
+			1.了解背景知识：历史 现状 特点 应用领域 发展趋势
+			2.搭建开发环境，编写Hello world
+			3.声明变量和常量
+			4.数据类型
+			5.运算符
+			6.逻辑结构
+			7.通用小程序
+			8.函数和对象
+			9.第三方库、组件、框架
+			10.实用项目
+     PHP 背景知识
+		PHP：personal home page => PHP is Hypertext (Zend)
+		
+		 LAMP组合= Linux+ApacheHttpd+MYSQL+PHP
+	 搭建PHP开发环境
+	  1.服务器端：下载安装一款静态web服务器
+		C:\xampp\apache\bin   httpd.exe
+	  2.服务器端：下载安装PHP解释器，与web服务器整合
+		C:\xampp\php php.exe
+	  3.服务器端：编写静态/动态网页，保存在web服务器上
+		C:\xampp\htdocs
+	  4.服务器端：启动web服务器，打开需要的端口
+		ApacheHttpd 服务器默认占用80/443端口
+	  5.客户端：在浏览器中输入协议、地址、端口访问web服务器
+		http://127.0.0.1：80
+		127.0.0.1指本机
+
+	 声明变量和常量
+		变量：值可能发生改变的量，如人的年龄，用户的密码，商品的价格。
+			php中声明一个变量：
+			  $变量名=值;   #等号读作“赋值”
+			输出一个变量的值：
+			echo$变量名;     #输出时不加单引号
+		常量：值不可能发生改变的量
+			声明一个常量：
+			 const 常量名 = 值;
+			输出一个常量值：
+			 echo  常量名;
+		
+	变量名中可以包含数字、字母、下划线，但不能以数字开头；
+		合法的：$age、$age2、$_age_2、$emp_age、$empAge
+		非法的：$2age、$user-Name、$user Name
+	常量名中可以包含数字、字母、下划线，但不能以数字开头；习惯上常量名全部使用大写字符
+	 合法的：AGE、AGE2、EMP_AGE
+
+
+
+	 $name='liwenhua';  echo $name;
+	 $ps='241354654'
+
+	 #PHP预定义函数：var_dump($变量名) 输出变量的类型和值
+	 var_dump($变量名);
+day06
+		变量=值； 值为数字时不能加引号
+		0-65535 端口两个字节
+
+	 PHP中的数据类型————不复杂，有点乱
+		 PHP/JS属于‘弱类型’语言————创建变量时不需指定类型，一个变量可以先后赋值为不同类型的值，
+		 SQL/C/java属于‘强类型’语言
+
+
+		 echo $变量名;可以输出变量的值;
+		 var_dump ($变量名);可以用于输出变量的类型和值;
+		 PHP中的数据类型————：具体可以查看网络下载参考手册：《语言参考》
+		  1.四个标量/值/基础类型
+			1.int/integer：整数-2147483648~2147483647
+			2.float/double：小数 float和double时相同的
+			3.string：字符串 
+			4.bool/boolean：布尔,只能取值为true/false/TRUE/FALSE
+		  2.两个复合类型
+			5.array：数组
+			6.object：对象
+		  3.两个个其他类型
+			7.null：空
+			8.resource：资源
+		 注意：
+			1.整数值超过了int的最大范围（2147483647），自动变为float类型
+			2.bool的true若用echo输出为‘1’，false用echo输出为空字符串
+			3.string 可用单引号/双引号括起来；细微的区别：若单引号字符串有变量名，则输出为变量名，而双引号中有变量名则输出为变量的值————双引号中不具备计算能力:
+			4.两个字符串拼接用 . 符号  连接
+		
+	 PHP中的运算符————不复杂，有点乱
+		 PHP中的运算符分为如下几大类：
+		  1.算数运算符：+  -  *   / %(求余数运算/取模运算)  ++（自加1运算） -- 
+			 1.+只用作算术运算，不用做字符串拼接！
+			 2.+作用于字符串，会发生隐式转换：试着解析出字符串中的数字，能解析   几位就解析几位
+			 3.+作用于布尔，会发生隐式转换：true转换为1，false转换为0。
+			 4.%表示求余数运算/取模运算，2018%4结果为2，一般用于判定一个数是否   能被另一个数整除
+			 5.计算一个数字在原有基础上+1，有两种办法
+			  $n1=$n1+1;
+			  $n1++;//运算速度更快!
+			  ++$n1;
+			    $++和++$的异同：
+					 $++：先取值再自加
+					 ++$：先自加再取值
+				
+			 计算机中变量的本质：变量名的本质就是一个内存编号的别名。
+
+		  2.比较运算符：<   >  <=  >=  ==  ===(全等于)  !=  !==(不全等)
+			 1.比较运算符的结果为 true 或false
+			 2.默认情况下，用==比较，1和true是相等的，0和false和""是相等的
+			   注意：==运算符会进行自动的隐式转换。
+			 3.若比较运算中不希望出现自动的隐式转换，只要类型不同直接判定为不等    使用===！
+			
+		  3.逻辑运算符： &&   ||   ！
+			 &&(并且/与)  ||(或)    !(取反/非)
+
+			  对于&&运算：             对于||运算：        对于！运算
+			  true&&true=> true        true||true=> true   ！true=>false
+			  false&&true=> false      false||true=> true  ！false=>true
+			  true&&false=>false       true||false=> true
+			  false&false=false        false||false=> false
+		  4.位运算符：  <<(按位左移)   >>(按位右移)
+			 把数字按照2进制（bit位）形式进行运算
+			 <<一个数字向左移动一N位，相当于 *2^n
+			 >>一个数字向右移动一N位，相当于 /(2^n)
+		  5.赋值运算符：  = +=  -=  *=  /=  %= .....
+			 $n =5  等价于 $n += 5
+			 ...................
+
+		  6.拼接运算符：  .
+			 .=
+			 $uname = 'tom';
+			 $uname = $uname.'先生'；
+			 $uname .= '先生';
+		  7.三目运算符：?:
+			 语法：表达式1 ？ 表达式2 ：表达式3 
+			   单目运算符： $a++
+			   双目运算符：$a + $b
+			   三目运算符
+			   含义：（如果....否则....）如果表达式1的值为true，则返回表达式2的值，否则返回表达式3的值；
+day07
+	 1.逻辑结构————注意逻辑思考&练习多
+	   程序=数据+算法
+	     1.算法的基本结构
+			 1.顺序执行
+			 2.选择执行
+			 3.循环执行
+	 2.程序逻辑结构————顺序执行
+	 3.程序逻辑结构————选择/分支执行
+		 选择执行的最基础代码
+			 if(条件判定){条件判定结果为true时执行的代码
+			 }
+
+		 如果...否则...逻辑的语法结构
+			 if(条件判定){
+				//条件判定为true时执行的语句；
+			 }else{
+				//条件判定为false时执行的语句；
+			 }
+			关于"if...else....的嵌套问题"有两种编写方法：
+			(1)	if(  ){
+				}else {
+					if(){
+					}else {
+					}
+				}
+			(2)	if(  ){
+				}else if(  ){
+				}else if(  ){
+				}else {
+				}
+			  if*1 + else if*N + else*1
+			小结：
+			 1.  if( ){   }
+			 2.  if( ){   }else{   }
+			 3.  if( ){   }else{  if(){}else{}  }
+			 4.  if( ){   }else if( ){  }... else{  }
+
+		4.程序逻辑结构————选择/分支执行之二
+		 switch...case...break选择分支结构：在多个不同的“情形下”进行“切换”
+		 语法：switch  (变量名){
+					 case 值1：         #if(变量名==值1)
+						 语句1; 
+						 break;
+					 case  值2：		#if(变量名==值2	)
+						 语句2;
+						 break;
+					 ...
+					 default:			#else
+						 语句n；
+		 }
+		 含义：若指定变量等于值1，则执行语句1，否则若等于值2，执行语句2
+		 否则值若等于n执行语句n；
+		 注意：默认情况下，switch若判定了某个相等条件则执行该条件以及后续所有条件中的执行语句！—————必须配合break使用
+	5.程序逻辑结构————循环结构之一
+		循环：多次执行完全相同或相似的代码
+		循环二要素：1.循环体   2.循环条件
+		第一种循环结构：
+			while (条件判定){
+				//循环体
+			}
+			含义：执行条件判定，若为true，则执行一次循环体；
+				  再次执行条件判定...直到某次执行完循环体，再去执行条件判定为false，则退出循环，继续执行后面的语句。
+day08
+	1.循环结构之二 —— do...while...
+			语法：
+		do{
+			循环主体;
+		}while( 循环条件 );
+		while循环主体可能执行0~N次
+		do..while循环主体可能执行1~N次
+
+	2.循环结构之三 —— for... —— 重点掌握
+		 for( 表达式1;  表达式2; 表达式3){
+			循环主体；
+		 }
+		含义：首先执行且仅执行一次“表达式1”
+			  再执行“表达式2”的判定，若为true，执行一次循环主体；
+			  再执行一次表达式3，再去执行表达式2的判定，若为true继续执行一次循环主体...直到为false，退出循环。
+			  总结：  
+				 表达式1在循环前执行一次————一般用于声明循环变量
+				 表达式2每次主体执行之前都执行一次———一般用于执行循环判定条件
+				 表达式3在每次执行主体之后都执行一次————一般用于执行循环变量的增减	
+				 while和for的功能一样！只是for更加紧凑！
+				 for循环中的三个表达式都可以为空。
+
+	 循环中使用break关键字： 打断当前循环，不再执行，跳出循环
+	 循环中使用continue关键字：跳过此次循环，继续下一次循环
+
+	3.PHP中的数据类型：复合类型 —— array
+
+	 PHP中数组分为两种类型：
+	 1.索引数组(Indexed Array)：每个元素的下标是数字 “类型相同的多个数据”
+		 创建一个数组的语法：
+			$变量名 = [ 值1, 值2, .... 值n ];
+			$变量名 = [  ];
+		 获取数组中元素的个数/数组的长度：
+			echo  count($变量名);
+		 操作数组中的某个元素——使用元素的下标/索引(index)：
+			$变量名[下标] = 值;     #修改指定下标处的元素值
+			echo $变量名[下标];		#输出指定下标处的元素值
+		 向数组中添加新元素：
+			$变量名[ ] = 值;     #新的元素会自动获取新的下标
+		 索引数组的遍历：  
+			for($i=0; $i<count($变量名); $i++){
+				echo  $变量名[$i];
+			}
+	 2.关联数组(Association Array)：每个元素的下标是字符串
+		关联数组的声明：  $变量名 = ['下标'=>值, '下标'=>值...];
+		关联数组不能使用for循环遍历！
+	 注意：
+		echo "书籍名称: ".$book['bname']; //正确写法
+		#echo "书籍名称: ".$book[bname];  //错误写法
+		#echo "书籍名称: $book['bname']";  //错误写法
+		echo "书籍名称: $book[bname]";  //正确写法
+	 PHP中的二维数组（即数组的数组），就对应于数据库/网页中的一个“表格
+			//echo $userList[$i]['uname'].'<br>';
+			//echo "$userList[$i][uname]<br>";  //错误
+
+			//$arr = $userList[$i];
+			//echo "$arr[uid] &nbsp;&nbsp;";
+day09
+		程序员必做的50题
+	 1.循环结构之四 —— foreach循环
+		 语法：foreach只用于遍历数组（尤其是关联数组）
+			foreach( $数组名  as  $元素变量名 ){
+			 //循环主体
+		    }
+			foreach( $数组名  as  $下标变量名=>$元素变量名 ){
+			 //循环主体
+			}
+		含义：对于数组中的每个元素，都看做是一个指定的变量，对每个这样的变量执行一次指定的循环体
+	 2.PHP中的预定义数组 —— 难点！
+		 预定义数组：
+			由PHP解释器自己创建的，程序员不需要声明可以直接使用的。PHP预定义了如下的数组变量：
+			  $_GET
+			  $_POST
+			  $_COOKIE
+			  $_FILES
+			  $_REQUEST：保存着客户端提交给服务器的“请求”数据
+			  $_SESSION
+		 上述变量默认都是 array(0){ }
+				 Web项目中，客户端(浏览器)如何给服务器传数据：
+			http://127.0.0.1/login.php?uname=tom&upwd=123
+		  PHP服务器会自动把?后面的数据存储到$_REQUEST数组中：
+			 $_REQUEST['uname'] = 'tom';
+			 $_REQUEST['upwd'] = '123';
+		  程序员如何读取客户端提交的数据：
+			 echo  $_REQUEST['uname'];     //tom
+			 echo  $_REQUEST['upwd'];      //123
+	 3.函数基础认识 —— 掌握
+		 Function：功能体/函数，用于封装一段需要反复执行/不易编写的代码。
+		 1.声明一个函数：
+				function 函数名( ){
+					//函数主体
+				}
+			 执行/调用一个函数：
+				函数名( );
+		 2.声明一个带参数的函数：
+				function 函数名(参数名1,  参数名2, ... ){
+					//函数主体
+				}
+			  执行/调用一个函数：
+				函数名( 值1, 值2, ... );
+		 3.声明一个带返回值的函数：
+				function 函数名( [参数名1,  参数名2, ...] ){
+				 //函数主体
+				 return  函数运算的结果值; //应该是整个函数中最后一句
+				}
+			  执行/调用一个有返回值函数：
+			 $变量名 = 函数名( [值1, 值2, ...] );
+		     使用一个变量接收函数的返回值。
+		 4.PHP预定义函数 —— 访问MySQL数据库必需的函数 ——重点&难点
+			 提示：历史上，PHP官方提供了两套访问MySQL服务器的函数：
+				mysql_xxxx( )   性能不够优秀
+				mysqli_xxxx( )    Improved：改进提升版
+			 使用MySQLI函数库访问数据库服务器的步骤(与管理员从命令行中访问数据库的步骤一样)：
+			  (1)连接到数据库服务器
+				$conn = mysqli_connect(...);
+			  (2)提交SQL语句给服务器执行
+				$sql = "INSERT/DELETE/UPDATE/SELECT...";
+				$result = mysqli_query($conn,  $sql);
+			  (3)查看执行结果
+				if($result===false){   //执行失败
+				}else{	//执行成功
+				}
+			  (4)关闭到数据库服务器的连接(可以省略)
+				mysqli_close( $conn );
+day10
+	 CRUD Create Retrieve UpdateE Delete
+	 1.基于单表的插入操作————注册新用户
+		 1.	编写user_add.PHP,接收客户端提交的请求数据
+		  uname、upwd、email、phone，检验用户输入
+		 2.连接数据库
+		 3.向数据库服务器提交INSERT 语句
+		 4.输出执行结果：注册成功/失败
+	  如果一行代码有错误/警告输出，可以使用 @ 符号压制屏蔽错误消息的输出
+	 终止PHP页面的执行可以使用die ("终止消息")函数
+	 获取刚刚执行的INSERT语句产生的自增编号使用函数：
+	 $id=mysqli_insert_id($conn);
+	 获取INSERT///语句影响的行数
+	
+	 2.基于单表的删除操作————删除用户
+		 $count=mysql_affected_rows($conn);
+		 对于多个PHP页面都需要的变量/函数，可以声明在一个公共的文件中，如int.php
+		 所有其它页面都声明“包含”此页面即可
+		 require('int.php');
+	 3.基于单表的修改操作————修改注册信息
+		 		
+	 4.基于单表的查询一条操作————用户登录
+	 5.基于单表的查询多条操作————用户列表
+day11
+		杨燕  g-yangyan@tedu.cn
+	20天前端基础概述
+			1.HTML5Basic(2D)
+				搭建网页结构
+			2.Javascript基础（5D）
+				了解基本编程语言的语法结构
+			3.AJAX（3D）
+				了解异步请求数据方式
+			4.项目1（2D）
+				实现数据的动态加载
+			5.CSS3（6D）
+				使用CSS技术美好HTML页面
+			6.项目2（2D）
+				使用HTML和css搭建学子商城的首页，列表页，详情页，购物车页。
+			===========================
+	1.WEB基础知识
+		1.web与Internet
+		 Internet:全球的计算机互联网络，简称因特网，互联网....
+		 Internet提供的服务：
+			 1.BBS 电子公告板，俗称论坛。
+			 2.Email 电子邮件服务
+			 3.www服务 （world wide web）万维网，指的就是通过网络去访问网页。
+			 4.FTP 文件上传下载
+			 5.telnet 远程登录
+		 基本实现技术：
+			 1.分组交换原理
+			 2.TCP/IP协议族
+	 2.Ineternet上的应用程序
+		 1.c/s
+			 c:Client 客户端
+			 s:Server 服务器
+			 通过指定的客户端连接服务器的程序
+			 代表：QQ,游戏
+			 可执行的桌面应用程序 (.exe)
+		 2.b/s
+			 b:Browser 浏览器
+			 s:Server 服务器
+			 通过浏览器去访问服务器的一种程序
+			 代表：各种网站
+		 3.web
+			 web（www）服务
+			 web规范是由w3c来指定
+			 w3c：world wide web Consortium(万维网联盟)
+			 web将各类信息和服务进行无缝连接，并提供生动形象的用户界面。
+			 服务：Telnet bbs emial 
+			 信息：文字，图片，音频，视频等
+			 产物：
+					bbs:论坛
+		Email:邮件
+		网站
+		 4.web的工作原理
+			 web(网页)程序是保存在服务器，运行在客户端的一种应用程序。
+			 由3部分组成：
+					 1.web服务器
+			 提供基础服务，存储代码，数据
+		 2.浏览器
+			 访问服务器所用软件
+		 3.通信协议 http(https)
+			 规范了数据如何打包以及如何传递的
+		 5.服务器和浏览器
+			 服务器： 
+				 1.功能
+		 1.存储web信息，并提供环境
+		 2.接收用户请求并给出响应
+		 3.要具备一定的安全功能
+	 2.服务器产品
+		 1.TOMCAT
+		 2.APACHE
+		 3.IIS
+	 3.服务器技术
+		 1.php
+		 2.java
+		 3..net
+		 4.asp
+		 5.python
+			 浏览器：
+				 1.功能
+		 1.以图形化的界面显示网页
+		 2.作为HTML和JS的解释器
+		 3.代理用户提交请求
+	 2.浏览器产品
+		 1.IE
+		 2.Chrome
+		 3.Firefox
+		 4.Opera
+		 5.Safari
+	 3.浏览器技术
+		 1.HTML
+		 2.CSS
+		 3.javascript
+	2.HTML入门
+		1.什么是HTML？
+			HTML：HyperText Markup Language超文本标记语言
+			普通文本a:英文首字符
+			超级文本a：超链接
+
+			普通文本b:英文字符
+			超级文本b:加粗显示文本
+
+			Markup:标记，又称为标签 即超文本组成形式
+		2.基础语法
+			1.标记语法
+				标记，又称为元素，在网页中，主要表示一些功能
+				标记在使用时，必须用<>括起来，标记分为2种：
+				 1.封闭类型
+					 也称为双标记，必须成对出现，有开始有结束(注意)。
+					 语法：<标记>内容</标记>
+					 ex:<a>百度</a>
+							<b>文本</b>
+
+				 2.非封闭类型
+					 也称为单标记，只有一个标记组成，既表示开始也表示结束
+					 语法：<标记>或<标记/>
+					 ex：<br> 换行
+							 <hr> 水平线
+				 <img> 图片 <img/>
+			2.标记嵌套
+				1.什么是嵌套
+				在一对标记中出现另外一对（一个）标记，从而形成功能的层叠。
+				2.语法
+					<标记1>
+						 <标记2>
+								<标记3>
+						 </标记2>
+					</标记1>
+					ex:
+					 <a>
+							<img>
+					 </a>
+					ex:不推荐
+						<a><b><i><img></i></b></a>
+
+						3.属性和值
+							作用：修饰元素（标记）
+				语法：<标记 属性="值" 属性="值" ...></标记>
+				ex:
+				p元素有align属性的值为center，title属性的值为“这是一段提示文字”
+				<p align="center" title="这是一段提示文字"></p>
+				标准属性：
+					 所有的元素支持的属性称为标准属性。
+					 1.id 定义元素的唯一标识（名称）
+					 2.title 定义鼠标移入到元素上时所提示的文字
+					 3.class 定义元素引用类选择器（css中）
+					 4.style 定义元素行内样式（css中）
+						4.注释
+							语法：<!--注释内容-->
+				注意：
+					1.注释本身不能嵌套
+					2.注释不能写在标记中
+	3.HTML文档标准结构
+		1.HTML文档的结构
+			1.文档类型声明
+					作用：告诉浏览器使用的是HTML哪个版本
+					语法：<!doctype html>
+			2.HTML页面结构
+				作用：表示页面的开始与结束
+				语法：紧挨着文档类型声明之后
+				<html></html>
+				在html根标记中包含两个子元素：
+					1.<head></head>表示网页头部
+					2.<body></body>表示网页主体内容
+			3.<head></head>元素
+					是其他头元素的容器
+					<title></title>:定义网页的标题
+					<meta>：定义基础信息：编码格式utf-8,关键词，描述内容等
+					<style></style>:定义内部样式
+					<script></script>:定义或引用javascript文件
+					<link>:引入外部样式
+			4.<body></body>
+					显示网页的主体内容		 
+	4.文本标记
+		1.特殊字符
+				1.&nbsp; 表示一个空格
+				2.&lt; 表示一个<
+				3.&gt; 表示一个>
+				4.&copy; 表示版权
+				5.&yen; ￥
+				练习：完成以下效果
+				©2017 阿甲集团有限公司 版权所有 京ICP证09002163号
+		2.文本样式
+				1.<b></b> :加粗
+				2.<i></i> :斜体
+				3.<u></u> :下划线
+				4.<s></s> :删除线
+				5.<sup></sup> :上标
+				6.<sub></sub> :下标
+				练习：
+					这里有一段加粗，有斜体，有下划线，有删除线，有上标，有下标的文本。
+		3.标题元素
+				语法：<hn></hn> n:1-6
+							<h1>内容</h1> 一级标题
+				...
+				<h6>内容</h6> 六级标题
+				特点：
+					 1.字体大小可以变化
+					 2.字体加粗
+					 3.上下文之间有垂直空白间距
+						属性：align
+						作用：标记内容的水平对齐方式
+						取值:left/center/right
+		4.段落元素
+				作用：以突出的形式表示一段文字
+				语法：<p>内容</p>
+				属性：align 
+				取值：left/center/right
+		5.换行元素
+				语法：<br>或<br/>
+		6.分割线元素（水平线）
+				语法：<hr>
+				作用：在网页中表示为“一根线”
+				属性：
+					 1.size
+						 表示水平的尺寸（高度），取值为px或%的数值 ex:5px;
+					 2.width
+						 宽度，表示水平线的宽度，取值为px或%的数值
+					 3.align
+						 水平线的对齐方式
+						 left/center/right
+					 4.color
+						 水平线的颜色，取值为合法的颜色值
+		7.预格式化
+				作用：保留HTML代码中的回车和空格
+				语法：<pre></pre>
+		8.分区元素
+			1.块分区
+				作用：用于页面做布局效果
+				语法：<div>内容</div>
+			2.行分区
+				作用：处理同一行文本的不同样式
+				语法：<span>内容</span>
+		9.块级元素和行内元素
+			1.块级元素
+				在网页中独占一行的元素就是块级元素
+				页面中常见的块级元素：
+					1.标题元素
+					2.段落元素
+					3.div元素
+			2.行内元素
+					在网页中，多个元素位于同一行
+					页面中常见的行内元素：
+					1.文本样式元素b,i,u,s,sup,sub,span,a,img
+			3.行内块元素  表单控件
+	5.图像和链接
+			1.url
+				1.目录结构
+					目录：文件夹
+				2.url
+					url:Uniform  Resource Locator统一资源定位器，俗称：路径。
+				3.路径的表现形式
+					 1.绝对路径
+						完整路径，从文件所在的最高目录处查找文件所经过的路径就称为绝对路径。
+						 1.本地资源：从最高盘符处开始查找
+						 2.网络资源: 通信协议+主机的名称+目录结构+文件名
+					 2.相对路径（必须）
+							从当前文件所在的位置处开始查找资源文件所经过的路径，就是相对路径。
+							1.同级目录:直接引用  logo.png
+							2.子级目录:先进入，再引用 images/a.jpg
+							3.父级目录:先返回，再引用 ../b.jpg
+					 3.根相对路径
+							永远都是从服务器所在的根目录处开始查找
+							表现：/codeboy/images/a.jpg
+			2.图像
+				1.图像格式
+					jpg:压缩比率大，图片模糊
+					gif:动画
+					png:背景透明（logo）
+				2.图像元素
+					元素：<img>
+					属性：
+					 src:要显示图像的url(绝对/相对/根相对)
+					 width:宽度，取值为数值+px或 %形式
+					 height:高度，取值为数值+px或 %形式
+					 alt:图片出错，提示文字内容
+					注意：width和height属性，如果只修改其中一个属性的值，另外一个属性值会跟着等比缩放。
+				3.超链接
+					1.语法：<a>内容</a>
+						属性：
+						1.href:链接路径（url）
+						2.target:指定打开网页的方式
+							取值：
+								 _self 默认值，在当前的标签页中打开新网页
+								 _blank 在新的标签页中打开新网页
+					2.超链接的表现形式
+						1.资源下载
+							让链接的url，链接到rar/zip文件即可。
+								<a href="*.rar/*.zip">下载</a> 
+						2.电子邮件链接
+								<a href="mailto:xxx.163.com"></a>
+						3.返回到页面顶部的空链接
+								<a href="#">返回顶部</a>
+						4.链接到javascript
+								<a href="javascript:js脚本"></a>
+					3.锚点
+						1.什么是锚点
+							锚点就是网页中一个记号，可以通过超级链接跳转到该记号位置处。
+						2.使用方式
+							1.定义锚点
+								1.使用a标记的name属性定义锚点
+									<a name="锚点名称"></a>
+								2.使用任意标记的id属性定义锚点
+									<ANY id="锚点名称"></ANY>
+							2.链接到锚点
+									<a href="#锚点名称">本页面</a>
+									<a href="url#锚点名称">其它页面</a>
+									 快捷键：
+								 ctrl+s:保存文件
+								 ctrl+x:剪切
+								 ctrl+c:复制
+								 ctrl+v:粘贴
+								 F5：刷新
+								 Alt+Tab:切换工作窗口
+								 ctrl+b:在浏览器中运行网页
+								 windows+D:回到桌面
+								 ctrl+shift+n:新建网页模板
+day12
+	1.表格	
+		1.表格
+			1.定义表格
+				<table></table>
+			2.行
+				<tr></tr> ---table row
+			3.列
+				<td></td>---table data
+		2.属性
+			1.table属性
+				1.width 宽度
+				2.height 高度
+				3.align 设置表格的水平对齐方式
+				4.border 设置表格的边框的宽度
+				5.cellpadding 设置单元格的内边距（内容与td边框之间的间距）
+				6.cellspacing 设置单元格外边距（td边框外的间距）
+				7.bgcolor 背景颜色
+			2.tr
+				tr属性
+					1.align 设置当前内容的水平对齐方式（left/right/center）
+					2.valign 设置当前行内容垂直对齐方式（top/middle/bottom）
+					3.bgcolor 设置当前一行的背景颜色
+			3.td
+				td属性
+					1.width
+					2.height
+					3.align
+					4.valign 
+					5.bgcolor
+					6.colspan 跨列
+					7.rowspan 跨行
+		3.可选标记
+			1.表格标题
+				<caption>	</caption>
+				如果要设置标题的话，则必须位于table下的第一个子元素
+			2.行/列的标题
+				<th></th>
+				所有的td可以被th取代
+		4.表格的复杂应用
+			1.行分组
+				可以将连续的几个行，划分到一个组中，并进行统一的管理
+					1.表头
+						<thead> </thead>
+						表格中最上面一行，可以放在表头行中
+					2.表尾行
+						<tfoot> </tfoot>
+						表格中最后一行要进行分组的话，可以放在表尾行中
+					3.表主体行
+						<tbody></tbody>
+						允许将若干行放在表主题行中，进行统一管理
+			2.不规则表格
+				1.跨列：colspan
+					从指定的单元格位置处开始，横向向右合并几个单元格（包括自己），被合并的单元格要删除
+				2.跨行：rowspan
+					从指定的单元格位置处开始，纵向向下合并几个单元格（包括自己），被合并的单元格要删除
+	2.列表
+			1.列表的作用
+				按照从上到下（从左到右）的方式显示所有的数据，并且可以在数据前增加显示的标识
+			2.列表的组成
+				列表都是由列表“类型”和“列表项”组成。
+				1.列表类型
+					有序列表：<ol></ol> order  list
+					无序列表：<ul></ul> unorder list
+				2.列表项
+					用于表示列表中的数据（嵌套在列表类型中）
+					<li></li> list item
+				3.列表的属性
+					1.有序列表
+						1.type
+							作用：指定列表项标识的类型
+							取值：
+								1 数字（默认值）
+								a 小写英文字母
+								A 大写英文字母
+								i 小写罗马数字
+								I 大写罗马数字
+						2.start
+							作用：指定起始编号从第几个位置开始排序
+							取值：数字（没有单位）
+					2.无序列表
+						1.type
+							作用：指定列表的标识类型
+							取值：
+								disc 实心圆（默认值）
+								circle 空心圆
+								square 实心方块
+								none 不显示标识
+				4.列表的嵌套
+					在一个列表项中又出现另一个列表被嵌套的列表只能出现在li中
+				5.定义列表
+					1.什么是定义列表
+						定义列表常用于给出一类事物的定义或多名词的解释说明等
+					2.语法
+						1.<dl></dl>表示一个定义列表
+						2.<dt></dt>定义列表中要解释说明的名词
+						3.<dd></dd>表示定义列表中对名词解释的内容
+									<dl>
+										<dt>三国演义</dt>
+										<dd>一部小说</dd>
+									</dl>
+					常用场合：图文混排
+	3.结构标记
+		1.结构标记的作用
+			用于描述整个网页的结构 （取代div做结构布局）
+		2.常用的结构标记
+			1.<header></header>
+				作用：定义网页或某一部分的头部
+			2.<nav></nav>
+				作用：用来定义网页的导航链接
+			3.<section></section>
+				作用：用来表示网页的主体内容
+			4.<aside></aside>
+				作用：定义页面中的侧边栏（左或者右）
+			5.<footer></footer>
+				作用：定义页面靠底部的信息（页尾）
+			6.<article></article>
+				作用：定义于文字内容相关的内容，如：论坛中的帖子、微博、用户的评论等
+	4.表单（重点）
+		1.作用
+			1.提供一个可以与用户交互的可视化控件
+			2.手机用户信息并提交给服务器
+		2.表单的组成部分
+			1.前端部分
+				表单元素，与用户交互的可视化控件（比如：文本框，密码框，按钮等）
+			2.服务器端
+				对提交数据的处理  ***.php
+		3.表单元素
+			1.标记:<form></form>
+				属性：
+					1.action
+						作用个：定义表单被提交时发生的动作，通常定义的是服务器上处理程序的地址（url）默认提交给本页。
+					2.method
+						作用：指定表单数据的提交方式
+						取值：
+							1.get（默认）
+								1.明文提交，待提交的数据会显示在地址栏上
+								2.安全性低
+								3.提交的数据有大小限制，限制为2kb
+								4.向服务器要数据时，使用get方式
+							2.post
+								1.隐式提交，提交的数据不会显示在地址栏上
+								2.安全性较高
+								3.提交数据没有大小限制
+								4.要传递数据给服务器处理时，使用post方式
+							3.delete 删除
+							4.put 
+					3.enctype
+						作用：指定表单数据的编码格式，允许将什么样的数据提交给服务器
+						1.application/x-www-form-urlencoded
+							默认值，允许将任意的字符提交给服务器（文件无法提交）
+						2.multipart/form-data
+							允许将文件提交给服务器
+						3.text/plain
+							只能讲普通字符提交给服务器
+							注意：当提交文件时必须将提交方式设为post
+			2.表单控件
+				能够与用户进行交互的可视化控件
+					1.分类
+						1.input元素
+						2.textarea多行文本域
+						3.select和option 选项框元素
+						4.其他元素
+					2.input元素
+						1.作用
+							在页面上提供各种各样的输入控件如：文本框，密码框，单选按钮，复选框
+						2.语法
+							标记<input>或<input>
+							属性：
+								1.type 指定创建输入控件的类型
+								2.name 为控件定义名称，服务器端使用(必须的)
+								3.value 控件的值，提交给服务器端的值
+								4.disabled 禁用控件，不能操作并且也不能提交 
+									该属性无值，只要出现在标记中，就是禁用。
+						3.input元素详解
+							1.文本框和密码框
+								文本框<input type="text">
+								密码框<input type="password">
+								属性：
+									1.maxlength
+										指定限制输入的字符数
+									2.readonly
+										只读，只能看不能改，但允许提交给服务器
+										注意：该属性无值
+									3.placeholder
+										占位符，即默认显示在控件上的文本
+							2.按钮
+								1.提交按钮
+									<input type="submit">
+									功能：将表单中的数据，提交给服务器上指定的程序（action="**.php"）
+								2.重置按钮
+									<input type="reset">
+									功能：将表单中的按钮恢复到初始化的状态
+								3.普通按钮
+									<input type="button">
+									功能：没有功能
+								属性：
+									value 定义按钮上的文字
+							3.单选按钮和复选框
+								单选按钮：<input type="radio">
+								复选框：<input type="checkbox">
+								属性：
+								1.name
+									除了定义控件名称之外，还能起到分组的作用
+								2.checked
+									设置默认被选中，无值属性
+							4.隐藏域和文件选项框
+								1.隐藏域
+								  <input type="hidden">
+									想要提交给服务器，但不想展示给用户看的数据可以放在隐藏域中
+								2.文件选项框
+										<input type="file">
+										注意：
+											1.method 属性值必须为post
+											2.enctype 必须为multipart/form-data
+day13
+	（day13部分时间）
+	1.textarea元素
+	 <textarea> </textarea>
+	 属性：
+		1.name
+			定义控件名称，提供给服务器使用
+		2.readonly
+			只读
+		3.cols
+			指定文本域的列数，即一行能显示多少个英文字符（中文减半）
+		4.rows
+			指定文本域的行数，即默认显示多少行的数据，超出rows的范围显示滚动条
+	2.选项框
+		1.语法
+			<select></select>
+			作用：在页面中表示一个选项框
+					<option></option>
+					作用“定义选项框中的选项
+		2.
+			select
+			name 定义选项框的名称
+			size 定义显示选项的数量，默认是1
+						如果取值大于1的数字，元素则表现为滚动列表，否则就是下拉列表
+			multiple 设置多选，无值属性
+							 只有为滚动列表支持多选
+			option 
+				value 定义选项的值
+				selected 设置被选中，无值属性
+	3.其他元素
+		1.label元素
+			作用：关联文本与表单控件
+			语法：<label></label>
+			属性：
+				for 用for关联表单控件的ID值，用于选中表单控件
+		2.为控件分组
+			语法：<fieldset></fieldset>为控件分组
+								<legend></legend> 为分组指定标题
+		3.浮动框架
+			作用：允许在一个网页中，再引入另一个网页
+			语法：<iframe></iframe>
+			属性：
+				witdh 宽度
+				frameborder 浮动框架的边框 默认为1px
+	2.新表单控件元素
+		1.什么是新表单控件
+			在html5版本中新提出的控件详解
+		2.详解
+			1.电子邮件类型
+				作用：表单提交时，会验证数据是否符合email的规范（ @ ）
+				语法：<input type=“email”>
+			2.搜索类型
+				作用：提供了快速清除的功能
+				语法:<input type="search">
+			3.URL类型
+				作用：提交时验证数据是否符合url的规范（绝对路径的规范）
+				语法：<input type="url">
+			4.电话号码类型
+				作用：在移动端的设备中，显示效果为“拨号键盘”界面
+				语法：<input type="tel">
+			5.数字类型
+				作用：只能接收数字，并且可以灵活调整数字的值
+				语法：<input type="number">
+				属性：
+						value：控件值
+						min：能够接收的最大值
+						max：能够接收的最大数字
+						step：每次调整数字时数字变化的范围（步长）
+			6.范围类型
+				作用：提供一个滑块组件，允许用户选取指定范围的值
+				语法：<input type="range">
+				属性：	
+							min：范围最小值
+							max：范围最大值
+							step：范围的步长
+							value：初始值
+			7.颜色类型
+				作用：提供一个颜色的拾取控件
+				语法<input type="color">
+			8.日期类型
+				作用：选择日期
+				语法：<input type="date">
+			9.周类型
+				作用：选取周
+				语法：语法：<input type="week">
+			10.月份类型
+				作用：选取月份
+				语法：语法：<input type="month">
+day13
+	day13下午
+	javascript
+	1.javascript
+		1.什么是JavaScript？
+			JavaScript简称js，是运行在js解释器/引擎中的脚本语言。
+		js的运行环境
+			1.独立安装js解释器（node）
+			2.嵌入在浏览器内核中的js解释器
+		2.js的发展史
+			1.1992年nombas公司为自己的软件开发了一款脚本语言scriptEase
+			2.1995年Netscape（网景）开发了脚本语言livescript——javascript（与jav无任何关系）
+			3.1996年Micriosoft（克隆版本JScript）
+			4.1997年JavaScript提交给ECMA，定义为ECMAScript（ES5 ES6）
+		3.js的组成部分
+			完整的js由三部分组成：
+				1.核心：ECMAScript
+				2.DOM(Document object Model)文档对象模型
+					提供了一些允许操作页面元素的一些函数和属性
+				3.BOM(Browser object Model)浏览器对象模型
+				 提供了一些允许操作浏览器的函数和属性
+		4.js的特点
+			1.语法类似于C，java，php...
+			2.无需编译，由js解释器直接运行
+			3.弱类型的语言
+			4.面向对象的
+	2.JavaScript基础语法
+		1.浏览器内核
+			浏览器内核负责页面内容的渲染，由两部分组成
+				1.内容排版引擎——解析HTML/CSS
+				2.脚本解释引擎——javascript（v8）
+		2.搭建JS的运行环境
+			1.独立安装js解释器——NodeJs官网下载
+				1.在命令行界面输入node
+				2.输入console.log（"hello world"）
+			2.浏览器内核中嵌入的JS解释器（F12调出控制台）
+				1.直接在Console（控制台）中输入脚本并运行
+				2.将JS脚本嵌入到HTML页面中执行
+					1.HMTL元素的事件执行JS脚本
+						事件-onclick-鼠标单击元素时要执行的操作。
+					2.在script标记中编写脚本并执行
+						网页的任意位置处都可以嵌入一对<script></script>并且在<script></script>中编写脚本
+					3.使用外部脚本文件(**.js)编写脚本		
+						1.创建脚本文件并在文件中编写脚本
+						2.在使用的网页中引入js文件
+							<script src="脚本url"></script>
+			3.js的调试，出错时只影响当前块，不影响其它代码块，后续代码继续执行。
+			调试：F12 查看控制台（console）
+	3.通用语法规范
+		语句：可执行的最小单元
+				必须以;结束
+				严格区分大小写
+				所有的符号必须是英文
+		注释：
+			//:单行注释
+			/**/：多行注释
+	4.变量和常量
+		1.变量的声明
+			1.声明变量
+				var 变量名;
+			2.为变量赋值
+				变量名=值;
+			3.声明变量并赋值
+				var变量名=值;
+			注意：
+				1.声明变量时可以不使用var，但不推荐
+				2.如果声明变量，但未赋值，则默认为undefind
+				3.允许在一条一句中声明多个变量，用逗号隔开 
+					var uname="李白",uage=20;
+		2.变量名的命名规范
+			1.不允许使用js的关键词和保留关键字
+			2.允许包含字母，数字，下划线（_）,$
+			3.不能以数字开头
+			4.最好见名知意
+			5.尽量时用小驼峰命名法
+				var userNameEply 小驼峰命名法 var UserName(大驼峰命名法)
+				user_name 下划线命名法
+		3.变量的使用
+			1.声明了变量未赋值，则默认为undefined
+			2.使用未声明的变量，则报错
+			3.赋值操作——set操作
+				变量名出现在左边，一律赋值操作
+					var uname="贾宝玉";
+					uname="baoyu.jia";
+			4.取值操作——get操作
+				变量只要没出现=的左边一律是取值操作
+				var uname="林黛玉"
+				var newName=uanme newName赋值   uname 取值
+		4.常量
+			1.什么是常量
+				在程序中，一经声明就不允许被修改的数据就是常量
+			2.语法
+				const 常量名=值；
+				常量名在程序中通常采用大写形式
+day14
+	1.数据类型
+		1.数据类型的作用
+			规定了数据在内存中所占的空间
+			bit:位 byte:字节 kb:千字节  8位=1byte 1024byte=1kb
+		2.数据类型的详解
+			1.原始类型（基本类型）
+				1.Number类型
+					数字类型
+					作用：可以表示32位（4byte）的整数，也可以表示64位（8byte）浮点数（俗称小数）
+					整数：
+						1.十进制
+							由0-9十个数字组成的，逢十进一
+						2.八进制
+							由0-7八个数字组成的，逢八进一
+							var num=010;//八进制
+							console.log(num);8
+						3.十六进制
+							由0-9 A-F十六个组成，逢十六进一
+							十六进制以0X表示
+					浮点数：
+						小数点记数法：123.132
+						指数记数法：1.2e3 表示1.2*10^3	
+				2.string类型
+					字符串
+					作用：表示一系列的文本字符数据，如:姓名，性别，地址，描述内容...字符串中的每个字符都是由Unicode的字符，标点和数字组成
+					Unicode码：每个字符在计算机中都有一个唯一的码表示该字符。该码就是指Unicode码
+					查找一个字符的Unicode码的方法：charCodeAt();
+						"朱".charCodeAt();//默认以十进制输出
+						"朱".charCodeAt().toString(16);//以十六进制输出
+					如何将Unicode码转换为汉字
+						var str="\u26417";
+						console.log(str);
+						汉字的Unicode码的范围：\u转义字符
+						"\u4e00"~"\u9fa5"
+					特殊字符需要用转义字符：
+						\n:换行
+						\t:制表符（缩进）
+						\": "
+						\': '
+						\\: \	
+					注意：字符串在使用时，需要用""或''括起来。
+						ex
+							var num1=12;//数字
+							var num1="12";//字符串
+							var num1='12';//字符串
+				3.boolean类型
+					布尔类型
+					作用：在程序中表示真或假的结果
+					取值：true 或 false
+					var isBig=true;
+					var isRun=false;
+					参与数字运算时，true可以当做1运算，false可以当做0运算
+					var result=25+true;//结果为26
+				4.undefined
+					作用：表示数据不存在
+					场合：
+						1.声明变量但未赋值
+							var num；
+						2.试图访问对象的属性不存在
+			2.引用类型
+	2.数据类型的转换
+		1.隐式（自动）转换
+			不同类型的数据在计算过程中自动进行转换
+			1.数字+字符串：数字转换成字符串
+				var num=15;
+				var str="hello";
+				var result=num+str;//15hello
+			2.数字+布尔：将布尔转换成数字，true=1，false=0
+				var num=0;
+				var isFun=true;
+				var result=num+isFun;//1
+			3.字符串+布尔：将布尔转换成字符串
+				var str="hello";
+				var isFun=true;
+				var result=str+isFun;//hellotrue
+			4.布尔+布尔：将布尔转换成数字
+			
+				var num1=15;
+				var num2=18;
+				var str="hello";
+				var result1=str+num1+num2;  //hello1518
+				console.log(result1);
+				var result2=num1+num2+str;	//33hello
+				console.log(result2);
+		 允许使用typeof()的函数检查数据类型
+		 console.log(typeof());
+		2.强制转换——转换函数
+			1.toString()将任意类型转换成字符串
+				语法：var res=变量.toString();
+				var num=15;
+				var str=num.toString();
+				console.log(typeof(str));
+			2.parseInt()
+				将任意类型的数据转换为整数
+				如果转换不成功，结果为：NaN(Not a Number)
+				语法：
+					var res=parseInt(数据);
+
+					var num1="3a";
+					var num2="a3";
+					var res1=parseInt(num1);
+					var res=parseInt(num2);
+					console.log(res1);
+					console.log(res);
+			3.parseFloat();
+				将任意类型数据转换为小数
+				如果转换不成功，结果为NaN
+				语法：
+					var res=parseFloat(数据);
+			4.Number()
+				将任意类型的数字转换为Number
+				注意：如果包含非法字符，则返回NaN
+				语法
+					var res=Number(数据);
+						var res1="123abc";
+						var res2=Number(res1);
+						console.log(res2);
+			var money=prompt("请输入金额："); 弹出框
+	3.运算符和表达式
+		1.什么是表达式？
+			由运算符连接操作数所组成的式子就是表达式
+			任何表达式都会有结果
+		2.运算符
+			1.算术运算符
+				+  -  *  / %  
+				++(自增运算符，只做+1操作 ++在前：先自增再运算  ++在后 先运算再自增 )
+				--(自减运算符，只做-1操作 --在前：先自减再运算  --在后  先运算再自减)
+			2.关系运算符（比较运算符）
+				>  <  >= <=  ==  !=  ===  !==
+				运算结果为：boolean类型（true，false）
+				问题：
+					1.5>"10"
+						关系运算符两端，只要有一个是number的话，另外一个会隐式转换为number类型（使用Number()），再进行比较
+					2."5">"10"  :true  比较Unicode码
+						"5".charCodeAt();53
+					3."张三丰">"张无忌" false
+						关系运算符的两端，如果都是string的话，则比较每位字符Unicode码，以Unicode码不相等的字符的比较结果作为整体结果。
+						"数据".charCodeAt();
+					4."3a">10
+						Number("3a")-->NaN
+					注意：NaN与任何一个数据做比较运算时结果都是false。
+						console.log("3a"<10);
+						console.log("3a"!=10);
+						console.log("3a"==10);
+					isNaN()函数
+						语法：isNaN(数据);
+						作用判断指定数据是否为非数字，如果不是数字，返回值为true，是数字返回值false。
+		3.逻辑运算符
+			！ &&  ||
+			  ！：取反
+				&&：并且，关联的两个条件都为true时，整个表达式结果为true
+				||：或者，关联的两个条件，只要有一个为true，整个表达式的结果为true。
+				短路逻辑：（判断）
+					短路逻辑&&；
+						当第一个条件为false时，整体的表达式结果为false，不需要判断第二个条件
+					短路逻辑||：
+						当一个第一个条件为true时，整体的表达式结果为true，不需要执行后续的表达式
+						当第一个结果为false时，继续执行第二个条件或操作，
+		4.位运算符
+			<<,>>,&,|,^
+			<<右移是把数字变小
+			>>左移是把数字变大
+			&:按位与     判断奇偶性
+										任何一个数字与1做按位与，结果为1，则为奇数，结果为0则为偶数
+										var num=323;
+										var res=num & 1;
+										console.log(res);
+			|：按位或    对小数取整
+										将任意的小数与0做按位或，结果则取整数部分
+										var num1=123.456
+										var res1=num1 | 0;
+										console.log(res1);
+			^：按位异或  用于交换两个数字
+									var a=15;		1111
+									var b=18;	 10010
+									a=a^b; 29	 11101
+									b=b^a; 15  01111	
+									a=a^b;  18 10010
+									b=b^a;	29 11101
+														 01111
+		5.赋值运算符和扩展运算符
+      1.赋值运算符 =
+      2.扩展运算符
+        +=,-=,*=,/=,%=,^=.......
+			a+=b; --->a=a+b;
+			a+=1; --->a=a+1,a++,++a
+			a^=b; --->a=a^b;
+   6.条件（三目）运算符
+     单目（一元）运算符：只需要一个操作数或表达式
+     ++，--，！
+     a++;
+
+     双目（二元）运算符：需要两个操作数或表达式
+     +，-，*，/，% ....
+
+     三目（三元）运算符：需要三个操作数或表达式
+        条件表达式 ？ 表达式1 ：表达式2
+        先判断条件表达式的值，
+			如果条件为true,则执行表达式1的操作
+			如果条件为false,则执行表达式2的操作		
+day15
+	1.函数
+		1.什么是函数
+			函数：function，也称为方法（method）函数是一段预定义好的可以反复执行的代				码块
+				预定义：提前定义好，并非马上执行
+				代码块：可以包含多条可执行的语句
+				反复执行：允许被多次调用
+				函数——功能
+				使用过的函数：
+				parseInt();   将任意类型的数据转换成整数
+				parseFloat();
+				Number();
+				console.log()
+				alert()
+				document.write()
+		2.定义和使用函数
+			1.普通函数的声明和调用(无参数 无返回值)
+				1.声明
+					function 函数名(){
+						//函数体——若干条可执行的语句
+					}
+				2.调用
+					在任意JavaScript合法的位置处通过 函数名称();对函数进行调用
+					ex：sayHello();
+						1.直接调用
+						2.事件调用
+						3.函数里面调用函数
+							function 函数名(){
+								sayHello();
+								函数2;
+							}
+			2.带参数函数的声明和调用
+				1.声明
+					function 函数名(参数列表){
+						//函数体；
+					}
+					参数列表：可以声明一个或多个参数，多个参数之间使用逗号隔开即可
+					声明函数时，声明的参数称为"形参"。				
+				2.调用
+					函数名(参数值列表);
+					注意：尽量按照声明函数的格式调用。
+					调用函数时，传递的参数称为"实参"。
+				3.带返回值的函数的声明与调用
+					1.声明
+						function 函数名称(参数列表){
+							//函数体;
+							return 值;
+						}
+						注意：最多只能返回一个值
+					2.调用
+						允许使用一个变量去接收函数的返回值；
+						 var result=函数名(参数);
+	2.函数作用域
+		1.什么是作用域
+			作用域表示的是变量或函数的可访问范围
+				js的作用域，分为两种：
+					1.函数作用域：只在函数内有效
+					2.全局作用域：代码的任何位置都有效
+		2.函数作用域中的变量
+			又称为:局部变量，只有在声明的函数中有效
+		3.全局作用域变量
+			又称为：全局变量，一经声明，任何位置都能用
+			1.不在function中声明的变量为全局变量
+			2.声明变量不使用var，无论任何位置声明，都能全局使用（不推荐）不使用var定义的变量的函数未执行，其他函数调用时会出现变量未定义的错误
+				注意全局变量和局部变量冲突时，优先使用局部变量
+	2.声明提前
+		1.什么是声明提前
+			js程序在正式执行之前，function声明的函数，会将所有var声明的变量，都预读（声明）到所有作用域的顶部，但赋值还是保留在原处
+	3.按值传递
+		1.什么是按值传递
+			基本数据类型的数据（number， string， bool）在做参数时，都是按照“值传递”的方式进行传参的。
+			值传递：真正传递参数时，实际上传递的是值的副本（复制出来的一个值）而不是原始值。
+	4.函数作用域
+		1.分为两种
+			1.局部函数
+				在某个function中声明的函数
+			2.全局函数
+				在最外层（script）中定义的函数就是全局函数，全局函数一经定义任何位置都能调用。
+		ECMAScript提供的全局函数
+			1.parseInt()
+			2.parseFloat()
+			3.isNaN()]
+			4.enciodeURI()
+				URI:Uniform Resource Identifier(标识符)
+				URL:Uniform Resource Locator 路径
+				作用：对统一资源标识符进行编码，并返回编码后的字符串
+				所谓进行编码，就是讲地址中的多字节的文字编程单字节的文字。(英文字母，数字单字节 汉字2-3字节)
+			5.decodeURI()
+				作用：对已编码的URI进行解码，并返回解码后的字符串
+			6.encodeURIComponent（）
+				在encodeURI的基础上，允许对特殊字符进行编码
+			7.decodeURIComponent()解码特殊字符
+			8.eval()
+				作用：执行以字符串表示的js代码。
+		5.递归调用
+			递归：在一个函数的内部再一次调用自己
+			问题：求5*4*3*2*1  5的阶乘
+						求10*9*8*7*6*5*4*3*2*1  10的阶乘
+				通过一个函数，求数字n的阶乘
+				function f(n){
+					//计算数字n的阶乘;
+					return n==1?1:n*f(n-1);
+				}
+				function res(){
+					res=f(20);
+					console.log(res);
+				}
+				
+				在本次调用还未结束时没救开始下一次的调用，本次调用就会挂起知道所有的调用都完成之后才会依次返回，调用次数越多效率越低。
+		3.分支结构
+			1.if结构
+			语法：
+				if(条件){
+					语句块;
+				}
+				注意：条件尽量时boolean类型，如果不是的以下的条件值，会被当做false
+					if(0){...}
+					if(0.0){...}
+					if(""){...}
+					if(undefined){...}
+					if(null){...}
+					if(NaN){...}
+					ex if(35){}真
+					if后的{}可以省略，省略后if只控制下面的第一条语句，建议不要省略if后的{}
+					2.if...else..结构
+						语法：
+							if(条件){
+							语句块}else{
+								语句块
+							}
+					3.if..else if  else
+					语法：if(){
+					}else if{
+					}else if{
+					}else{
+					 语句块n;
+					}
+				enctyp
+day16
+		1.switch...case
+			1.作用（使用场合）
+				等值判断
+			2.语法
+				switch(值/表达式){
+				case 值1：
+					语句块1;
+					break;//结束switch判断，可选的
+				case 值2：
+					break;
+					....
+					default：
+						语句块n；
+						break；
+				}
+				注意：switch后的值或者是表达式，与case后的值进行比较的时候使用的是===判断
+			3.特殊用法：
+					执行相同操作时：
+						switch(值/表达式){
+							case 值1：
+							case 值2：
+							case 值3：
+								语句块1;
+						}
+		2.循环结构
+			1.特点
+				1.循环条件：循环的开始和结束
+				2.循环操作：要执行的相同或相似的语句；
+			2.循环-while
+				1.语法
+					while(条件){
+						//循环体——循环操作
+						//更新循环条件
+					}
+				2.循环的流程控制
+					1.break
+						作用：终止整个循环的运行
+					2.continue
+						作用：终止本次循环的 运行，继续执行下一次的循环;
+		3.循环值-do...while
+				1.语法：
+					do{
+					循环体
+					}while(条件);
+					执行流程：
+						1.先执行循环体
+						2.再判断循环条件
+							如果条件为真，则继续执行循环体
+							如果条件为假，则跳出循环体操作
+			while(input!=r&&input!="exit")
+		4.循环-for
+			1.语法
+				for(表达式1;表达式2;表达式3){
+						循环操作
+				}
+				 表达式1：循环条件的声明
+				 表达式2：循环条件的判断
+				 表达式3：更新循环变量
+				 执行流程：
+					1.先执行表达式1
+					2.判断表达式2的结果（boolean类型）
+					3.如果条件为真，则执行循环体，否则退出
+					4.执行完循环体后，再去执行表达式3
+					5.判断表达式2的结果（真继续否则退出）
+			2.for三个表达式的特殊用法：
+				 1.省略表达式
+						三个可以任意省略，分号不能省但一定要在循环的内部或外部将表达式补充完整（一般省略表达式1）
+				 2.表达式1和表达式3允许写多个表达式，用逗号隔开
+			3.循环嵌套
+				1.循环嵌套
+					在一个循环体的内部，又出现一个循环
+					for(){
+						外层循环；
+						for(){
+							内层循环
+						}
+					}
+					外层循环走一次，内层循环走一轮
+		5.数组
+			1.什么是数组
+				在一个变量中保存多个数据
+				数组是按照线性顺序来排列的——线性结构
+				数组中，除了第一个元素外，每一个元素都有一个直接的"前驱元素"
+				数组中，除了最后一个元素外，每一个元素都有一个直接的"后继元素"
+			2.声明数组
+				语法
+				1.var 数组名称=[];
+				2.var 数组名称=[元素1，元素2，元素3，...]
+				3.var 数组名称=new Array();
+					创建一个不包含任何元素的空数组。
+				4.var 数组名称=new Array(元素1，元素2，元素3，...)
+day17
+	1.数组的使用
+		取值和赋值操作都使用 数组名[下标]
+		1.为数组赋值
+			数组名[下标]=值;
+			取值：数组名[下标]
+		2.获取数组的长度
+			数组的长度：数组中元素的个数
+			属性：length
+			语法：数组名.length
+		3.配合循环，遍历数组中的每一个元素
+			for(var i=0;i<names.length;i++){
+				i表示每个元素的下标
+				names[i]:每个具体的元素
+			}
+		4.length表示数组即将要插入元素的下标
+			names[names.length]="";
+	2.关联数组
+		php:$array=["names"=>"suwukong"]; 与js中不一致
+		以字符串作为元素下标的数组，就是关联数组
+		以数字作为下标的数组，就是索引数组
+		在js中的关联数组：
+			var array[];
+			arrar["字符串下标"]=值;
+		注意：
+			1.关联数组中，字符串下标的内容是不记录到length中
+			2.只能通过字符串的形式做下标取数组中的值
+	3.for...in
+		遍历出任意数组中的字符串下标以及索引下标
+			语法
+				for(var 变量 in 数组){
+					//变量：字符串下标 或者索引下标
+					//取值：数组名[下标]
+				}
+
+
+
+
+	4.冒泡排序
+		1.什么是冒泡排序
+			排序算法的一种，将一组数据进行排序，小的数字往前排，大的数字往后排。
+			var arr[]
+			往后越比越少
+			特点：
+				1.n个数字，则比较n-1次；
+				a^=b;
+				b^=a;
+				a^=b;  a  b  交换位置
+				2.轮数增加，比较次数减少
+				3.嵌套循环解决冒泡排序的问题
+	5.数组的常用方法
+		1.toString()
+			作用：将一个数组转换成字符串，并返回转换后的结果
+			语法：var str=数组对象.toString();
+		2.join()
+			作用：将数组的元素通过制定的字符连接到一起，并返回连接后的字符串
+			语法：var res=数组对象.join("指定的字符");
+		数组名.length=0;//清空数组;
+		3.concat()
+			作用：拼接两个或者更多的数组，并返回拼接后的结果
+			语法：var res=数组对象.concat(数组1,数组2,.....)
+			注意：
+				1.concat不会改变原有数组，而是返回拼接以后的结果
+				2.要拼接的数据可以是数组，也可以是普通数据
+		4.slice()
+			作用：截取子数组，从指定的数组中截取几个链接的元素组成一个新的数组
+			语法：var arr=数组名.slice(start,[end]);
+				start:从哪个下标位置处开始截取，取值为正，从前向后算，取值为负，从后向前算。
+				end：指定结束位置处的下标(不包含)，该参数可以省略，如果省略的话，就是从start开始一直截取到尾
+			注意：该函数不会影响现有数组，会返回一个全新的数组，
+		5.splice()
+			作用：允许从指定数组中，删除一部分元素同时再添加另一部分元素
+			语法：arr.splice(start,count,e1,e2,e3,...);
+				start:指定要添加或删除元素的起始下标位置
+				count：指定要删除的元素的个数，取值为0表示不删除
+				e1：要增加的新元素
+				e2：要增加的新元素
+				e3：要增加的新元素
+			返回值：返回一个由删除元素所组成的新数组
+			注意：该函数会改变现有的数组
+		6.reverse()
+			作用：将一个数组反转
+			语法：数组名.reverse();
+			注意：该函数会改变当前数组的内容
+		7.sort()
+			作用：排序，默认情况下，按照数组元素的Unicode码进行升序排序
+			语法：数组名.sort()；
+			注意：该函数会改变当前元素的内容
+			特殊用法：允许自定义排序函数，从而实现对数字的升序或降序的排序
+			语法：数组名.sort(排序函数);
+		  ex:
+        var arr=[12,6,4,72,115,89];
+			//排序函数（升序）
+				function sortUp(a,b){
+					 return a-b;
+				}
+			//排序函数（降序）
+				function sortDown(a,b){
+					 return b-a;
+				}
+			//为数组指定排序函数
+				arr.sort(sortUp);
+				arr.sort(sortDown);
+			原理：
+				1.指定排序函数，sortUp,定义两个参数，表示数组中的相邻的两个数字。
+				2.将排序函数指定给数组的sort()方法，数组会自动传递数据到sortUp()中，如果返回值>0的话，则交换量个数字的位置，否则不变。
+day18
+	day18上
+	1.进出找操作
+		js四按照标准的“栈式操作”访问数组
+		所有的栈式操作的特点都是“后进先出”;
+		1.push()
+			入栈，在栈顶（数组的尾部）添加指定的元素，并返回新数组的长度
+			var 变量名=数组名.push(元素);
+		2.pop()
+			出栈，删除(删除栈顶数据)并返回删除元素
+		3.shift()
+			删除数组头部（第一个）元素并返回删除元素
+		4.unshift()
+			作用：在数组的头部（第一个）元素位置处，增加新元素，并返回新数组的长度
+	2.二维数组
+		1.什么是二维数组
+			在一个数组中的元素又是一个数组，也可以称为数组的数组
+		2.二维数组的使用
+			var names=[
+				["朱","张","赵"],
+				["男","女","男"],
+				[25,26,28],
+				["河南","浙江","安徽"]
+			];
+			console.log(names[1][1]);
+day18
+	day18下;
+	1.ajax
+		1.URL
+			1.URL的作用
+				用于去表示任意一个资源的位置（互联网上）
+			2.详解
+				格式：
+					<scheme>://<user>:<pwd>@<host>:<port>/<path>;<params>?<query>#<frag>
+					scheme:方案\协议，指的是哪种方式到服务器获取资源，协议不区分大小写，
+					常见协议：http，https，ftp;
+							ssh:安全的远程登录
+							SMTP:邮件传输
+							POP3：邮件接收
+							DNS：域名解析
+							TELNET：远程登录
+					host:主机名，服务器主机名或者IP地址或域名（由DNS转换为IP地址）
+							127.0.0.1    local host
+					port：端口号 80  443
+					user：用户名，访问特定资源时需要用到的信息
+					pwd：密码，访问特定资源时需要用到的密码
+					path：路径，资源在服务器上具体存放位置
+					params：参数（跟服务器有关）
+					query：查询字符串，要传递给服务器的数据
+						http：//127.0.0.1/?
+					frag:锚点
+		2.HTTP协议
+			1.什么是HTTP协议
+				Hyper Text Transfer Protocol：超文本传输协议
+				规范了数据如何打包以及传递
+			2.详解
+				1.请求（request）消息
+					客户端带给服务器的数据都有哪些，由三部分组成
+						1.请求的起始行
+							1.请求方法
+								1.GET
+									表示客户端向服务器获取资源时使用
+									特点：
+										1.无请求主体
+										2.靠地址栏传递查询的字符串
+								2.POST
+									表示想传递数据给服务器使用
+									特点：
+										1.有请求主体
+								3.PUT
+									表示客户端想放置文件到服务器（禁用）
+								4.DELETE
+									表示客户端要删除服务器端的数据（禁用）
+								5.HEAD
+									表示客户端客户端只想获取指定的响应头
+								6.CONNECT
+									测试连接
+								7.TRACE
+									追踪请求路径
+								8.OPTIONS
+									选项，保留以后使用
+							2.请求URL
+							3.协议版本：HTTP/1.1
+						2.请求头
+							1.Host：localhost/127.0.0.1
+								作用：告诉浏览器请求哪一个主机
+							2.Connection：keep-alive
+								作用：告诉服务器要进行持久连接
+							3.User-Agent：
+								作用告诉服务器自己（浏览器）的类型
+							4.Accept-Language：zh-cn
+								作用：告诉服务器自己能接纳的自然语言
+							5.Accept-Encoding:gzip
+								作用：告诉服务器自己能接收的数据压缩类型是什么
+							6.Referer:http:localhost/day01/login.html;
+								作用：告诉服务器请求来自哪个页面
+						3.请求主体
+							Form Data
+				2.响应（response）消息
+					1.响应的起始行
+						1.协议的版本号：HTTP/1.1
+						2.响应状态码
+							作用：告诉浏览器服务器的响应状态是什么问题（有问题，没有问题，问题大概是什么）
+								1xx：100-199 提示信息
+								2XX：成功响应
+									200：ok
+								3XX：需要进行重定向
+									301：永久性重定向
+									302：临时重定向
+									304：Not Modifid
+								4XX：客户端请求错误
+									404：NOT Found 请求资源不存在
+									403：Forbidden 权限不够
+									405：Method Not Allowed 请求方法不被允许
+								5XX：服务器运行错误
+									500：服务器内部错误
+				3.原因短句
+					对状态码的简单解释
+			2.响应头
+				1.Date
+					作用：告诉浏览器，服务器的响应时间格林尼治时间（+8h）
+				2.Connection
+					作用：告诉浏览器已经启动持久连接
+				3.Conntent-Type
+					作用：响应主体的类型是什么，告诉浏览器，用什么样的方式解析响应主体
+						1.text/html：响应回来的数据时html文本
+						2.text/plain：响应回来的数据是普通文本
+						3.text/css：响应回来的数据是css样式
+						4.application/xml：响应回来的数据是xml格式
+						5.application/javascript:响应回来的数据是js脚本代码
+						6.application/json:响应回来的数据是json格式的字符串
+						7.images/jpeg:响应回来的数据是图片
+			3.响应主体
+				Response
+		3.缓存
+			1.什么是缓存&工作原理
+				客户端将服务器响应回来的数据进行自动保存，当你再次访问的时，直接使用保存的数据。
+			2.缓存的优点
+				1.减少了冗余的数据的传输，节省客户端流量
+				2.可以节省服务器的带宽
+				3.降低对服务器资源的消耗和运行要求
+				4.降低了由于远距离而造成的延时加载
+			3.与缓存相关相关的消息头
+				1.Cache-Control消息头
+					作用：从服务器将文档传到客户端时起，可以认为此文档处于新鲜的秒数
+					语法：
+						Cache-Control:max-age=处于新鲜的秒数
+						ex：Cache-Control：max-age=3600;
+								Cache-Control:max-age=0;每次都从服务器下载新资源
+				2.Expires消息头
+					作用：来指定缓存过期的确切时间（格林尼治时间）
+					语法：Expires:Thu,23 Nov 2017  GMT
+					如果希望客户端不缓存，可以给一个过期的时间
+					Expires:Wed,22 nov 2017 00:00:00  GMT
+					Expires：0;不标准---此方法不标准，执行性不是特别好
+			4.在网页上设置消息头
+				1.更改服务器配置
+				2.在网页上增加消息
+					<meta http-equiv="消息头" connect="值">
+					ex：
+						<meta http-equiv="Cache-Control" connect="max-age=3600">;
+						<meta http-equiv="Expires" connect="0">;
+				php:
+					header("Expires:0");
+					Response.AddHeader("Expires","0")
+	4.DOM操作
+		1.什么是DOM
+			1.DOM：Document Object Model
+				文档对象模型
+				让js动态的操作页面的元素
+		2.使用js获取页面上的某个元素
+			1.为元素增加一个id属性
+				<div id="d1"></div>
+				<input type="text" id="uname">
+			2.在js中，允许通过元素的id来获取页面指定的元素
+				var elem=document.getElementById("元素id");
+				elme就是指定id元素在js中的表现形式（DOM对象）
+				练习：
+					1.创建一个网页
+					2.在网页中创建一个div，id=d1内容自定义
+					3.在页面中创建一个按钮，点击按钮时，将id为d1的元素获取出来，并打印在控制台，观察结果
+		3.获取/设置元素中的内容
+			<div id="d1">这是一个div元素</div>
+			DOM对象的一个属性：innerHTML
+			表示的就是标签内的文本
+				ex：获取div标签中的文字内容
+					1.获取div元素
+						var d=document.getElementById("d1");
+					2.获取元素中的文本内容
+						console.log(d.innerHTML)；
+					3.更改div元素的内容的文本内容为“这是更改后的内容”
+						d.innerHTMl="这是更改后的内容";
+		4.获取/设置表单控件的数据
+			在DOM中表单控件们，是通过DOM对象的value属性来获取/设置表单控件的值
+			步骤：
+				1.通过id获取表单控件元素
+				2.通过DOM对象的value属性获取/设置控件的值
+day19
+	1.简化document.getElementById();
+	2.HTML元素的事件
+		1.什么是事件
+			允许通过用户的行为来激发的操作就是事件
+			常见事件：onclick（单击事件）
+		2.其他事件
+			1.文本框与密码框-onblur(失去焦点)
+				onblur事件：失去焦点事件
+			2.文本框与密码框-onfocus
+				onfocus事件：获取焦点的事件
+		3.body的onload事件
+			当网页加载时要执行的操作
+			 方式1	<body onload="函数()">
+			 方式2  window.onload=function(){}//可以使用匿名函数
+		4.select的onchange事件
+			当选项框中的内容发生改变时要触发的事件
+	3.AJAX
+		1.名词解释
+			1.同步：（synchronous）
+				在一个任务进行中时，不能再开启其它的任务
+				同步访问：浏览器在向服务器发送请求的时侯，浏览器只能等待服务器的响应，不能做其它的事情
+				出现场合：
+					1.地址栏输入网址访问页面
+					2.a标记默认跳转
+					3.submit按钮的表单提交
+			2.异步（Asynchronous）
+				在一个任务进行中时，可以开启其他的任务
+				异步访问：浏览器在向服务器发送请求时，不耽误在网页上做其它的操作
+				使用场合：
+					1.用户名的重复验证
+					2.聊天室
+					3.股票走势图
+					4.搜索框建议（百度，京东）
+		2.AJAX
+				1.Asynchronous JavaScript And Xml
+						异步               js    和  Xml
+				2.本质：
+					使用js提供的异步对象（XMLHttpRequest）XHR，异步的向服务器发送请求，并接受响应数据（数据格式是Xml）
+					AJAX请求中，服务器响应回来的数据部分数据而不是完整的页面，并且可以以无刷新的效果来更改页面的局部内容。
+				3.创建XMLHttpRequest对象-异步对象（xhr）
+					标准创建：
+						var xhr=new XMLHttpRequest();
+					IE8以下：
+						var xhr=new ActiveXObject("Microsoft.XMLHttp");
+					允许通过window.XMLHttpRequest 来判断浏览器是否支持标准创建，如果浏览器不支持标准创建那么window.XMLHttpRequest的值就是null
+					if(window.XMLHttpRequest){
+						var xhr=new XMLHttpRequest();	
+					}else{
+						var xhr=new ActiveXObject("Microsoft.XMLHttp");	
+					}
+				4.XHR常用的方法和属性（重点）
+					1.open()
+						作用：创建请求
+						语法：xhr.open(method,url,isAsyn)；
+							1.method
+								string类型
+								请求方式：get/post
+							2.url
+								string类型
+								请求地址
+							3.isAsyn
+								boolean类型
+								指定采用同步（false）还是异步（true）的方式发送请求
+					2.readyState 属性
+						作用：表示xhr对象的请求状态
+						值：0-4表示5个状态
+								0：请求尚未初始化
+								1：已经打开到服务器的链接，正在发送请求中
+								2：请求完成
+								3：正在接受服务器端的响应
+								4：接受响应数据成功
+							注意：readyState的值为4的时候，才表示所有的响应都已经接受完毕。
+					3.status 属性
+						作用：表示的是服务器响应状态码
+						值：
+							记住一个值：200
+							当status的值是200的时候，表示服务器已经正确的处理请求以及给出响应
+					4.onreadystatechange事件
+						作用:当xhr的readyState属性值发生改变的时候，要自动激发的操作
+						判断readyState的值为4并且status的值是200的时候，就可以获取以及响应数据了
+						(xhr对象的状态在做一些改变时，这个事件会一直监视着它)
+						语法：
+						onreadystatechange=function(){
+							if(xhr.readyState==4&&xhr.status==200){
+							//接收响应回来的结果
+								var resText=xhr.responseText;
+								consoel.log(resText);
+							}
+						}
+					5.send()
+						作用：发送请求
+						语法：xhr.send(body)
+							body:请求主体
+							如果没有请求主体，body位置处为null（get）
+							如果有请求主体则放请求主体数据到body位置（post）
+					5.发送异步请求的步骤
+						1.创建xhr对象
+						2.创建请求
+						3.设置xhr的onreadystatechange（回调函数）
+							判断状态，并接受响应回来的数据
+						4.发送请求
+					6.使用get提交方式，发送请求（带参数）
+						http://127.0.0.1/login.php?uname=value1&upwd=value2;
+day20
+	1.使用ajax发送post请求
+  注意两点：
+     1.post的请求将数据放在请求主体中
+       xhr.send(body);
+       ex:
+       xhr.send("uname=value1&upwd=value2");
+     2.在发送请求之前，需要手动修改请求消息头
+       xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
+     练习：
+       使用ajax的post请求方式完成异步的注册-参考学子商城-注册页
+         1.创建一个register.html页面
+	   包含以下表单控件
+	      uname-<input type="text">
+	     登录名重复性验证，失去焦点时验证数据库中是否存在该用户名
+	      upwd-<input type="password">
+	      email-<input type="email">
+	      phone-<input type=text>
+	      user_name-<input type="text">
+	      gender-<select>
+           注册按钮：<input type="button">
+	   单击按钮时，使用post提交方式，异步发送register.php，并且完成注册给出响应（注册成功/注册失败）
+	2.js对象数据格式
+		1.js对象的数据格式
+			var lindaiyu=[];
+					lindaiyu[0]="林黛玉";
+		lindaiyu[1]="1990";
+		lindaiyu[2]="160cm";
+		lindaiyu[3]="50kg";
+			改版：
+			var lindaiyu=[];
+					lindaiyu["name"]="林黛玉";
+		lindaiyu["birth"]="1990";
+		lindaiyu["height"]="160cm";
+		lindaiyu["weight"]="50kg";
+		ex:取值
+			lindaiyu["name"]
+		数组描述的是林黛玉的个人信息，如果你把林黛玉看成是一个对象，那么她的个人信息就是她这个对象的属性。
+			js对象的语法：
+					var 对象名={
+			 属性：值,
+			 属性：值,
+			 属性：值,
+			 属性：值
+		};
+		ex:林黛玉这个对象所对应的属性如下
+		var lindaiyu={
+			 name:"林黛玉",
+			 birth:"1990",
+			 height:"160cm",
+			 weight:"50kg",
+		}
+				如果对象取值的时候，直接对象.属性 名称就可以
+				 ex:lindaiyu.name --->林黛玉
+				练习：
+					 1.创建一个对象，贾宝玉
+		 2.该对象包含三个属性
+				 name,值为 贾宝玉
+				 height,值为 178cm
+				 gender,值为 男
+		 3.控制台上分别将贾宝玉的三个属性输出
+		2.JSON
+			1.什么是JSON
+				JavaScript  Object Notation
+					 js         对象 表现方式
+				js对象表示法，即以js对象的格式表现出来的字符串。
+			2.JSON语法
+				1.JSON对象
+					1.用一对{}来表示一个对象
+		2.对象的属性名称，必须用""引起来（单引号不可以），值如果是字符串的话，必须也用""引起来。
+		ex:
+		var computer='{
+				"name":"电脑",
+				"price":5600
+				}'
+				2.JSON数组
+					1.普通数组
+			 '["小乔","大乔","貂蝉"]'
+		2.对象数组
+			'[
+					{
+						"name":"小乔",
+			"height":"160cm",
+			"age":18
+					},
+					 {
+						"name":"大乔",
+			"height":"163cm",
+			"age":20
+					},
+					{
+						"name":"貂蝉",
+			"height":"165cm",
+			"age":21
+					}
+			]'
+			3.JSON文件创建
+				以.json为后缀的文件，里面包含的是符合json格式的数据
+
+			4.将JSON字符串，转换成js对象/数组
+				var mperson='{"name":"TOM","age":18}';
+				//json对象
+
+				 var arr='["小乔","大乔","貂蝉"]';
+				 //json数组
+
+				 var arr1='[
+						 {"name":"Lucy","age":19},
+			 {"name":"Lily","age":19}
+				 ]';  //json数组
+			如何把上面的数据转换成js对象/数组格式
+				 1.使用eval()将数据转换成js对象数组（不推荐）
+				 2.使用JSON.parse()来将JSON字符串解析为js对象
+					 var obj=JSON.parse(mperson); //js对象
+		 var obj=JSON.parse(arr);//js数组
+		 var obj=JSON.parse(arr1);//js数组
+			 练习：
+					1.创建一个user.json文件，里面包含一个数组，数组中有3个对象，每个对象包含uname,upwd,gengder属性，分别赋值
+					2.在网页中使用异步请求的方式向json文件发送请求，并按找以下格式输出
+							 用户名称：XXX
+							 用户密码：XXX
+							 用户性别：X
+									
+							 用户名称：XXX
+							 用户密码：XXX
+							 用户性别：X
+
+							 用户名称：XXX
+							 用户密码：XXX
+							 用户性别：X
+day21
+	1.在PHP中，可以直接将数组转换成json格式的字符串
+		语法：
+			通过json_enconde ()将数组转换为json字符串，并返回转换后的结果
+	2.XML
+		1.什么是xml
+			eXtensible Markup Language
+			可扩展的 标记  语言
+		2.XML的标记没有被预定义过，需要自定义
+			XML的宗旨是做数据传递的，而非显示数据
+		XML的语法结构
+			XML文件可以独立的保存为***.xml的文件，也可以字符串的形式出现
+				1.XML的最顶端是XML的声明
+					<?xml version="1.0" encoding="utf-8"?>
+				2.XML标记的语法
+					1.XML的标记必须成对出现
+					2.XML严格区分大小写，开始和结束必须一致
+						<person></person>
+					3.XML的标记允许被嵌套，注意嵌套顺序
+					4.每个标记都允许自定义属性，格式与HTML一致，但属性值必须用""括起		来
+					5.每个XML文档必须有一个根元素
+			3.解析XML文档对象的内容
+				1.核心方法
+					elem.getElementByTagName("标签名称");
+					返回值：返回一个包含指定元素们的"类数组"（用for循环遍历）
+			4.在PHP中返回XML格式的字符串
+				1.必须增加响应消息头
+					header("Content_Type:application/xml")
+				2.按照XML的语法结构，拼xml字符串，再响应给前端
+					$xml="<>xml version='1.0' encoding='utf-8'?>"
+					$xml.="<StudentList>";
+					...;
+					$xml.="</StudentList>";
+					echo $xml;
+day23
+	1.CSS概述
+		1.什么是css？
+			CSS：Cascading Style Sheets层叠样式表，级联样式表（简称样式表）
+		2.作用
+			设置HTML网页元素的样式
+					HTML 元素的属性，修饰元素时有弊端：
+						1.相同的样式，使用不同的属性来完成
+							<body text="red">
+							<font color="red">
+						2.相同的操作要重复的写
+							<font color="red">
+							<font color="red">
+		3.HTML与CSS的关系
+			HTMl：负责内容的展示
+			CSS：负责内容（元素）的修饰
+		4.HTML与CSS的使用原则
+		  W3C建议尽量使用css属性取取代HTML属性来修饰元素
+	2.CSS的语法规范
+		1.使用CSS样式的方式	
+			1.内联样式/又称为行内样式
+				特点：将css样式定义在HTML开始标记中
+				语法：<ANY style="样式声明1;样式声明2;..."></ANY>
+				样式声明：
+					1.由样式属性和值组成
+					2.属性名与值之间用  冒号  链接	
+					3.多个样式声明之间用  分号  分割
+				常用的CSS样式属性 和 值
+					1.设置文本颜色的属性和值
+						属性：color 
+						值：合法的颜色值
+					2.设置背景颜色的属性和值
+						属性：background:
+						值：合法的颜色值
+					3.设置文字大小的属性和值
+						属性：font-size
+						值：以px或者pt为单位的数字
+						lorem
+			2.内部样式
+				在网页的头元素head中增加一对style标记，在style中取声明该网页的用到了样式规则
+				语法<head>
+							<style>
+							/*注释*/
+								样式规则1
+								样式规则2
+								.........
+							</style>	
+						</head>
+				样式规则：由选择器和样式声明组成
+				选择器：规范页面中哪些元素能够使用定义好的样式(就是把声明好的样式匹配给元素)
+				元素选择器：由元素的名称作为选择器
+				选择器{}  ex:div{}
+				样式规则：
+					选择器{
+						样式声明：
+					}
+					div{
+						color:red;
+						font_size:50px;
+					}
+					
+			3.外部样式
+				独立于任何网页的位置处，声明一个样式表文件（***.css为后缀）在.css文件中保存样式规则，然后在网页中引入.css文件。
+				使用步骤：
+					1.创建样式表文件，并编写样式规则
+					2.在网页中引入样式表文件
+						<head>
+							<link rel="stylesheet" href="***.css">
+						</head>
+		2.CSS样式特征
+			1.继承性
+				大部分样式可以被继承（子元素继承父元素的样式特征）
+				必须是有层级关系的嵌套
+					<div>
+							<p></p>
+					</div>
+			2.层叠性
+				可以为一个元素定义多个样式，当样式属性不冲突时，可以同时将这些样式应用到元素上
+			3.优先级
+				如果样式声明冲突时，会按照样式的优先级来应用定义的样式规则
+					由低到高：
+						浏览器默认设置			最低
+						内部样式和外部样式    中（就近原则）
+						内联样式             最高
+			4.调整显示的优先级
+				!important规则
+				调整显示的优先级
+				将!important添加在属性值之后，与值之间用空格隔开。就能优先使用当前样式
+		3.CSS基础选择器（重点）
+			1.选择器的作用
+				规范页面中哪些元素能够使用定义好的样式
+			2.选择器详解
+				1.通用选择器
+					作用：可以修饰页面上的任何元素
+					语法：*{样式声明;}
+					效率较低，尽量少用
+				2.元素选择器
+					作用：设置页面上某种（某一类）元素的样式
+					语法：标记名称{样式声明;}
+				3.类选择器
+					作用：定义页面上某个或者是某些元素的样式，（谁想用谁就可以引用）
+					特点：通过元素的class属性进行引用
+					语法：
+						1.声明
+							.类名{样式声明}
+							注意：
+								1.类名是自定义的，但是注意，类名不能以数字开头
+								2.类名不能包含特殊符号（&，^，%，，$#，@）
+								3.可以包含（_,-）
+						2.引用方式
+							<ANY class="类名">
+					特殊用法：
+						1.多类选择器
+							让一个元素同时引用多个类选择器
+							语法：
+								<ANY class="类名1 类名2......">
+						2.分类选择器
+							将元素选择器和类选择器联合使用
+							对同一类元素中某些特殊的内容进行修饰
+							语法：元素名称.类选择器{样式声明}
+								ex：div.text{color:red}
+									<div class="text">ddd</div>
+									<div>dd1d1</div>
+day24
+	1.选择器
+		1.通用选择器
+		2.元素选择器
+		3.类选择器
+		===========
+		4.id选择器
+			作用：设置指定id元素的样式(专属定制)
+			语法：#id值{样式声明;}
+		5.群组选择器
+			作用：将多个选择器放在一起进行样式的声明定义
+			语法：选择器1,选择器2,选择器3....{}
+			ex:
+				div,#main,.mycolor,p.text{}
+		6.后代选择器
+			作用:通过元素的后代关系匹配元素(多级嵌套)
+			语法：选择器1 选择器2 选择器3{样式声明}
+		7.子代选择器
+			作用：通过元素的子代（以层层关系）关系匹配元素
+			语法：选择器1>选择器2>选择器3{
+				注意：子代选择器 子代是指一层层级关系！
+			}
+		8.伪类选择器
+			作用：匹配元素不同的状态的选择器
+			语法：
+				所有的伪类选择器都是以:作为开始
+				选择器：伪类选择器{样式声明}
+			1.链接伪类
+				1.:link 匹配元素尚未访问的状态
+				2.:visited 匹配元素访问之后的状态
+			2.动态伪类
+				1.:hover 匹配鼠标悬停在元素上时的状态
+				2.:active 匹配元素被激活时的状态(超链接，文本框，密码框点击的时候)
+				3.:focus  匹配元素获取焦点是的状态(文本框和密码框)
+			font-style:italic/normal
+		9.选择器的优先级
+			权值：标识当前选择器的重要程度
+				元素选择器：1
+				类选择器：10
+				伪类选择器：10
+				id选择器：100
+				内联样式：1000
+			选择器的权值加到一起大的优先
+			权值相同，以后定义的为主
+	2.尺寸与边框
+		1.单位
+			1.尺寸单位
+				1.px:像素
+					1024*768
+				2.in:英寸
+					1lin=2.54cm
+				3.pt:磅（1pt=1/72in）
+					多数用于表示文字大小
+				4.cm:厘米
+				5.mm:毫米
+				6.em:相对于父元素乘以倍数(多个父元素2em)
+				7.rem:根相对(元素字体的大小，html/body)
+			2.颜色单位(颜色取值)
+			1.英文单词
+				red blue gray green yellow black....
+			2.rgb(r,g,b)
+				r:0-255
+				g:0-255
+				b:0-255
+			3.reba(r,g,b,alpha)
+				alpha:透明度，0-1之间的小数，值越大，不透明度越高
+			4.#rrggbb
+				由6位16进制的数字表示一个颜色
+				0-9  A-F
+				#000000:黑色
+				#ffffff：白色
+				#eeeeee：灰色
+				#ff11aa
+			5.#rgb是上面的缩写形式
+				#000:黑色
+				#fff：白色
+				#eeee
+				#f1a
+		2.尺寸属性
+			1.作用：
+				设置元素的高度和宽度
+			2.语法：
+				1.宽度
+					width：宽度
+					min-width:最小宽度
+					max-width:最大宽度
+				2.高度
+					height：高度
+					min-height：最小高度
+					max-height:最大高度
+				3.页面中的哪些元素允许设置尺寸属性
+					1.所有块级元素都允许设置尺寸
+						div p h ul ol  dl
+					2.本身具备width和height属性的行内元素可以设置
+						img  table
+					3.行内块允许设置尺寸
+						大部分的表单控件（单选按钮，复选框不可以）
+					4.大部分的行内元素是无法设置尺寸
+						a  span  
+		3.溢出的处理
+			当内容多，区域小的时候，就会产生溢出的效果默认都是纵向溢出
+			 属性：overflow，overflow-x,overflow-y
+			 取值：
+					1.visible
+						可见的，默认值，溢出可见
+					2.hidden
+						将溢出的内容全部隐藏，溢出内容不可见
+					3.scroll
+						显示滚动条，溢出时，可用
+					4.auto
+						自动，溢出时才显示滚动条并可用
+		4.边框的设置
+			1.边框属性
+				1.简写方式
+					border：width    style color;
+						width：边框的宽度，以px为单位的数值
+						style：边框的样式
+							取值：
+								solid：实线
+								dotted：虚线边框(点)
+								dashed：虚线边框(线)
+						color：边框的颜色
+							取值：合法的颜色值
+							transparent：透明色
+						注意：取消边框：border：0；或者border：none
+				2.单边定义
+					只设置某一边的边框
+					属性:border-方向
+					方向:top/bottom/left/right
+				3.单属性定义
+					只设置四条边框的一个属性
+						属性：border-width/style/color:值
+						border-color:red;
+				4.单边单属性的定义
+					只设置某一个方向的某一个属性
+					属性：
+						border-方向-属性:值；
+						方向：top/bottom/left/right
+						属性：width/style/color
+					ex：border-left-color:solid;
+			2.边框倒角
+				将元素的直角倒换成圆角
+				属性：border-radius
+				取值：
+						1.以px为单位的数值
+						2.百分比的形式 设置圆形(50%);
+			单角设置：
+				border-top-left-radius:左上角
+				border-top-right-radius：右上角
+				border-bottom-left-radius：左下角
+				border-bottom-right-radius：右下角
+		5.边框阴影
+			属性：box-shadow
+			取值：h-shadow v-shadow blur spread color inset
+				h-shadow:阴影在水平方向的偏移，必须值  
+									取值为正：阴影向右偏移 
+									取值为负阴影向左偏移
+				v-shadow: 阴影在垂直方向的偏移，必须值  
+									取值为正阴影向下偏移 
+									取值为负阴影向上偏移
+				blur:阴影的模糊距离，取值越大，模糊效果越明显，以px为单位的数值(可				选值)
+				spread:阴影的大小，指定要在基础阴影上扩充出来的大小，取值以px为单					位的数值
+				color:阴影的颜色
+				inset:将默认的外阴影改为内阴影
+			4.轮廓
+				轮廓指的是边框的边框，绘制于边框外围的一条线
+				属性：
+					outline:width style color
+					width:轮廓的宽度
+					style：轮廓的样式
+						取值：solid/dotted/dashed
+					color:轮廓颜色
+				取消轮廓：outline:none/0
+	3.框模型
+		1.什么是框模型
+			框模型：box model 定义了元素框处理元素的内容，内边距以及外边距以及边框的一种计算方式
+			外边距：元素与元素之间的空白间距
+			内边距：元素边框与元素内容之间的空白间距
+			框模型的计算模式：
+				元素的实际占地宽度=左右外边距+左右边框+左右内边距+width
+				元素的实际占地高度=上下外边距+上下边框+上下内边距+height
+day25
+	1.外边距
+		1.什么是外边距
+			围绕在元素边框外的空白距离，就是外边距
+			也能表示当前元素与其他元素之间的空白距离
+		2.语法
+			属性：margin 定义某个元素四个方向的外边距
+						margin-top/bottom/left/right定义单边的外边距
+			取值：
+				1.具体数值，以px为单位
+				2.取值为负
+					让元素向相反的方向移动
+					margin-left:
+						取值为正，让元素向右移动
+						取值为负，让元素向左移动
+					margin-top：
+						取值为正，让元素向下移动
+						取值为负，让元素向上移动
+				3.取值为%
+					外边距的值，是父元素宽或高的占比
+				4.取值为auto
+					自动计算外边距的值(控制块级元素水平居中对齐)
+			简写方式：
+				1.margin:value
+					四个方向
+				2.margin:v1 v2;
+					v1：上下外边距
+					v2：左右外边距
+				3.margin：v1 v2 v3 
+					v1:上外边距
+					v2:左右外边距
+					v3:下外边距
+				4.margin：v1 v2 v3 v4
+									上 右 下  左(顺时针方向)
+					
+		3.自带外边距的元素
+			body h1-h6 p ul ol dl dd pre
+			通过CSS RESET(css重写)的手段，来重置具备外边距的元素
+			body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,pre{
+				margin:0;
+			}
+		4.外边距的特殊效果
+			1.外边距合并
+				当两个垂直外边距相遇时，他们将合并为一个，最终取决于两个外边距中距离较大的那个
+				如果两个外边距相等，那么取其中一个值
+			2.外边距的溢出
+				在某些条件下，为子元素设置上外边距时有可能作用到父元素上，
+						1.父元素没有上边框
+						2.为子元素设置上外边距时
+				*解决溢出方案
+					1.位父元素增加上边框
+						弊端：对父元素的高度有影响
+					2.使用父元素的上内边距取代子元素的上外边距
+						弊端：对父元素的高度有影响
+					3.在父元素的第一个子元素位置处，增加一个空(table)
+				*行内元素以及行内块的垂直外边距
+					1.行内元素垂直外边距无效(img除外)
+					2.行内块元素，设置垂直外边距时，整行元素都跟着发生改变
+	2.内边距
+		1.什么是内边距
+			元素边框与内容之间的空白距离
+			内边距会扩大元素边框占地区域
+		2.语法：
+			属性：
+				padding 四个方向的内边距
+				padding-top/bottom/left/right 设置单边内边距
+			取值：以px为单位的数值
+						以%形式设置
+			简写方式:
+				1.padding:value  四个方向的内边距
+				2.padding：v1 v2 
+						v1上下内边距 
+						v2左右内边距
+				3.padding：v1 v2 v3
+					v1:上
+					v2:左右
+					v3:下
+				4.padding：v1 v2 v3 v4
+									 上 右 下 左
+			3.属性：box-sizing
+				作用：指定框模型的计算方式
+				取值：
+					1.content-box
+						默认值，采用默认的计算元素的占地区域
+						实际占地宽度=左右边框+左右外边距+左右内边距+width
+						实际占地高度=上下边框+上下外边距+上下内边距+height
+					2.border-box
+						元素的尺寸会包含border以及padding的值
+						实际占地宽度=width(包含了border和padding)
+						实际占地高度=height(包含了border和padding)
+	3.背景属性
+		背景：可以是单一颜色或图片填充元素
+		1.背景色
+			属性：
+				background-color:
+					取值：合法的颜色值
+					注意：背景颜色默认是从边框的位置处开始填充的
+		2.背景图片
+				background-imgage:
+				取值：url(图片的路径);
+				ex：background-image:url(a.jpg)
+		3.背景图片平铺
+			属性：background-repeat
+			取值：
+				repeat 默认值，横向 纵向 都平铺
+				norepeat:不平铺(图片只显示一次)
+				repeat-x:只在水平方向上平铺
+				repeat-y:只在垂直方向上平铺
+		4.背景图片尺寸
+			属性：background-size
+			取值：
+				1.width/height
+				2.width%/height%(ex:20% 30% 是元素自己高宽占比)
+				3.cover
+					将背景图等比放大，知道背景图完全覆盖到元素的所有区域为止
+				4.contain
+					将背景图等比放大，直到背景图碰到元素的某一个边缘为止
+		5.背景图片固定
+			作用：将背景图固定在网页的某个为止处，一直在可视区域中，不会随着滚动条二发生为止的变化
+			属性：background-attachment
+			取值：
+				1.scroll 默认值
+				2.fixed 固定	
+		6.背景图片定位
+			作用：改变背景图在元素中为位置
+			属性：background-position
+			取值：
+				1.x  y 具体数值(px)
+					x:背景图水平偏移距离
+						取值为正，向右移动
+						取值为负，向左移动
+
+					y:背景图垂直偏移距离
+						取值为正，向下移动
+						取值为负，向上移动
+				2.x%  y%
+					0% 0% 背景图左上角
+					100% 100% 背景图在右下角
+					50% 50% 背景图在中间
+				3.关键字
+					x:left/center/right
+					y:top/center/bottom
+		7.背景的简写属性
+			在一个属性中指定背景的多个属性值
+			属性：background
+			取值：color url() repeat attachment position;
+			ex:
+				background:gray url(a.jpg) no-repeat;
+			注意：如果不设置其中某个属性值的话，该位置采用默认值
+day26
+	1.渐变
+		1.什么是渐变
+			渐变指定是多种颜色平缓变换的一种显示效果。
+		2.渐变的主要因素
+			1.色标：一种颜色及其出现的位置
+			2.一个渐变是由多个色标组成的(至少两个)
+		3.渐变的分类
+			1.线性渐变
+				以直线的方向来填充效果
+			2.径向渐变
+				以圆形的方式实现填充
+			3.重复渐变
+				将线性渐变或者径向渐变重复几次来实现填充
+		4.渐变详解
+			1.线性渐变
+				属性：background-image
+				取值：linear-gradient(angle,color-point1,color-point2,...);
+					1.angle
+						表示渐变填充的方向或角度
+						取值：
+							1.关键字
+								to top 从下向上填充渐变色
+								to bottom 从上向下填充渐变色
+								to left 从右向左填充
+								to right 从左向右填充
+							2.角度值
+								0deg  从下向上填充，等同于to top
+								90deg 从左向 右填充，等同于to right
+								180deg 从上到下填充，等同于to bottom
+								270deg 从右向左填充，等同于to left
+					2.color-point
+						色标：颜色 及其 位置
+						取值：颜色 以及 位置的组合，中间用空格分开
+						ex：
+							1.red 0%;
+								在填充方向的位置的开始的位置处颜色为红色
+							2.green 50%
+								到填充方向一半的位置处，颜色变为绿色
+							3.blue 200px；
+								到填充方向的200px的位置处，颜色变为蓝色
+			2.径向渐变
+				属性：
+					background-image：radial-gradient([size at position],color-point1,color-point2,...)
+						size at position: 圆心所在位置
+							1.x y 具体数值
+							2.x% y% 元素宽和高的占比
+							3.关键字
+								x:left,center,right
+								y:top,center,bottom
+							ex:
+								100px at left top 
+								半径     右上角位置
+			3.重复渐变
+				1.重复线性渐变
+					background-image:repeating-linear-gradient(angle,color-point1,color-point2,color-point3,.....)
+					color-point:位置一定要给绝对数值(px),不要用相对单位%
+				2.重复径向渐变
+					background-image:repeating-radial-gradient([size at position],color-point1,color-point2,color-point3,.....)
+	caniuse.com浏览器兼容性查询
+		5.浏览器兼容性处理
+			各个浏览器的新版本都支持渐变属性
+			对于不支持的浏览器版本，可以通过增加浏览器的前缀的方式，让浏览器支持渐变属性
+			Firfox:-moz-
+			Chrom & Safari:-webkit-
+			Opera:-o-
+			IE:-ms-
+	2.文本格式化属性
+		1.字体属性
+			1.指定字体	
+				属性：font-family
+				取值：字体名称，名称之间用逗号隔开
+				ex:font-family:"微软雅黑",Arial,"黑体";
+			2.字体的大小
+				属性：font-size
+				取值：以px或pt为单位的数字
+			3.字体的加粗
+				属性：font-weight
+				取值：
+					1.bold加粗(b hb)
+					2.normal 正常
+					3.value 无单位的数字 （整百倍）
+						400-900
+						400 等同于normal
+						900 等同于bold
+			4.字体的样式
+				属性：font-style
+				取值：
+					1.normal 正常显示
+					2.italic 斜体显示
+			5.小型大写字母
+				将小写字符变成大写，但文本的大小与小写字符一致
+				属性：font-variant
+				取值：
+					1.normal 正常
+					2.small-caps
+			6.字体属性简写
+				属性：font
+				取值： style variant weight size family;
+				注意：
+					如果用简写方式必须设置family的值，否则无效
+					font：12px; 错误
+					font:12px "黑体";
+		2.文本格式
+			1.文本颜色
+				属性：color
+				取值：合法的颜色值
+			2.文本排列
+				作用：指定文本，行内，行内块元素的水平对齐方式。
+				属性：text-align
+				取值：left/center/right/justify(两端对齐)
+			3.文字修饰(线条修饰)
+				属性：text-decoration
+				取值：
+						none：无任何线条修饰
+						underline：下划线修饰
+						overline：上划线
+						line-through：删除线
+			4.行高
+				作用：定义一行文本的高度
+				特点：如果行高的高度大于字体本身的大小那么该行文本将在指定的行高内呈现垂直居中的效果
+				属性:line-height
+				取值：以px为单位的数值
+			5.首行文本缩进
+				属性：text-indent
+				取值：以px为单位的数值
+			6.文本的阴影
+				属性：text-shadow
+				取值：h-shadow v-shadow blur color
+	3.表格
+		1.表格的常用属性
+			1.边距属性:padding
+			2.边框属性:border
+			3.尺寸的属性:width height
+			4.文本格式化属性:font-*，text-* line-height
+			5.背景属性:颜色 图片 渐变
+			6.vertical-align
+				作用:指定单元格数据的垂直对齐方式
+				取值:
+					top:上对齐
+					middle:居中对齐
+					bottom:下对齐
+		2.表格的特殊属性
+			1.边框合并
+				属性：border-collapse
+				取值：
+					1.separate
+						默认值，即分离边框模式
+					2.collapse
+						边框合并
+			2.边框边距
+				作用：设置单元格之间或单元格与表格之间的距离
+				属性：border-spacing
+				取值：
+					1.给定一个值：水平和垂直的间距相同
+					2.给两个值：
+						第一个值表示水平的间距要
+						第二个值表示垂直间距
+					注意：只有在边框分离模式下边框的边距才有效，即border-collapse：separate时，border-spacing才有效
+			3.表格标题位置
+				属性:caption-side
+				取值:
+					1.top:默认值，标题在表格内容之上
+					2.bottom：标题在表格内容之下
+			4.显示规则
+				作用:用来帮助浏览器指定如何布局一张表，也就是指定td尺寸的计算方式
+				属性：table-layout
+				取值：
+					1.auto
+						默认值，即自动布局表格，列的尺寸实际上由内容来决定的
+					2.fixed
+						固定表格布局，列的尺寸由设置的值为准
+			 自动表格布局VS固定表格布局
+				1.自动表格布局
+					1.单元格的大小会适应内容
+					2.表格复杂时，加载速度较慢(缺点)
+					3.自动表格布局会比较灵活
+					4.适用于不确定每列大小时使用
+				2.固定表格布局
+					1.单元格的尺寸取决于设定的值
+					2.任何情况下都会加载显示表格(优点)
+					3.适用于确定每列大小时使用
+					4.固定表格布局不够灵活(缺点)
+	4.定位-浮动定位
+		1.定位
+			定位：指的是改变元素在页面中的默认位置
+		2.定位的分类
+			按照定位的效果，可以分成以下几类
+				1.普通流定位(默认的定位方式)
+				2.浮动定位
+				3.相对定位
+				4.绝对定位
+				5.固定定位
+		3.定位的详解
+			1.普通流定位
+				又称为文档流定位，页面中元素的默认定位方式
+					1.每个元素在页面中都有自己的空间
+					2.每个元素默认都是在其父元素的左上角开始显示
+					3.页面中的块级元素都是从上往下排列，每个元素独占一行
+					4.页面中的行内元素以及行内块都是按照从左到右的顺序来排列的
+				要解决的问题：让多个块级元素在 一行中显示
+			2.浮动定位
+				1.什么是浮动&特点
+					1.如果元素一旦浮动起来，将不占据页面空间(脱离了文档流)，其它未浮动元素将上前补位
+					2.浮动元素会停靠在父元素的左边，或者其他已经浮动的元素的边缘上
+					3.浮动定位解决的问题：能够让多个块级元素在一行中显示
+				2.语法
+					属性：float
+					取值：
+						1.left
+							左浮动，让元素停靠在父元素的左边或者挨着左侧已经浮动元素
+						2.right
+							右浮动，让元素停靠在父元素的右边或挨着右侧已经浮动的元素
+						3.none	
+							默认值，即无任何浮动效果
+day27
+	1.浮动
+		1.浮动引发的特殊效果
+			1.元素一旦浮动起来以后就会变成块级元素
+				允许修改尺寸
+				能正常处理垂直方向外边距
+			2.当父元素显示不下所有已浮动元素时，最后一个将换行，但是有可能被卡住。
+			3.元素一旦浮动起来后，宽度将以内容为主(未指定宽度情况下)
+			4.文本，行内元素，行内块元素是采用环绕的方式来排列的，是不会被浮动元素压在底下的，而会巧妙的避开。
+		2.清除浮动带来的影响
+			元素一旦浮动起来之后，就会对后续元素带来一定的位置影响（后续元素要上前补位），如果后续元素不想被影响（不想补位），那么就可以清除浮动的方式来解决
+			属性：clear
+			取值：
+				1.left
+					清除当前元素前面的元素左浮动所带来的影响
+				2.right
+					清除当前元素前面的元素右浮动所带来的影响
+				3.both
+					清除当前元素前面的元素任何一种浮动所带来的影响
+				4.none
+					默认值，不做任何的清除浮动的操作
+		3.浮动元素对父元素高度的影响
+			1.元素的高度都是以未浮动元素的高度为准的，浮动元素是不占页面的高度的
+				解决父元素的高度方案如下:
+					1.直接设置父元素的高度
+						弊端:不是每次都知道父元素的高度
+					2.设置父元素也浮动
+						弊端:不是任何时候父元素都需要浮动，而且浮动会影响后续元素
+				 3.为父元素设置overflow
+						取值:hidden或者auto
+						弊端:如果有内容需要溢出显示的话也会一同被隐藏起来
+					4.在父元素中，追加空子元素（块级元素），并设置（clear:both）
+	2.显示
+		1.显示方式
+			1.什么是显示方式
+				决定了元素在网页中表现形式(块级，行内，行内块)
+			2.语法
+				属性：display
+				取值：
+					1.none 不显示元素-隐藏
+						特点：脱离文档流，不占据页面的空间
+					2.block
+						让元素表现的和块级元素一致
+						特点：独占一行，可以修改高宽
+					3.inline
+						让元素表现的和行内元素一致
+						特点：不允许修改尺寸
+									多个元素在一行中显示
+									无法设置垂直外边距
+					4.inline-block
+						让元素表现的和行内块元素一致
+						特点：多个元素还是一行中显示，但是可以修改尺寸
+					5.table
+						让元素表现的和表格一致
+						特点：
+							尺寸以内容为准
+							每个元素独占一行
+							允许修改尺寸
+		2.显示效果
+			1.显示/隐藏
+				属性:visibility
+				取值:
+					1.visible:默认值，元素可见
+					2.hidden:元素不可见-隐藏
+				面试:display:none和visibility:hidden的区别
+					display:none  不占页面空间
+					visibility:hidden 占页面空间
+			2.透明度
+				属性:opacity
+				取值:0.0(完全透明)-1.0(完全不透明)之间的小数
+			3.垂直方向的对齐方式
+				属性：vertical-align
+				场合：
+					1.表格中使用
+						取值：top/bottom/middle
+					2.图片（img）中使用
+						取值：
+							top：上
+							bottom：下	
+							middle：中间
+							baseline：基线对齐，默认值
+	3.光标
+		1.作用
+			改变鼠标悬停在元素上时，鼠标的状态
+		2.语法
+			属性：cursor
+			取值：
+				1.default 
+				2.pointer：小手
+				3.crosshair：+
+				4.text：I
+				5.wait:等待
+				6.help：帮助
+	4.列表
+		1.列表项标记
+			属性：list-style-type
+			取值：
+				1.none
+				2.disc
+				3.circle
+				4.square
+		2.列表项图像
+			作用：使用自定义图像作为列表项标识
+			属性：list-style-image
+			取值：url(图像路径)
+		3.列表项位置
+			作用：将默认的列表项位置，放到li里面
+			属性：list-style-position
+			取值：
+				1.outside 默认值，将标识显示在li外面的
+				2.inside 将标识放于li里面
+		4.列表属性的简写方式
+			属性：list-style
+			取值：type url() position;
+			常用方式：list-style:none
+			列表的使用场合：
+				横向排列或纵向排列的内容都可以上会用列表来实现
+	5.定位
+		相对定位，绝对定位，固定定位
+		1.定位相关的属性
+			属性：position
+			取值：
+				1.static:静态，默认值
+				2.relative:相对定位
+				3.absolute：绝对定位
+				4.fixed：固定定位
+		2.偏移属性
+			top/bottom/left/right
+			以上四个属性的取值均为数字
+			ex：
+				top:150px 元素向下移动150像素
+				left：20px元素向右移动
+				right:-150px 元素向右移动150px
+			注意：只有已定位元素才能使用偏移属性
+		3.定位详解
+			1.相对定位
+				1.什么是相对定位
+					元素相对于它原来的位置偏移某个距离
+				2.使用场合
+					做元素位置微调时使用
+				3.position:relative
+					配合偏移属性来实现位置的移动			
+			2.绝对定位
+				1.什么是绝对定位&特点
+					1.绝对定位的元素会脱离文档流-不占页面空间
+					2.绝对定位的元素会相对于离他最近的，已定位的，祖先元素 去实现位置的初始化
+					3.如果没有已定位的祖先元素，那么该元素就相对于body去实现位置的初		始化
+					4.配合偏移属性 实现元素位置的修改
+				2.语法
+					position:absolute
+					配合偏移属性实现位置的修改
+				3.使用场合
+					1.由堆叠效果的元素
+					2.弹出菜单
+				
+				4.注意：
+					1.脱离文档流-不占据页面空间
+					2.绝对定位元素会变成块级元素
+				5.堆叠顺序z-index
+						一旦元素变为已定位元素的话，元素们则有可能出现堆叠效果
+						属性：z-index
+						取值：无单位的数字，数字越大越靠上
+						注意：
+							1.只有已定位元素才能实现堆叠顺序的改变(z-index)
+							2.父子元素间，z-index无效，永远都是子元素压在父元素上方
+			3.固定定位
+				1.什么是固定定位
+					将元素固定在网页的某个位置处，位置不会随着滚动条而发生改变，固定在可视区域中
+				2.position:fixed
+					配合偏移属性来使用
+				注意：
+					1.固定定位的元素永远都是相对于body去实现位置的初始化和偏移。
+					2.元素固定定位的元素会变成块级元素
+					3.固定定位元素会脱离文档流-不占页面空间
+day28
+		CSS3 Core
+	1.复杂选择器
+		1.兄弟选择器
+			兄弟元素：具备相同父元素的平级元素之间称为兄弟元素。
+			1.相邻兄弟选择器
+				作用：获取紧紧挨在某元素后的兄弟元素
+				语法：选择器1+选择器2{}
+				注意：兄弟选择器，只能向后找，不能向前找
+			2.通用兄弟选择器
+				作用：获取某元素后所有满足条件的兄弟元素
+				语法：选择器1~选择器2{}
+		2.属性选择器
+				<input type="text" value="" placeholder="">
+				1.作用
+					允许通过元素所附带的属性及其值来匹配元素type="text"
+				2.语法：
+					1.基本语法
+						[attr]  //属性
+						作用：匹配页面中所有附带attr属性的元素
+						ex:
+							1.[id] 匹配页面中所有附带id属性的元素
+							2.[class] 匹配页面中所有附带class属性的元素
+					2.elem[attr]
+						elem:表示任意元素
+						attr:表示任意属性
+						作用：表示匹配页面中所有附带attr属性的elem元素
+						ex:
+							div[id]匹配页面中所有带有id属性的div元素
+							input[type]匹配页面中所有带有type属性的input元素
+							.text[placeholder]匹配页面中所有带有placeholder属性，并有text类选择器的元素
+					3.[attr1][attr2]
+						作用：匹配同时带有多个属性的元素
+						ex：
+							div[id][class]
+					4.[attr=value]
+						作用：匹配attr属性值为value的元素
+						ex：
+							<input type="text">
+							<input type="password">
+							//匹配的是第一个input元素(以下三种写法均可)
+							input[type="text"]
+							input[type='text']
+							input[type=text]
+		3.伪类选择
+			1.已学过的伪类
+				1.链接伪类
+					:link（尚未访问）
+					:visited（访问过的）
+				2.动态伪类
+					:hover（鼠标悬停）
+					:active（激活）
+					:focus（获取焦点）
+			2.目标伪类
+				作用:突出显示活动的HTML锚点元素，匹配被激活的锚点
+				语法结构：
+					选择器:target{...}
+					div:target{}
+					#d1:target{}
+			3.结构伪类
+				作用:通过元素的结构关系来匹配元素(上下级嵌套)
+				1.:first-child
+					匹配的元素属于其父元素的第一个子元素
+					<div>
+						<p>p1</p>
+						<p>p2</p>
+						<p>p3</p>
+					</div>
+					ex:
+						p:first-child{}//找父元素的第一个子元素
+				2.:last-child{}
+					匹配的元素时属于其父元素的最后一个子元素
+					ex:p:last-child{...}//找父元素的最后一个子元素
+				3.:nth-child(n)
+					匹配的元素是属于其父元素中第n个子元素
+					table tr:nth-child(2)匹配表格第二行数据
+				4.:empty
+					匹配没有子元素的元素
+					没有任何子元素 （空格和字符都不行）
+				5.:only-child
+					匹配的元素是属于其父元素中唯一的子元素
+					<div>
+						<p id="p1">ppppppp</p>
+					</div>
+					<div>
+						<p>pppppppppp</p>
+						<span>sssssssssss</span>
+					</div>
+					p:only-child{color:red;}//改变的是p1元素
+			4.否定伪类
+				将满足指定选择器的元素给排除出去(不要了，排除)
+				:not(selector)
+				table tr:not(:first-child){
+					font-size:24px;
+				}//除第一行以外的所有行的文字大小变为24px;
+		4.伪元素选择器
+			1.:first-letter或::first-letter
+				作用：匹配某个元素的首字符
+			2.:first-line或::first-line
+				作用:匹配某个元素的首行(第一行)
+				注意：首行与首字符冲突时，以首字符为准
+			3.::selection
+				匹配被用户选取的内容
+				注意：只能去修改文本颜色或者是背景颜色
+	2.内容生成
+		1.什么是内容生成
+			使用CSS动态的向某元素中插入一段内容】
+		2.伪元素选择器
+			1.:before或::before
+				作用：匹配到某元素的内容区域之前
+				<p>(:before)鹅鹅鹅</p>
+			2.:after或::after
+				作用：匹配到某元素的内容区域之后
+				<p>锄禾日当午(:after)</p>
+			3.属性
+				属性：content
+				作用：向匹配到的位置处增加内容
+				取值:
+					1.字符串:用""引起来(普通文本)
+					2.url():生成一幅图像
+			4.解决的问题
+				1.解决浮动问题
+					div:after{
+						content:"";
+						display:block;
+						clear:both;
+					}
+				2.子元素上外边距溢出问题
+					div:before{
+						content:"";
+						display:table;
+					}
+day29
+	1.弹性布局(Flexible Layout)
+		1.什么是弹性布局
+			弹性布局，是一种布局方式，主要解决某元素中"子元素"的布局方式，为布局提供最大的灵活性。
+		2.弹性布局的相关概念
+			1.弹性布局的容器
+				弹性布局的容器 简称"容器"(子元素的父元素，称为容器)
+			2.弹性布局的项目
+				弹性布局的项目 简称"项目"(要实现布局效果的子元素，称为项目)
+			3.主轴
+				项目们排列的方向的那一根轴，就称为主轴
+				如果项目们按x轴排列(横向排列)，那么x轴就是主轴
+				如果项目们按y轴排列(纵向排列)，那么y轴就是主轴
+			4.交叉轴
+				与主轴交叉的一根轴就是交叉轴
+				如果主轴是x轴那么y轴就是交叉轴
+				如果主轴是y轴那么x轴就是交叉轴
+		3.语法
+			1.flex容器
+				将元素变为flex容器后，那么所有的子元素将变为flex项目，都允许按照弹性布局的方式排列
+				如何将元素变为flex容器?
+				属性：display
+				取值：
+					1.flex:将块级元素变为容器
+					2.inline-flex:将行内元素变为容器
+			注意：
+				1.元素设置为flex容器后，子元素的float，vertical-align，clear将失效
+				2.容器的text-align将失效
+			2.容器的属性
+				1.flex-direction
+					作用：指定容器主轴及其排列方向
+					取值：
+						1.row 默认值，即主轴为x轴，起点在左端
+						2.row-reverse 主轴为x轴，起点在右端
+						3.column 主轴为y轴，起点在顶端
+						4.column-reverse 主轴为y轴起点在底端
+				2.flex-wrap
+					作用：当一个主轴排列不下所有项目的时候，指定子项目如何换行
+					取值:
+						1.nowrap 默认值，即空间不够是，也不换行，项目会自动缩小
+						2.wrap 换行
+						3.wrap-reverse 换行翻转
+				3.flex-flow
+					作用：是flex-direction和flex-wrap的缩写形式
+					取值：
+						1.row nowarp 默认值
+						2.direction  wrap
+				4.justify-content
+					作用定义项目在主轴上的对齐方式
+					取值:
+						1.flex-start
+							在主轴的起点位置对齐
+						2.flex-end
+							在主轴的终点对齐
+						3.space-between
+							两端对齐(常用)
+						4.center
+							在主轴上居中对齐
+						5.space-around
+							每个项目两端间距相同
+				5.align-items;
+					作用：定义项目在交叉轴上的对齐方式
+					取值：
+						1.flex-start
+							交叉轴的起点对齐
+						2.flex-end
+							交叉轴的终点对齐
+						3.center
+							交叉轴居中对齐
+						4.baseline
+							交叉轴上基线对齐
+						5.stretch
+							如果项目未设置尺寸，在交叉轴上将占满所有空间
+
+			3.项目的属性
+				该组属性只能设置在某一项目上，只控制一个项目，是不影响容器以其其他项目的效果。
+				1.order
+					作用：定义项目的排列顺序，值越小，越靠近起点，默认值为0
+					取值：整数数字，无单位
+				2.flex-grow
+					作用：定义项目的放大比例，如果容器有足够的剩余空间，项目将放大
+					取值：
+						整数数字，无单位
+						默认值0，不放大
+						取值越大，占据的剩余空间越多
+				3.flex-shrink
+					作用：定义项目的缩小比例，也就是容器的空间不足时，项目该如何缩小
+					取值：
+						默认值为1，空间不足时则等比缩小
+						取值为0，则不缩小（常用）
+				4.align-self
+					作用：定义当前项目在交叉轴上的对齐方式
+					取值：
+						1.flex-start
+						2.flex-end
+						3.center
+						4.baseline
+						5.stretch
+						6.auto(继承自父元素的align-items属性)
+	2.转换
+		1.什么是转换
+			改变元素在页面中的位置，大小，角度以及形状的一种方式
+			2D转换:只在x轴和y轴上发生的转换效果
+			3D转换:增加在z轴的转换效果
+		2.转换属性
+			1.转换属性
+				属性：transform
+				取值：
+					1.none 默认值，无任何转换函数
+					2.transform-function
+						表示1个或多个转换函数
+						如果是多个转换函数的话，转换函数之间用空格隔开
+			2.转换原点
+				属性:transform-origin
+				取值：数字/百分比/关键字
+							2个值：表示原点在x轴和y轴上的位置
+							3个值：表示原点在x轴，y轴，z轴上的位置
+					默认的原点都是在元素的中心位置处(center center)(50% 50%)
+			3.2D转换
+				1.位移
+					1.什么是位移
+						改变元素在页面中的位置
+					2.语法
+						属性:transform
+						取值:
+							1.translate(x)
+								指定元素在x轴上的位移距离
+								取值为正，元素向右移动
+								取值为负，元素向左移动
+							2.translate(x,y)
+								指定元素在x轴和y轴的移动距离
+								x:同上
+								y:取值为正，元素向下移动
+									取值为负，元素向上移动
+							3.translateX(x)
+								在x轴上的位移
+							4.translateY(y)
+								在y轴上的位移
+				2.缩放
+					1.什么是缩放
+						改变元素在页面中的尺寸
+					2.语法
+						属性：transform
+						取值：
+							1.scale(value)
+								value:表示横向或者纵向的缩放比例
+								value:默认值是1
+											值>1:放大
+											0<值<1:缩小
+											负数：放大(水平和垂直方向都翻转180度)
+							2.scale(x,y)
+								x:横向的缩放比例
+								y:纵向的缩放比例
+							3.单向缩放函数
+								scaleX(x)
+								scaleY(y)
+				3.旋转
+					1.什么是旋转
+						改变元素在页面上的角度
+					2.语法
+						属性：transform
+						取值：
+						rotate(ndeg)
+							n:取值为正，顺时针旋转
+							n:取值为负，逆时针旋转
+				注意：
+					1.转换原点会影响最后的转换效果
+					2.旋转连同坐标轴一起旋转
+				4.倾斜
+					1.什么是倾斜
+						改变元素在页面中的形状
+					2.语法
+						属性：transform
+						取值：
+							1.skewX(xdeg)
+								让元素向着x轴的方向产生倾斜效果
+								实际上改变的是y轴的倾斜角度值
+								x:取值为正，y轴逆时针倾斜
+								x:取值为负，y轴顺时针倾斜
+							2.skewY(ydeg)让元素向着y轴的方向产生倾斜效果，实际上改变的x轴的倾斜角度值
+								y:取值为正，x轴顺时针倾斜
+								y:取值为负，x轴逆时针倾斜
+							3.skew(x)
+								等同于skewX(xdeg)
+							4.skew(x,y)
+			4.3D转换
+				1.透视距离
+					模拟人的眼睛到3D转换元素之间的距离(z轴)
+					属性：perspective
+					注意：该属性要加在3D转换元素的父元素上
+				2.3D旋转
+					属性:transform
+					取值：
+						1.rotateX(xdeg)
+							以x轴为中心轴，旋转元素的角度
+							取值为正，顺时针旋转
+						2.rotateY(ydeg)
+							以y轴为中心，旋转元素的角度
+						3.rotateZ(zdeg)
+							以z轴为中心，旋转元素的角度
+						4.rotate3D(x,y,z,ndeg)
+							x,y,z取值大于0的数字时，表示该轴要参与旋转，取值为0则不参与旋转
+							rotate3D(1,0,0,45deg)只在x轴旋转45度
+							rotate3d(1,1,1,0deg)不旋转
+	3过渡
+		1.什么是过渡
+			使得CSS属性值，在一段时间内平缓变化的效果
+		2.过渡语法
+			1.指定过渡的属性
+				属性： v
+				取值：
+					1.all 能使用过渡的属性，一律用过渡体现
+					2.具体的属性名称
+						ex：
+							transition-property:background
+							当背景的属性发生变化时，用过渡给体现
+							transition-property:border-radius；
+							当边框倒角在发生改变时用过渡体现出来
+							transition-property:all
+							允许设置过渡效果的属性：
+							1.颜色属性(背景 颜色 边框 阴影颜色)
+							2.取值为数字的属性(高宽 内外边距等)
+							3.转换属性(位移 旋转 缩放 倾斜)
+							4.阴影属性
+							5.渐变属性
+							6.visibility
+			2.指定过渡时长
+				作用：指定在多长时间内完成过渡操作
+				属性：transition-duration
+				取值：以s或者ms为单位的数值
+						1000ms=1s
+			3.指定过渡的速度时间曲线函数
+				属性:transiton-timing-function
+				取值：
+					1.ease 默认值，慢速开始，快速变快，慢速结束
+					2.linear 匀速
+					3.ease-in 慢速开始，加速结束
+					4.ease-out 快速开始，慢速结束
+					5.ease-in-out慢速开始和结束，中间先加速后减速
+			4.指定过渡延迟时间
+				属性：transiton-delay
+				取值：以s或者ms为单位的数值
+			5.过渡属性的编写位置
+				1.将过渡放在元素声明的样式中
+					即管去，又管回
+				2.将过渡放在触发的操作中(hover)
+					只管去，不管回
+			6.过渡的简写形式
+				transition:property duration timing-function delay;
+				ex:
+					transition：background 2s ease,border-radius 2s;
+					transition: all 2s;//上面的简写
+	4.动画
+		1.什么是动画
+			使元素从一种样式逐渐变为另一种样式
+			即将多个过渡效果放在一起
+			动画是通过“关键帧”，来控制动画的每一步
+			关键帧:
+				1.定义动画执行的时间点
+				2.在改时间点上的样式是什么
+		2.动画的使用步骤
+			1.声明动画
+				为动画起名
+				定义关键帧
+			2.为元素去调用动画
+				指定元素调用的动画名称以及各个参数属性
+			3.定义动画(动画的声明)
+				@keyframes 自定义动画名称{
+					/*定义动画中的所有的关键帧*/
+					0%{
+						/*动画开始时元素的样式*/
+					}
+					25%{
+						/*动画执行到1/4的时的样式*/
+					}
+					50%{
+						/*动画执行到一半的样式*/
+					}
+					75%{
+						/*动画执行到3/4的样式*/
+					}
+					100%{
+						/*动画执行到结束时的样式*/
+						
+					}
+				}
+			4.动画调用(属性)
+				1.animation-name
+					作用：指定调用动画的名称
+				2.animation-duration
+					作用：指定动画执行一个周期的时长
+					取值：以s或者ms为单位的数值
+				3.animation-timing-function
+					作用：指定动画的速度时间曲线函数
+					取值：ease，linear，ease-in，ease-out ease-in-out
+				4.animation-dealy
+					作用：指定动画的延迟时间
+					取值：以s或者ms为单位的数值
+				5.animation-iteration-count
+					作用：指定动画的播放次数
+					取值：
+						1.具体的数字
+						2.infinite 无限次数播放
+				6.animation-direction
+					作用：指定动画的播放方向
+					取值：
+						1.normal
+							默认值，正常播放0%-100%
+						2.reverse
+							逆向播放 100%-0%
+						3.alternate
+							轮播播放
+								奇数次数播放时，正向播放
+								偶数次数播放时，逆向播放
+				7.动画的简写方式
+					animation:name duration timizing-function delay iteration-count direction;
+				8.animation-fill-mode
+					作用：规定动画在播放前或播放后的状态
+					取值：
+						1.none 默认值
+						2.forwards
+							动画播放完成后将保持在最后一个状态
+						3.backwards
+							动画播放前延迟时间内，动画保持在第一个帧的状态上
+						4.both
+							forwards与backwards的合体
+				9.animation-play-state
+					作用：指定动画处于播放还是暂停的状态
+					取值：
+						1.paused 暂停
+						2.running 播放
+
+day30
+	1.CSS Hack
+		1.解决问题
+			解决IE浏览器兼容性问题
+			解决办法：针对不同浏览器编写不同的CSS代码
+		2.CSS Hack 的原理
+			使用CSS样式的优先级解决兼容性问题
+		3.CSS Hack的实现方式
+			1.CSS类内部的Hack
+				在样式属性名称前或属性值后面增加前后缀，以便于识别不同浏览器
+				+：IE6,7的前缀
+				-：IE6的前缀
+				\0:IE8,9,10的后缀
+				\9\0:IE9,10的后缀
+			2.CSS选择器Hack
+				在选择器前增加前缀以便于识别不同的浏览器
+				*：识别IE6
+				*+：识别IE7
+				div~div
+				*div~div{IE6识别}
+				*+div~div{IE7识别}
+			3.HTML头部引用Hack
+				使用IE的条件注释来判断浏览器的版本，从而执行不同的代码
+				语法：
+					<!--[if 条件 IE 版本号]>
+					满足条件要执行的HTML代码
+					<!--[endif]>
+					版本号：6-10
+					条件：
+						1.gt
+							只有在大于指定版本的浏览器中执行代码
+							<!--[if 条件 IE 6]>
+								该段内容只显示在IE6以上的浏览器中
+							<!--[endif]>
+						2.gte
+							大于等于
+						3.lte
+							小于等于
+						4.lt
+							小于
+						5.！
+							在指定条件以外版本的浏览器中执行操作
+						6.省略条件
+							只在指定版本的浏览器中取执行操作
+							判断浏览器是否为IE浏览器或指定IE的指定版本
+day32
+	讲师:张东
+	邮件:zhangdong@tedu.cn
+	准备:
+		1. 犀牛书: JavaScript权威指南
+		2. 公众号: 前端大全!
+		3. 上届笔记 和 思维导图
+		谁抄的越勤，谁学的越烂！！！
+	正课:
+	String:
+		1. 什么是String:
+		2. API:
+		3. ***正则表达式:
+	1.什么是String: 一串字符组成的字符数组
+		String vs 数组: 
+		 相同: 1. 下标, 2. .length,  3. for,  4. slice
+		 不同: 类型不同, API不通用!
+		 字符串必须用' '——ESLint
+	2.API: 所有字符串API无权修改原字符串，只能返回新字符串
+	 大小写转换: 
+		 str.toLowerCase() //转为小写
+		 str.toUpperCase() //转为大写
+		 何时: 不区分大小写时
+	 获取指定位置的字符: 
+		 str.charAt(i)  =>   str[i]
+	 获取指定位置字符的unicode号:
+		 str.charCodeAt(i)  字->号
+	 将unicode号转回字: 
+		 String.fromCharCode(号)
+	 选取子字符串: 
+		 str.substring(starti,endi+1)  =>  str.slice(starti,endi+1)
+		 差别: substring不支持负数参数
+		 变通: str.length-n
+		 str.substr(starti,n) 从starti开始选取n个字符	 
+		***查找关键词: 4种:
+		1. 查找一个固定的关键词的位置:
+		 var i=str.indexOf("关键词",fromi)
+		 在str中，从fromi位置开始，找下一个"关键词"出现的位置
+		 返回值: 关键词第一个字的位置  找不到，返回-1
+		 var i=str.lastIndexOf("关键词")
+		 查找str中"关键词"最后出现的位置
+		 优: 设置开始位置，找所有关键词的位置
+		 缺: 只能查找一个固定的关键词
+		2. 判断是否包含符合正则条件的敏感词: 
+		 var i=str.search(/正则/i)
+			查找str中查找第一个符合正则要求的关键词的位置
+			返回值: 关键词位置  	找不到返回-1
+			问题: 正则默认都区分大小写
+			解决: 在第二个/后加i   ignore
+			问题: 只能找一个，且只返回位置，无法返回关键词内容
+		3. 获取所有关键词的内容: 
+			var kwords=str.match(/正则/ig)
+			查找str中所有关键词的内容
+			返回值: 关键词数组
+			如果找不到, 返回null
+		强调: 如果一个函数可能返回null，就必须先验证不是null，再使用!
+			问题: 所有正则，默认只查找第一个关键词
+			解决: 在第二个斜线后加g  global
+			问题: 只能找关键词的内容，无法返回每个关键词的位置
+		4. 即找所有关键词的内容，又找所有关键词的位置
+			reg.exec()
+	 替换: 
+		1. 简单替换: 将所有关键词，替换为统一的新内容
+			str=str.replace(/正则/ig,"替换值")
+			 更简单: 如果关键词是固定的: str.replace("关键词","新值")
+		2. 高级替换: 根据每个关键词的不同，动态选择不同的新值替换
+			str=str.replace(
+				/正则/ig,
+				function(kword){//每找到一个关键词，就自动调用该function
+					//kword会自动获得本次找到的一个关键词
+					return 根据kword的不同，返回不同的新值
+				}
+			)
+	 切割: 
+
+	3. ***正则表达式:
+	 什么是: 描述一个字符串中字符出现规律的规则!
+	 为什么: 有些关键词会发生变化！
+	 何时: 2种: 
+		 1. 查找可变的关键词
+		 2. 验证格式
+	 如何: 正则表达式的语法: 
+		 1. 一个固定的关键词原文，也是一种最简单的规则
+		 2. 字符集: 规定一位字符上可用的备选字符列表
+			何时: 只要一位字符有多种备选字
+			如何: [备选字列表]
+			简写: 如果备选字符列表连续，可用-省略中间字符
+			 比如: 一位数字: [0-9]
+						 一位小写字母:[a-z]
+						 一位大写字母:[A-Z]
+						 一位字母: [A-Za-z]
+						 一位字母或数字:[A-Za-z0-9]
+						 一位汉字: [\u4e00-\u9fa5]
+			 排除: [^xxx]
+		3. 预定义字符集: 
+			对常用字符集的简化:
+			 一位数字  \d
+			 一位字母,数字,_都行  \w    [0-9A-Za-z_]
+			 一位空字符  \s  包括: 空格, tab, ...
+			 通配符 .
+		问题: 字符集只能规定一位字符的备选内容
+					无法定义字符出现的个数
+		解决:
+		4. 量词: 专门规定一个字符集出现次数的规则
+		 何时: 只要规定一个字符集出现次数时
+		 如何: 字符集量词
+		 2大类:
+			1. 有明确数量边界: 
+			 字符集{6,8}  至少6个，最多8个
+			 字符集{6,}   至少6个，多了不限
+			 字符集{6}    必须6个，不能多也不能少
+			2. 没有明确数量边界:
+			 字符集?    可有可无，最多一个
+			 字符集*    可有可无，多了不限
+			 字符集+    至少一个，多了不限
+		5. 选择和分组: 
+		 选择:  或  |
+			 规则1|规则2  在两个规则之间选其一匹配即可
+			 何时: 只要在多个规则间选其一匹配时
+		 分组:  将多个规则，用()包裹为一个整体
+			 为什么: 量词默认仅修饰相邻的前一个字符集
+			 何时: 只要一个量词，要修饰多个字符集时
+			 如何: (规则1规则2...)量词
+
+		身份证号: 15位数字 2位数字 一位数字或X或x 
+													后三位整体可有可无，最多一个
+							\d{15}    ( \d\d        [0-9Xx]  )?
+		手机号: +86或0086   可有可无，最多1次
+					 空字符  可有可无，多了不限
+					 1
+					 [34578]
+					 9位数字
+			(+86|0086)?\s*1[34578]\d{9}
+		
+		微信  wei xin  w x
+		(微|w(ei)?)\s*(信|x(in)?)
+
+		6. 匹配特殊位置: 
+		 三个位置: 
+		 1. 开头 ^  比如: 开头的空字符: ^\s+
+		 2. 结尾 $  比如: 结尾的空字符: \s+$
+			何时: 如果只匹配紧挨开头或结尾的内容时
+			即匹配开头，又匹配结尾: ^\s+|\s+$
+		 3. 单词边界 \b 包括: 开头, 结尾, 空格, 标点
+day33
+	个人项目: 
+	1. 静态界面
+	2. 收集业务数据
+	正课:
+	1. String
+	2. RegExp
+	3. Math
+	4. Date
+	1. String:
+	 替换: 
+		衍生: 删除: 将关键词替换为""
+	 切割: 将一个字符串，按指定的字符切割为多段子字符串
+		如何: 2种: 
+		 1. 简单切割: 按一个固定的分隔符，分割字符串
+			 var substrs=str.split("分隔符")
+			 固定套路: 打散字符串为字符数组:
+				var chars=str.split("")
+		 2. 复杂切割: 如果分隔符是变化的，可用正则切割
+			 var substrs=str.split(/正则/)
+	2. RegExp:
+	 什么是: 专门保存一条正则表达式，并提供用正则表达式执行验证和查找操作的API  的对象
+	 何时: 只要在js中使用正则表达式，都要先创建RegExp对象
+		 主要两个场景: 
+		 1. 验证字符串格式
+		 2. 即查找所有关键词的内容，又查找每个关键词的位置
+	 如何: 
+		创建: 2种:
+		 1. 直接量: 
+			 var reg=/正则/ig;
+			 何时: 如果正则表达式不需要动态生成!
+		 2. 用new: 
+			 var reg=new RegExp("正则","ig")
+			 何时: 专门用于动态生成正则表达式
+		API: 
+		 1. 验证字符串格式: 
+			var bool=reg.test(str)
+			 用reg检查str是否符合正则表达式格式要求
+			问题: 正则，默认只要找到符合条件的内容，即使只是一部分，也返回true。
+			解决: 今后，凡是验证，必须前加^，后加$
+					 表示从头到尾，完整匹配!
+		 2. 即找所有关键词内容，又找所有关键词位置
+			var arr=reg.exec(str)
+			在str中找下一个关键词的内容和位置
+			返回值: 数组:[
+				"0": 本次找到的关键词内容,
+				"index": 本次找到的关键的位置
+			]
+				如果找不到，返回null
+		 
+	3. Math:
+	 什么是: 专门保存算术计算的常量，并提供算术计算的API
+	 何时: 今后，只要进行数学计算时
+	 如何: 
+		创建: 不能new!
+			 所有API通过Math直接.调用
+	 API: 
+		1. 取整: 3种: 
+		 上取整: 只要小数部分超过，就取下一个整数
+			 Math.ceil(num)
+		 下取整: 舍弃小数部分
+			 Math.floor(num)
+		 vs parseInt(str) 可去掉数字后非数字字符(单位)
+		 四舍五入取整: 整数后一位小数，够5进1，不够舍弃
+			 Math.round(num);
+		 vs .toFixed(2)
+			1. Math.round只能取整!
+				.toFixed(d) 按任意小数位数四舍五入
+			2. 返回值: Math.round() 返回数字类型
+							 .toFixed() 返回字符串类型
+	 2. 乘方和开平方: 
+		Math.pow(底数,幂)
+		Math.sqrt(n)
+	 3. 最大值和最小值
+		Math.max(值1,值2,.....)
+		Math.min(值1,值2,.....)
+		问题: max和min默认不支持在数组中找最大和最小
+		解决: Math.max(...arr)
+	 4. 三角函数: 
+		 Math.sin    Math.cos    Math.tan
+		 反三角函数: 
+		 Math.asin   Math.acos    Math.atan
+	 5. 随机数: 
+		0<=Math.random()<1
+		公式: parseInt(Math.random()*(max-min+1)-min)
+		 简写: 当最小值为0时， 
+			 parseInt(Math.random()*(max +1))
+
+	4. Date: 
+	 什么是: 保存一个时间，提供操作时间的API
+	 何时: 只要在程序中保存或操作时间，都要使用Date对象
+	 如何: 
+		创建: 4种: 
+		 1. 创建日期对象，并获得当前系统时间
+			 var now=new Date();
+			 强调:无法获得服务器时间，仅能获得客户端时间
+		 2. 创建日期对象，封装自定义时间
+			 var date=new Date("yyyy-MM-dd hh:mm:ss")
+		 3. 可用一个毫秒数转化为时间
+			 原理: 起始日期对象中保存的也是一个毫秒数(1970年1月1日0点至今的毫秒数)
+			 为什么: 时间点受所在时区的影响，有所不同
+							 时间段不受时区影响。
+				 每个时区，将毫秒数时间段转为时间点时，各自的时间起点不一样，导致计算之后的终点时间各有不同。
+			 何时: 只要将毫秒数转为日期对象执行操作时，都用new Date()
+			 如何: var date=new Date(ms)
+		 4. 复制一个日期对象: 
+			 var date2=new Date(date1);
+day34
+	正课：
+	1. Date:
+	2. Error:
+	3. Function:
+	1. Date:
+	 API: 3句话:
+		1. 单位: 
+		 FullYear  Month  Date   Day
+		 Hours   Minutes  Seconds  Milliseconds
+		2. 每个单位上都有一对儿get/set方法
+		 其中: getXXX() 专门获取单位的数值
+					setxxx() 专门设置单位的数值
+		 比如: date.getDate()   date.getFullYear()
+					date.setDate(20)  date.setFullYear(2018)
+			 特例: Day没有set, 不能修改
+		3. 取值范围: 
+		 Month: 0~11  计算机中的month比现实中小1
+				 在取值和修改时，要修正
+		 Date: 1~31 
+		 Day: 0~6
+		 Hours: 0~23 
+		 Minutes/Seconds: 0~59
+	 计算: 2种: 
+		1. 两个日期对象可相减: 结果为毫秒差
+		2. 对任意单位做加减:
+		 3步:
+		 1. 获得单位上的当前值: 2018/2/13  getDate()  13
+		 2. 做加减: 13-30 = -17
+		 3. 将计算结果set回去
+			 .setDate(-17);
+				setDate内置日期进制算法。
+		 简化: date.setxxx(.getxxx()+n)
+
+	 格式化: 
+		.toLocaleString() 转为当地时区的简化版格式
+		.toLocaleDateString() 转为当地时区的简化版格式，仅保留日期
+
+	2. Error:
+	 什么是: 程序执行过程中，导致无法继续正常执行的异常情况
+		 只要程序发生错误，就会中断退出
+	 错误处理: 即使程序发生错误，也保证不会中断退出的机制
+	 如何错误处理: 
+		try{
+			可能发生错误的正确代码
+		}catch(err){
+			一旦发生错误，就自动执行的错误处理代码
+		}
+		其中: err是错误对象: 错误发生时，自动创建的封装错误信息的对象。
+		效率: 放在try catch中的代码，效率略有降低
+		解决: 用if...else代替try...catch
+	 鄙视: js中错误类型: 6种:
+		SyntaxError 语法错误 
+		ReferenceError  引用错误 要用的变量没找到
+		RangeError  范围错误  参数超范围
+		TypeError   类型错误  错误的使用了(),[]等。
+
+		URIError   URI错误
+		EvalError   Eval错误
+
+	 抛出自定义错误: 
+		何时: 协作开发中，程序的作者，向程序的调用者，提示错误的使用程序。
+
+	3. Function
+	 什么是: 保存一段可重用的代码段的对象
+	 何时: 只要一段代码可能反复使用时，都要封装为函数，反复调用函数
+	 如何: 
+		创建: 3种: 
+		 1. 直接量: function 函数名(参数列表){
+								 函数体;
+								 return 返回值;
+							 }
+			 缺: 会被声明提前, 打乱程序的执行顺序
+			 解决: 
+		 2. 赋值: var 函数名=function(参数列表){
+							 函数体;
+							 return 返回值;
+						 }
+			 优: 不会被声明提前
+			 揭示: 函数其实也是一个引用类型的对象
+						 函数名其实只是一个普通的变量
+						函数名通过地址引用函数对象
+			 function其实是创建一个新函数对象的意思
+		 3. 用new: 
+			 var fun=new Function("参数1","参数2",...,"函数体")
+			 
+		 以下创建函数正确的是：
+			 function cmp(a,b){return a-b}
+			 var cmp=function(a,b){return a-b}
+			 var cmp=new Function(a,b,"return a-b")
+			 var cmp=new Function("a","b","return a-b")
+
+	重载(overload):
+	 什么是: 相同函数名，不同参数列表的多个函数，在调用时，可根据传入的参数不同，自动选择匹配的函数执行。
+	 为什么: 减少API的数量，减轻调用者的负担
+	 何时: 只要一项任务，可能根据传入参数的不同，执行不同的流程时。
+	 如何: 
+		问题:js语法默认不支持重载，因为不允许多个同名函数同时存在！
+		解决: arguments
+		 什么是: 函数调用时，自动创建的
+						 保存所有传入函数的参数值的
+						 类数组对象(长的像数组的对象)
+							 vs 数组: 相同: 1. 下标; 2. .length; 3. 遍历
+										不同: 类型不同, API不通用
+		 何时: 重载:
+
+	匿名函数: 
+	 什么是: 定义函数时，不指定函数名的函数
+	 何时: 一个函数只使用一次时
+	 为什么: 节约内存
+	 如何: 2种:
+		1. 回调函数: 定义函数后，自己不执行，交给别的函数，由别的函数控制调用和执行过程。
+		2. 匿名函数自调: 函数定义后，自己调用自己!
+		 为什么: 全局变量，用完，无法自动释放！污染全局！
+		 解决: 今后禁止使用全局变量！
+		 何时: 只有所有功能的代码，必须放在匿名函数自调中
+		 如何: (function(){
+						//函数体
+					})();
+
+	鄙视:垃圾回收
+	 什么是: 引擎会自动释放不再使用的对象的内存空间
+	 为什么: 内存空间大小是有限的！系统都会释放不再被使用的对象，为后续新对象释放更多空间。
+	 垃圾回收器: 专门统计并回收内存中不再被使用的对象的空间的 小程序
+	 如何: 
+		1. 垃圾回收器伴随主程序启动而启动，在后台伴随主程序运行而运行。
+		2. 垃圾回收器会记录每个对象被几个变量引用着
+		3. 只要一个对象不再被任何变量引用，则垃圾回收器自动释放该对象
+	 习惯: 只要一个大对象，不再被使用，应该主动将变量赋值为null
+day35
+	正课:
+	1. Function:
+	 作用域和作用域链
+	 *****闭包
+	2. ***OOP
+
+	1.Function
+	 作用域(scope):
+		什么是: 变量的可用范围
+		为什么: 保证内部的变量不会影响/干扰外部的程序
+		包括: 2种: 
+		 1. 全局作用域: window
+			 保存全局变量: 特点: 随处可用，可重复使用!
+		 2. 函数作用域: 
+			 保存局部变量: 特点: 仅函数内可用，不可重用!
+		函数的生命周期: 
+		 1. 程序开始执行前:
+			 1. 创建执行环境栈(ECS): 用于记录有多少函数正在被调用
+			 2. 在ECS中记录首先调用的浏览器主程序(main)
+			 3. 创建全局作用域对象window，保存main函数执行所需的所有全局变量
+		 2. 定义函数时:
+			 1. 用函数名定义变量
+			 2. 创建函数对象保存函数的定义，函数名变量通过地址引用函数对象
+			 3. 函数对象的scope属性，指回函数来自的作用域
+		 3. 调用函数时:
+			 1. 在ECS中加入本次函数调用的记录
+			 2. 为本次函数调用，创建函数作用域对象(活动对象AO)
+			 3. 在活动对象AO中保存所有局部变量
+			 4. 让AO的parent属性，指向函数的scope引用的作用域对象
+			 调用过程中，变量的使用顺序: 
+				 先在AO中，使用局部变量
+				 局部没有，才去全局找
+		 4. 函数调用后:
+			 1. ECS中本次函数调用的记录，出栈
+			 2. 导致函数作用域对象AO释放
+			 3. 导致AO中局部变量释放
+	 作用域链(scope chain): 
+		什么是: 由多级作用域对象逐级引用形成的链式结构
+		保存着所有变量
+		控制着变量的使用顺序: 先局部，后全局
+
+	*****闭包
+	 什么是: 即重用变量，又保护变量不被污染的一种机制
+	 为什么: 全局变量和局部变量都有不可兼顾的优缺点
+		 全局: 优: 可反复使用, 缺: 随处可用，易被污染
+		 局部: 优: 仅函数内可用，不会被污染
+					 缺: 不可重用!
+	 何时: 今后只要希望一个变量，即可重用，又不会被污染
+	 如何: 3步:
+		1. 用外层函数包裹受保护的变量和内层函数对象
+		2. 外层函数将内层函数对象返回到外部
+		3. 使用者调用外层函数，获得返回的内层函数
+	 鄙视: 画简图:
+		1. 找受保护的变量
+		2. 找操作变量的内层函数
+	 缺: 闭包比普通函数占用更多的内存空间
+		解决: 如果闭包不再使用，应尽快释放!
+			将引用闭包结构的变量赋值为null
+
+	2. ***OOP:
+	 什么是对象: 程序中描述现实中一个具体事物的属性和功能的程序结构.
+	 什么是面向对象: 程序中都是先用对象来描述现实中的具体事物，再按需调用对象的方法，访问对象的属性值。
+	 为什么: 当要管理的数据非常多时，如果单独管理每项数据，极其不便于维护和使用。且不符合现实。
+	 如何: 面向对象三大特点: 封装，继承，多态
+		封装: 
+		 什么是: 创建一个对象集中保存现实中一个事物的属性和功能
+		 何时: 今后，只要使用面向对象的思想编程，都要先创建一个对象，来存储现实中一个事物的属性和功能
+		 为什么: 便于维护和使用，且更符合现实的意义
+		 如何: 3种: 
+			1. 直接量: var obj={
+									属性:值,
+										... : ...,
+									方法:function(){
+										... this.属性名  ... 
+									}
+								}
+				现实中: 具体事物的属性，会成为对象的属性
+								具体事物的功能，会成为对象的方法
+				问题: 对象自己的方法不能直接访问自己的属性
+					因为: 所有不加.直接访问的变量，只能在作用域链中查找，无法自动进入对象中查找属性。
+				错误解决: 在属性前加对象名.
+					问题: 对象名只是普通的变量名，可能发生改变。
+				正确解决: 在属性前加this.
+					this: 函数执行时，自动创建的，引用正在调用该函数的.前的对象本身。
+					何时: 只要对象自己的方法，想使用对象自己的成员时，都必须加this.
+
+		 如何访问对象的成员:
+			 成员=属性+方法
+			 访问属性: obj.属性名
+			 调用方法: obj.方法名()
+
+			2. 用new: 2步:
+			 1. var obj=new Object(); //{}
+			 2. obj.属性名=值
+				 obj.方法名=function(){  ...  this.属性名  ...  }
+			本质: 起始js对象底层，就是一个关联数组
+
+		 问题: 每次只能创建一个对象，如果反复创建多个对象，重复的结构代码会非常多！——DRY
+		 解决: 
+		 3. 用构造函数反复创建多个相同结构的对象:
+			构造函数(constructor): 描述一类对象，统一结构的函数
+			何时: 只要反复创建多个相同结构的对象前，都要先定义构造函数。
+			如何: 2步:
+			 1. 定义构造函数，描述一类对象的统一结构:
+				function 类型名(属性参数列表){
+					this.属性名=属性参数;
+					this.方法名=function(){
+					 ... this.属性名 ...
+					}
+				}
+			 2. 调用构造函数反复创建同一类型的对象:
+				var obj=new 类型名(属性值列表);
+				 new做了4件事: 
+				 1. 创建一个新的空对象:
+				 2. 设置新对象的__proto__属性，继承构造函数的原型对象
+				 3. 调用构造函数，并将其中this自动指向新对象
+						 构造函数用强行赋值的方式，将构造函数中规定的属性和方法，添加到新对象中
+				 4. 返回新对象地址
+			 总结: 构造函数两个作用:
+				 1. 描述一类对象的统一结构
+				 2. 将一个新的空对象，装修成规定的格式和内容
+
+		优: 代码重用!
+		问题: 在构造函数中添加的方法，每调用一次构造函数，都会创建该方法的副本。浪费内存！
+		解决: 继承:
+		继承: 
+		 什么是: 父对象的成员，子对象无需重复创建就可直接使用
+		 为什么: 代码重用, 节约内存
+		 何时: 只要多个子对象都拥有相同的成员时，应该仅在父对象中保存一份即可。所有子对象共用!
+		 如何: js中都是继承原型对象
+			原型对象(prototype): 专门保存同一类型的所有子对象，共有成员的父对象。
+			何时: 只要多个子对象都拥有相同的成员时，应该仅在原型对象中保存一份即可。
+			如何:
+			 创建: 不用自己创建，而是买一赠一:
+				 每定义一个构造函数，都附赠一个空的原型对象
+			 继承: 不用自己设置
+				 每new一个子对象，自动设置子对象继承构造函数的原型对象！
+		共有属性和自有属性: 
+		 共有属性: 保存在原型对象中，所有子对象共有的属性
+		 自有属性: 保存在子对象中，仅归当前子对象独有的属性
+		 获取: obj.属性名
+		 修改: 自有属性: 子对象.属性名=值;
+					 共有属性: 只能用  原型对象.共有属性=值
+		内置对象的原型对象: 
+		 内置对象: ES标准中规定的，浏览器已经定义好的对象。
+		 ES标准内置对象: 11个:
+			String Number Boolean —— 包装类型
+			Array Date Math RegExp
+			Function Object
+			Error
+			Global(在浏览器中被window代替)
+		 鄙视: 包装类型(box)： 
+			什么是: 专门封装一个原始类型的值，并提供操作原始类型值的API
+			为什么: 原始类型的值，仅是一个值而已，没有任何的方法。
+			何时: 只要试图对原始类型的值调用方法时，都会自动创建对应包装类型的对象。
+
+		一种类型: 都包含2部分:
+		 1. 构造函数: 创建当前类型的子对象
+		 2. 原型对象: 保存当前类型所有子对象共有成员
+		可解决浏览器兼容性问题: 
+		 问题: 旧浏览器，无法使用新的API
+		 解决: 
+day36
+		正课:
+	1. OOP
+	 继承
+	 多态
+	2. ES5
+
+	1. OOP
+	 继承:
+		原型链: 由多级父元素，逐级继承，形成的链式结构
+		 保存了: 对象的属性和方法
+		 控制着: 对象的属性和方法的使用顺序和共享范围
+				顺序: 先用自有，自己没有，才用共有
+				共享范围: 越靠原型链上层的共有成员，共享范围越广
+		 vs 作用域链: 
+				保存了所有不加.就可直接访问的变量
+				控制着变量的使用顺序: 先局部后全局
+		
+		鄙视: 判断一个对象是不是数组类型, 共有几种方法
+		 错误: typeof只能区分原始类型和function
+					无法进一步区分引用类型对象的具体类型
+		 1. 判断原型对象:
+			 var bool=Array.prototype.isPrototypeOf(obj)
+				等效于: obj.__proto__==Array.prototype
+		 2. 判断构造函数: 
+			 var bool=obj instanceof Array;
+				等效于: obj.constructor==Array
+		 问题: 不仅检查直接父对象，且检查整个原型链
+		 解决: 
+		 3. 检查class属性: 
+			每个对象内，都有一个class属性。
+			class属性记录了对象创建时的类型名称
+			class属性不随继承关系改变而改变
+			问题1: class属性是内部属性, 不允许用.直接访问!
+			解决: 唯一可查看class属性的办法: 
+				只有Object.prototype.toString() 才可输出:
+					[object Class]
+			问题2: 多数内置类型的子对象，无法直接调用Object.prototype中的原始toString()
+				 因为各自类型的原型对象，都纷纷重写了toString()
+			解决: call 抢: 
+			 想调用的函数.call(对象)
+				在执行时，相当于: 对象.想调用的函数()
+			 Object.prototype.toString.call(obj)==="[object Array]"
+		 4. 直接调用Array.isArray(obj)
+			 强调: 原理同第三种方式，也是严格的检查
+		鄙视: 一个方法，何时定义在原型对象中，何时定义在构造函数对象上?
+		 实例方法:保存在原型对象中，只能被当前类型的子对象调用的方法。
+			 何时: 如果一个方法，只希望当前类型的子对象才能调用时
+			 如何调用: 必须先创建该类型的子对象，再用子对象.调用实例方法。
+		 比如: arr.sort()  arr.indexOf()   arr.push()
+		 静态方法: 保存在构造函数对象上，不需要创建子对象，就可用构造函数.直接调用的方法
+			 何时: 如果希望任何类型的对象，都可使用的方法，就可定义为静态方法
+			 如何调用: 不需要创建子对象，只要用构造函数.就可直接调用。
+		 比如: String.fromCharCode(unicode)
+					Array.isArray(obj)
+
+		多态: 同一个方法，在不同情况下表现出不同的状态
+		 包括: 
+			重载overload
+			重写 override:
+			 什么是: 子对象觉得从父对象继承来的成员不好用时，可在子对象本地定义同名自有成员，覆盖父对象成员。
+			 何时: 只要子对象觉得从父对象继承来的成员不好用！
+			 如何: 
+
+		自定义继承: 
+		 1. 修改一个对象的父对象:
+			 Object.setPrototypeOf(child,father)
+				等效于: child.__proto__=father
+			 
+		 2. 修改多个子对象的父对象:
+			 其实就是修改构造函数的原型对象
+			 时机: 还未开始创建子对象之前
+						定义完构造函数后，立刻更换
+		 3. 两种类型间的继承: 
+			 何时: 只要定义多个类型时，发现拥有部分相同的属性结构和方法时
+			 如何: 2步: 
+				1. 定义抽象父类型: 
+					什么是抽象父类型: 集中存储多个类型间相同的属性结构和方法 的类型
+					如何定义: 
+						1. 抽象父类型的构造函数中保存相同的属性
+						2. 抽象父类型的原型对象中保存相同的方法
+				2. 让子类型继承父类型: 2步:
+					1. 在子类型构造函数中，先调用父类型构造函数
+					 问题: 直接调用父类型构造函数, 则父类型构造函数中的this默认指window
+					 解决: call 替换函数内不想要的this为指定的对象
+					2. 设置子类型原型对象继承父类型原型对象
+
+	2. ES5: 
+	 严格模式: 
+		什么是: 比普通js运行机制，更严格的模式
+		何时: 今后，所有代码的开发，都必须在严格模式下！
+		如何: 2种:
+		 1. 在整个<script>或js文件范围内启用严格模式:
+			 在顶部添加: "use strict";
+			 何时: 只要是新项目的开发，都必须整个script或js文件启用严格模式!
+		 2. 仅在一个函数内启用严格模式:
+			 在函数内的顶部加: "use strict";
+			 何时: 旧项目向严格模式迁移时
+		规定:
+		 1. 禁止给未声明的变量赋值
+		 2. 匿名函数自调和普通函数调用中的this不再默认指向window，而是undefined
+			 都是为了避免内存泄漏
+		 3. 禁用arguments.callee
+			什么是: 在函数调用时，在函数内部引用当前函数本身
+			何时: 递归
+			为什么: 为了在函数内自动获得当前函数名,避免写死
+			递归的问题: 重复计算量极大！效率极低! 
+			所以: 禁用arguments.callee，等于禁止使用递归！
+			解决: 所有递归，都可用循环代替!
+		 4. 将静默失败升级为错误!
+day37
+		正课:
+	1. ES5
+	2. ES6
+
+	1. ES5
+	保护对象: 
+	 保护属性: 
+		属性分为2大类:
+		 命名属性: 可用.直接访问到的属性 
+			——服务器端语言 公有public
+			保护命名属性: 分为2大类:
+			 数据属性: 实际保存属性值的属性
+				如何保护: 每个数据属性都有四大特性: 
+				 {
+					 value: 实际存储属性值,
+					 writable: true/false, 控制是否可修改
+					 enumerable: true/false, 控制是否可被for in遍历到
+						 问题: 隐藏并不彻底, 依然可用.直接访问！
+					 configurable: true/false,
+						 控制着: 1. 是否可删除该属性
+										2. 能否修改其它特性
+						 强调: 一旦改为false，不可逆！
+				 }
+				如何获取四大特性: 
+				 var attrs=Object.getOwnPropertyDescriptor(obj,"属性名")
+				如何修改四大特性:
+				 Object.defineProperty(obj,"属性名",{
+					 特性名: 值,
+							... : ...
+				 })
+				 问题: 每次只能修改一个属性的四大特性
+				 解决: Object.defineProperties(obj,{
+								属性名:{
+									特性名:值,
+										 ... : ...
+								},
+								属性名:{
+									... : ...
+								}
+							})
+				 问题: 保护是固定的，有限的几种
+			 访问器属性: 不实际存储属性值，仅对其它数据属性提供保护！
+				何时: 1. 用自定义规则保护属性时
+						 2. 计算属性(vue)/虚拟属性(mongodb)
+				包含: 四大特性: {
+								get(){ return this.受保护的数据属性},
+								set(val){
+									//val自动收到要赋的新值
+									if(val符合规则)
+									 才this.受保护的数据属性=val
+									else
+									 报错！
+								},
+								enumerable:true/false,
+								configurable:true/false
+							}
+					其中: 访问器属性的用法和普通属性完全一样
+						但是: 试图读取属性值时，自动调用get方法
+									试图为属性赋值时，自动调用set方法
+										set方法中的val会自动接到要赋的新值
+				如何定义访问器属性: 访问器属性只能通过Object.defineProperty或defineProperties创建
+		 内部属性: 不可用.访问的属性
+			——服务器端语言 私有 private
+			比如: .class  .__proto__
+	 
+	 防篡改: 禁止删除/添加属性
+		3个级别：
+		1. 防扩展: 禁止给对象添加新属性
+			Object.preventExtensions(obj)
+			原理: 每个对象中都有一个内部属性extensible=true
+						控制着是否可为对象添加新属性
+				preventExtensions()其实是将extensible=false
+		2. 密封: 在兼具防扩展基础上，又禁止删除现有属性
+			Object.seal(obj)
+			原理: 不但将extensible=false
+					 且自动修改所有属性的configurable为false
+		3. 冻结: 在兼具密封基础上，又禁止修改一切属性值
+			Object.freeze(obj)
+			原理: 在密封的基础上，进一步修改所有属性的writable为false!
+
+	Object.create:
+	 什么是: 创建一个子对象，继承指定父对象，并为子对象扩展自有属性。
+	 何时: 只有父对象，也想创建子对象时
+	 如何: var child=Object.create(father,{
+			//Object.defineProperties
+					bao:{
+						value:"LV",
+						writable:true,
+						enumerable:true,
+						configurable:false
+					}
+				})
+
+	Object.assign() 鄙视: 复制或合并对象
+	复制: var clone=Object.assign({},obj)
+		将obj中的所以属性和属性值合并到空对象中,并返回
+		问题: 浅克隆: 仅复制数据属性的值
+								如果属性是引用类型对象，则仅复制对象地址
+		解决: 深克隆: var clone=JSON.parse(JSON.stringify(obj))
+	合并: 将多个原对象，合并为一个新对象，原对象保持不变
+		var newObj=Object.assign({},obj1,obj2,...)
+	 何时: 如果页面需要的数据，来自于多个接口方法返回的多个对象。都要将多个对象，先合并为一个对象，用一次响应返回！
+
+	call apply bind:
+	如果函数中的this不是想要的，都可用call,apply,bind替换函数中的this为想要的任何对象
+	call apply:
+	什么是: 在调用函数时，临时替换函数中的this
+	何时: 如果调用函数时，临时替换this
+	如何: 
+		fun.call(obj,参数值列表)
+		调用fun，临时替换fun中的this为obj，并传递参数给fun
+		fun.apply(obj,[参数值数组])
+		调用fun，临时替换fun中的this为obj，并传递参数给fun
+			强调: 唯一差别: 参数的形式上:
+				call,要求参数单独传入
+				apply,要求所有参数值必须放在一个数组中整体传入
+	bind:
+	什么是: 基于原函数，创建一个新函数，并永久绑定其中的this为指定对象
+	何时: 专门用于替换回调函数中的不想要的this
+
+	数组API: 
+	判断: 判断数组中的元素是否符合条件
+	 .every(): 判断是否数组中每个元素都符合要求
+	 .some(): 判断数组中是否包含符合要求的元素
+	 仅以.every()举例: 
+		var bool=arr.every(function(elem,i,arr){
+			//elem当前元素值, i 当前位置, arr 当前数组对象
+			return 判断条件
+		})
+		用判断条件去检查每个元素，除非所有元素都满足要求，才返回true。
+
+	遍历API: 对数组中每个元素执行相同的操作
+	 .forEach() 对原数组中每个元素执行相同操作,直接修改原数组
+		何时: 对原数组中每个元素执行相同操作时
+		如何: arr.forEach(function(elem,i,arr){
+					 arr[i]=新值
+				 })
+	 .map() 取出原数组中每个元素，执行相同操作后，放入新数组中返回，原数组保持不变
+		何时: 希望原数组保持不变，返回新数组时
+		如何: arr.map(function(elem,i,arr){
+					 return 新值
+				 })
+
+	过滤和汇总: 
+	过滤: 选取出原数组中符合条件的元素，组成新数组返回，原数组保持不变。
+		var subArr=arr.filter(function(elem,i,arr){
+			return 判断条件
+		})
+	汇总: 将数组中每个元素的值汇总统计出一个最终的结论
+		var result=arr.reduce(function(prev,elem,i,arr){
+			//prev: 截止当前位置之前的临时汇总值
+			return prev+elem;
+		})
+day38
+	正课:
+	1. ES6
+	 let
+	 参数增强
+	 箭头函数
+	 模板字符串
+	 解构
+	 for of
+	 class
+	*****Promise
+		封装ajax函数
+	 集合
+
+	1. let: 代替var
+	 为什么: js中广受诟病的缺点: 声明提前! 破坏程序的正常执行顺序
+	 特点: 
+		1. 防止声明提前
+		2. 不允许重复声明同名变量
+		3. 添加块级作用域: 
+		 什么是块级作用域(block): 一个{}程序结构内，也是一个作用域。
+		 比如: for  while   do...while   if...else if...else
+		 问题: js中没有块级作用域，块内的变量会影响外部！
+		 为什么: 将块内的变量限制在内部，不要影响外部
+		 如何: 只要用let声明的变量，仅在当前块内有效
+		 原理: 在块内添加匿名函数自调，来划分临时作用域
+		4. 和for一起使用，可形成闭包!
+		 原理: (function(i){...})(i)
+	2. 参数增强:
+	default: 在定义函数时，为函数参数添加默认值
+		有默认值的参数，在调用函数时，不必赋值
+		强调: 有默认值的参数必须在参数列表的结尾！
+		如何: fun(参数1,......,参数n=默认值)
+	rest: 代替arguments
+	 为什么: arguments的问题:
+		1. 不是数组类型，无法使用数组的API!
+		2. 只能获得全部参数
+	 何时: 只要不确定参数个数时，都用rest代替arguments
+	 如何: 在定义函数时，固定参数之后，的剩余参数位置:  ...数组名
+	spread: 代替apply, 将数组打散为单个元素，分别传入
+	 如何: fn(..., ...数组)
+
+	3. 箭头函数: 省略function
+	 何时: 所有匿名函数和回调函数，都可用箭头函数简写
+	 如何: 去function，改=>
+		 其实可以更简化: 
+			 如果只有一个参数，可省略()
+			 如果函数体只有一句话，可省略{}
+					 如果仅有的一句话还是return，可继续省略return
+	 特点: 箭头函数内外，共用同一个this!
+		
+	4. 模板字符串: 简化复杂字符串拼接: 
+	 今后，只要字符串拼接，都用模板字符串代替+
+	 如何: 
+		整个字符串用``包裹
+		``中支持换行，支持"", ''
+		``中要想执行表达式，只要放在${...}即可
+
+	5. 解构: 简化批量赋值: 
+	 何时: 只要从一个大的对象中，挑选部分属性值使用时
+	 如何: 3种:
+		1. 数组解构: 下标对下标
+			var [变量1,变量2,...]=[值1,值2,...]
+			同时声明多个变量
+			从原数组中对应位置取出值，赋值给相同位置的变量
+		2. 对象解构: 属性对属性
+			var {属性1:变量1, 属性2:变量2,...}={属性1:值1, 属性2:值2,...}
+		3. 参数解构: 
+		 定义时: function ajax({type,url, data, dataType}){
+							type,   url,    data,     dataType
+						}
+		 调用时: 
+			ajax({
+				dataType:"json" 
+			url:"xxx.php", 
+			})
+		 何时: 今后，只要参数是否有值，或顺序都不确定
+
+	6. for of: 简化普通for循环
+	 何时: 只要依次获取数组/类数组对象中每个元素时
+	 如何: for(var 变量 of 数组/类数组对象){
+					变量会自动获得数组/类数组对象中每个元素
+				}
+	 局限: 
+		1. 只能获得元素内容，无法获得位置！
+		2. 只能完整遍历，无法选择
+		3. 只能遍历数字下标的数组或类数组对象, 无法遍历关联数组和对象（用for in遍历）
+
+	7. class:
+	 封装: 
+	 class类型名{
+		 constructor(){
+			this.xx=xx;
+			this.xx=xx;
+		 }
+		 方法名(){
+		 }
+		 方法名(){
+		 }
+	 }
+	 强调: class中构造函数和各个方法之间不用逗号分隔
+	 继承:
+		class Father{
+			constructor(){...}
+		}
+		class Child extends Father{
+		constructor(){
+				super(属性参数...)
+			}
+		}
+	 静态: static 不需要创建子对象，就可用构造函数直接调用的方法。
+		如何: 
+			class 类型名{
+				static 方法名(){...}
+			}
+		 调用: 
+			类型名.方法名()
+
+	 访问器属性:
+		class 类型名{
+			constructor(参数){
+				this.访问器属性=参数
+			}
+			//prototype
+			get 访问器属性(){ return this.数据属性}
+			set 访问器属性(val){ if(判断条件) this.数据属性=val}
+		}
+
+	8. Promise: 解决: 回调地狱
+	 什么是callback hell: 由于使用参数传递回调函数，导致步骤多时，参数的嵌套层级很深。
+	 何时: 只要异步调用，可能发生延迟时，都要用Promise代替传统参数callback
+	 如何: 定义时 
+				function 第一件事(){
+					return new Promise(fn=>{
+						第一件事的内容
+						fn()
+					})
+				}
+				function 第二件事(){
+					return new Promise(fn=>{
+						第二件事的内容
+						fn()
+					})
+				}
+				function 第三件事(){
+					第三件事的内容
+				}
+		 调用时:
+			第一件事()//return Promise(fn)
+				.then(第二件事)//return Promise(fn)
+				.then(第三件事)
+day39
+		复习:
+	1. 将类数组对象复制为数组:
+		var arr2=Array.prototype.slice.call(arguments)
+		将类数组对象复制为数组，并选取指定位置的剩余元素
+		var arr2= Array.prototype.slice.call(arguments,starti)
+						相当于arguments.slice(starti)
+		其实更简单的: var arr2= [].slice.call(arguments,starti)
+	2. promise中的错误处理:
+		其实: new Promise(可接收2件事)
+							.then(   )  .catch(    )
+		 new Promise((正常函数,出错函数)=>{
+			 如果顺利执行:
+				 调用正常()
+			 否则
+				 调用出错()
+		 })
+	3. 等待多个任务完成
+	 前提: 每个任务都必须都返回Promise
+	 如何: Promise.all([
+					task1(), task2(),...
+				]).then(()=>{所有任务完成后才执行的任务})
+
+	正课:
+	1. 什么是DOM
+	2. DOM Tree
+	3. 查找
+
+	1. 什么是DOM: Document Object Model
+	 什么是: 专门操作网页内容的API标准——w3c
+	 为什么: 统一不同浏览器操作网页内容的API标准
+		 优点: 几乎所有浏览器100%兼容
+	2. DOM Tree: 
+	 什么是: 网页中所有内容在内存中都是保存在一棵树形结构中
+		网页中每项内容(元素,文本,属性,注释...)，都是树上的一个节点对象。
+		唯一的树根节点: document
+	 为什么: 树形结构是最好的保存上下级包含关系的结构
+
+	 节点对象: Node
+		网页中每项内容都是DOM树上的一个节点对象:
+		所有节点都有的三个属性: 
+		 nodeType: 节点类型
+			何时: 只要判断节点的类型时
+			包括: 
+				document  9
+				element    1
+				attribute   2
+				text       3
+			问题: 无法进一步区分元素的标签名
+		 nodeName: 节点名称
+			何时: 只要进一步判断元素的标签名时
+			——可代替nodeType
+			包括:
+			 document   #document
+			 element     全大写标签名
+			 attribute     属性名——不常用!
+			 text        #text
+		 nodeValue: 节点值 ——不常用
+			 document  null
+			 element    null
+			 attribute   属性值
+			 text       文本内容
+
+	3. ***查找: 4种:
+	 1. 不需要查找可直接获得节点:
+		document.documentElement    html
+		document.head               head
+		document.body               body
+		document.forms[id/i]          form
+	 2. 按节点间关系查找:
+		何时: 如果已经获得一个节点了。想找周围节点时。
+		包括: 2种树:
+		1. 节点树: 包含网页中所有内容的完整树结构
+		 2大类关系:
+		 1. 父子: 4种:
+			elem.parentNode  elem的父节点
+			elem.childNodes   elem的直接子节点
+			elem.firstChild     elem下的第一个直接子节点
+			elem.lastChild     elem下的最后一个直接子节点
+		 2. 兄弟: 2种:
+			elem.previousSibling  elem的前一个兄弟元素
+			elem.nextSibling      elem的后一个兄弟元素
+		问题: 受看不见的空字符的干扰!
+		2. 元素树: 仅包含元素节点的树结构
+		 2大类关系:
+		 1. 父子: 4种:
+			elem.parentElement  elem的父元素
+			elem.children       elem的直接子元素
+			elem.firstElementChild     elem下的第一个直接子元素
+			elem.lastElementChild     elem下的最后一个直接子元素
+		 2. 兄弟: 2种:
+			elem.previousElementSibling  elem的前一个兄弟元素
+			elem.nextElementSibling      elem的后一个兄弟元素
+	 今后只要用DOM操作网页内容，都用元素树
+	 说明: 元素树不是一棵新树，其实只是节点树的一个子集
+	 
+	 childNodes和children: 动态集合(live collection)
+		什么是: 不实际存储属性值，每次访问集合都重新查找DOM树
+		优: 首次查找，效率高!  因为不用返回完整的属性。
+		缺: 每次访问集合，都会重新查找DOM树，降低效率
+		遍历: 
+		 不好: for(var i=0;i<children.length;i++){...}
+		 好: for(var i=0,len=children.length;i<len;i++){...}
+	 
+	 遍历指定父元素下的所有后代元素: 2种:
+		1. 递归: 2步:
+		 1. 定义函数仅遍历指定父元素下的所有直接子元素
+		 2. 对每个直接子节点调用和父节点完全相同的操作
+		 深度优先: 当一个节点同时拥有子节点和兄弟节点时，总是优先遍历子节点。所有子节点遍历完，才返回遍历兄弟节点。
+		2. 循环: 2步:
+		 1. 定义迭代器:
+			 迭代器: 可以依次获得每个后代元素节点的 专门对象
+			 如何: 
+				创建: var iterator=document.createNodeIterator(
+					parent, NodeFilter.SHOW_ELEMENT, null, false
+				);
+		 2. 循环调用迭代器，获得下一个节点对象:
+			 var curr=iterator.nextNode()
+			 内置深度优先遍历的算法
+			 如果curr返回null，说明遍历结束
+		 
+		3. 按HTML查找: 4种: 
+		 1. 按id查找:
+			var elem=document.getElementById("id")
+			返回值: 一个元素
+				如果找不到返回null!
+			强调: 1. 只能在document上调用
+		 2. 按标签名查找:
+			var elems=parent.getElementsByTagName("标签名")
+			返回值: 多个元素的集合
+				如果找不到返回空集合
+			强调: 1. 可在任意父元素上调用
+					 2. 不但找直接子元素，且在所有后代中查找
+		 3. 按name查找:
+			var elems=document.getElementsByName("name")
+			返回值: 多个元素的集合
+				如果找不到返回空集合
+			强调: 只能在document上调用
+		 4. 按class查找:
+			var elems=parent.getElementsByClassName("class")
+			返回值: 多个元素的集合
+				如果找不到返回空集合
+			强调: 1. 可在任意父元素上调用
+					 2. 不但找直接子元素，且在所有后代中查找
+					 3. 只要元素的一个class名匹配，就能找到该元素
+		强调: 返回的集合都是动态集合
+		问题: 每次只能按一个条件查找
+				 当查找条件复杂时，步骤很繁琐
+		解决: 用选择器查找:
+		4. 用选择器查找:
+		 1. 仅查找一个符合条件的:
+			var elem=parent.querySelector("选择器")
+			返回值: 一个元素
+				如果找不到,返回null
+		 2. 查找多个符合条件的元素: 
+			var elems=parent.querySelectorAll("选择器")
+			返回值: 多个元素的集合
+				如果找不到返回空集合
+				返回非动态集合: 实际存储属性值，即使反复访问集合，也不会导致反复查找DOM树
+			强调: 1. 可在任何父元素上调用
+					 2. 选择器只要相对于当前父元素内部即可
+					 3. 选择器的兼容性，受制于当前浏览器的兼容性
+		鄙视: 按HTML查找和按选择器查找的差别:
+			1. 返回值: 按HTML查找返回动态集合
+								按选择器查找返回非动态集合
+			2. 效率: 首次查找: 按HTML查找效率高
+											 按选择器查找效率低
+			3. 易用性: 按HTML查找繁琐
+								按选择器查找简单
+		总结: 今后，只要一个条件即可找到想要的元素，首选按HTML查找
+					只要查找条件复杂，都选按选择器查找
+		jQuery中就是这么选择的
+
+	4. 修改: 
+	 内容: 3种:
+		1. html代码片段: elem.innerHTML  没有兼容性问题
+		2. 纯文本内容: elem.textContent  有兼容性问题
+			1. 去掉内嵌的标签
+			2. 翻译转义字符为正文
+		3. 表单元素的值: elem.value
+	 属性: 
+	 样式: 
+
+	DOM操作基本步骤:
+	 0. 构建DOM树
+	 1. 查找触发事件的元素
+	 2. 绑定事件
+	 3. 在事件处理函数中，查找要修改的元素
+	 4. 修改元素(内容,属性,样式)
+day40
+	正课：
+	1. 修改:
+	2. 添加/删除:
+
+	1. 修改: 
+	 内容: .innerHTML  .textContent  .value
+	 属性: 3种:
+		1. HTML标准属性: 2种:
+		 1. 核心DOM: 最初的DOM API，要求支持所有结构化文档
+				优: 几乎万能   缺: 繁琐
+			 获取属性节点: var attrNode=elem.attributes[i]
+			 获取属性值: attrNode.value
+				 其实可以一步: var value=elem.getAttribute("属性名")
+			 修改属性值: elem.setAttribute("属性名","值")
+			 移除属性: elem.removeAttribute("属性名")
+			 判断是否包含指定属性: elem.hasAttribute("属性名")
+		 2. HTML DOM: 专门操作HTML内容的API
+									对核心DOM 常用API的简化
+			 优: 简单   缺: 不是万能
+			 简化: HTML DOM提前将所有标准属性，封装在了元素对象上，可用.直接访问.
+				比如:
+			获取属性值: elem.属性名
+					修改属性值: elem.属性名="值"
+				移除属性: elem.属性名=""
+				判断是否包含指定属性: elem.属性名!==""
+			 特例: class属性: 
+				 ES的对象中已经先入为主的包含了内部属性class，用来记录对象创建时的类型名。
+				 HTML的class属性就无法同时存在
+			 所以: DOM: html的class属性，更名为className
+		2. 状态属性: disabled  selected  checked
+		 1. 不能用核心DOM修改: 因为值是bool类型
+		 2. 只能用HTML DOM,打.修改
+		3. 自定义扩展属性: 
+		 何时: 2种: 
+			 1. 在元素上保存自定义数据
+			 2. 代替其他选择器，用来查找元素绑定事件
+		 如何: 2套:
+			 不能用HTML DOM访问, 因为不是标准属性，未被提前封装在DOM元素对象中
+			 1. 普通属性名+核心DOM
+			 2. HTML5: 
+				定义属性时: data-属性名="值"
+				获取或修改属性值: elem.dataset.属性名
+		 固定用法: 用自定义扩展属性代替其它选择器，为元素绑定事件
+			 为什么: 
+				 id: 唯一
+				 class: 经常变化
+				 elem: 做一种效果，可能使用任何元素
+			 解决: 今后，只要给元素绑定事件时，都要先为元素添加自定义扩展属性，再用自定义扩展属性查找元素，绑定事件
+				优: 没有个数限制, 不会受样式影响而变化，不受元素限制
+			 如何: 
+				定义: data-属性名="值"
+				查找: 只能用属性选择器查找:[data-属性名=值]
+	 样式: 2种:
+		1. 内联样式:
+			修改: elem.style.css属性名
+			 强调: 1. css属性名都要去横线变驼峰
+						2.长度数值必须加px单位
+			获取: 
+			 问题: 不能用elem.style.css属性名
+			 原因: elem.style仅包含内联样式! 无法获得内部或外部样式表中的样式
+			 解决: 获取计算后的样式!
+				计算后的样式: 最终应用到元素上的所有样式的集合
+											且将相对值换算为绝对值
+				何时: 只要获取样式时，都要获取计算后的样式
+				如何: 2步:
+					1. 获得计算后的style对象:
+						var style=getComputedStyle(elem);
+					2. 从style中获得css属性值
+						var value=style.css属性值
+				强调: getComputedStyle获得样式都是只读！
+		2. 内部/外部: 3步:
+		 1. 获得样式表对象:
+			 var sheet=document.styleSheets[i];
+		 2. 获得样式表对象中的cssRule
+			 什么是cssRule: 样式表中每个{}就是一个cssRule
+			 如何获得: var rule=sheet.cssRules[i]
+		 3. 获得cssRule中的style对象的css属性
+			 var value=rule.style.css属性
+	 问题: 用elem.style.css属性一句话只能修改一个css属性
+			 如果同时修改多个属性，代码会很繁琐
+	 解决: 用class批量应用样式
+		如何: 2步:
+		 1. 在css中准备好各种class
+		 2. 用程序，在对应情况下，选择对应的class应用！
+
+	2. 添加/删除:
+	 添加: 3步:
+		1. 创建空元素
+		 var a=document.createElement("a");
+		 <a></a>
+		2. 设置必要属性
+		 a.href="http://tmooc.cn";
+		 a.innerHTML="go to tmooc";
+		3. 将新元素添加到DOM树:3种api:
+		 parent.appendChild(a) 将a追加到指定父元素下末尾
+		 parent.insertBefore(a, child) 将a插入到指定父元素下的现有子元素之前
+		 parent.replaceChild(a, child) 用a替换指定父元素下的现有子元素
+		
+	优化: 尽量减少操作DOM树的次数, 从而减少重排重绘
+	 为什么: 
+		HTML页面加载过程:
+		 html -> DOM Tree
+						 ↓
+						Render Tree -> ***layout -> paint
+						 ↑
+		 css -> cssRules
+	 如何: 
+		1. 如果同时添加父元素和子元素时，应先在内存中，将所有子元素添加到父元素中，再最后一次性将父元素添加到页面上
+		2. ?
+day41
+	正课:
+	1. 添加/删除:
+	2. HTML DOM 常用对象
+	3. BOM
+	 window
+	 打开关闭窗口
+	 history
+	 location
+	 定时器
+	 navigator
+
+	1. 添加删除:
+	 优化: 尽量减少操作DOM树的次数
+		为什么: 减少重排重绘
+		如何: 2种:
+		 1. 如果同时添加父元素和子元素，则应该现在内存中，将子元素添加到父元素，再最后将父元素一次性整体添加到DOM Tree
+		 2. 如果父元素已经在页面上了，要添加多个平级子元素，则应该使用文档片段:
+			什么是文档片段: 内存中临时存储多个子元素的虚拟父元素
+			何时: 只要向网页中同时添加多个平级子元素时，都可用文档片段
+			如何: 3步:
+			 1. 创建文档判断
+			 2. 将子元素添加到文档片段
+			 3. 将文档片段整体添加到DOM 树
+
+	删除: parent.removeChild(child)
+			通常: child.parentNode.removeChild(child)
+
+	2. HTML DOM常用对象:
+	 Image: 创建: var img=new Image();
+
+	 Select: 代表页面上一个select元素
+		属性: 
+		 .selectedIndex 获得当前select选中的option的下标位置
+		 .value 获得select中选中的option的值
+						如果选中的option没有value属性，则用innerHTML代替
+		 .options 获得当前select下所有option的集合
+			 .options.length 获得select下所有option的个数
+				.options.length=0
+		 .length => .options.length
+			 清空所有option  .length=0
+		方法: .add(option) 追加一个option
+					问题: .add不支持文档片段
+				.remove(i) 移除i位置的option
+
+	 Option: 代表select下一个option元素
+		创建: var opt=new Option(text,value)
+		属性: .text   .value  .index
+
+	 Table: 代表一个table元素
+		管着行分组:
+		 创建行分组: var thead=table.createTHead()
+								var tbody=table.createTBody()
+								var tfoot=table.createTFoot()
+		 删除行分组: table.deleteTHead()
+								table.deleteTFoot()
+		 获取行分组: table.tHead   table.tFoot   table.tBodies[i]
+	 行分组: 管着行:
+		 添加行: var tr=行分组.insertRow(i)
+				 在i位置插入一个新行
+				 固定套路: 1. 在末尾追加新行: .insertRow()
+									2. 在开头插入新行: .insertRow(0)
+		 删除行: 行分组.deleteRow(i) ——不常用!
+					问题: i要求是在当前行分组内的相对下标位置
+							 无法自动获得
+					应换为: table.deleteRow(tr.rowIndex)
+					 tr.rowIndex可自动获得当前行在整个table内的位置
+		 获取行: 行分组.rows[i]
+	 行: 管着格
+		添加格: var td=tr.insertCell(i)
+			固定用法: 行末尾追加一个格: tr.insertCell()
+			说明: 只能创建td，不能创建th
+		删除格: tr.deleteCell(i)
+		获取格: tr.cells[i]
+
+	 Form: 代表一个form元素
+		获取: var form=document.forms[i/id]
+		属性: .elements 获得表单中所有表单元素的集合
+					 .elements.length  获得表单中，表单元素的个数
+				 .length => .elements.length
+		方法: .submit() 代替submit按钮，在程序中实现手动提交表单
+
+	 表单元素: 
+		获取: form.elements[i/id/name]
+					更简化: form.name
+		方法: .focus 让当前表单元素获得焦点
+				 .blur
+
+	3. BOM: Browser Object Model
+	 什么是: 专门操作浏览器窗口的API
+		 没有标准, 导致浏览器兼容性问题
+	 包括: 
+		window: 2个角色: 
+		 1. 代替global充当全局作用域对象
+		 2. 封装所有DOM和BOM的API
+		history:
+		location:
+		navigator:
+		document: 封装DOM树，并提供操作DOM的API
+		event
+		screen
+
+	window: 
+	 属性: .innerWidth,  .innerHeight 浏览器窗口中，文档显示区的宽和高
+	 方法: .open()  .close()
+		.open("url","name")
+		 三种: 1. 在当前窗口打开，可后退: .open("url","_self")
+					2. 在新窗口打开，可打开多个: .open("url","_blank")
+					3. 在新窗口打开，只能打开一个: 
+						.open("url","自定义窗口名")
+
+	history: 保存当前窗口打开后，成功访问过的url的历史记录栈
+	 在当前窗口中，每访问一个新url，都会将新url压入history
+	 API: history.go(n)
+		3种: 前进: history.go(1)  后退: history.go(-1)  
+				 刷新: history.go(0)
+	location: 保存当前窗口正在打开的url的对象
+	 属性: 
+		.href 完整url地址
+		.protocol 协议
+		.host 主机名+端口号
+		.hostname  主机名
+		.port  端口号
+		.pathname 相对路径
+		.hash  #锚点地址
+		.search  ?查询字符串
+	 方法: 
+		1. 在当前窗口打开，可后退:
+			location.assign(url) => location.href=url  => location=url
+		2. 在当前窗口打开，禁止后退:
+			location.replace(url) 
+		3. 重新加载页面: 刷新: 2种:
+		 1. 普通刷新:
+			优先从浏览器本地缓冲获取资源:
+			 F5
+			 history.go(0)
+			 location.reload(/*false*/)
+		 2. 强制刷新:
+			无论本地是否有缓存，总是强制从服务器获取资源
+			 location.reload(true)
+
+	定时器: 2种:
+	 1. 周期性定时器:
+		什么是: 让程序每隔指定的时间间隔，反复执行一项任务
+		何时: 只要让程序按照指定的时间间隔，自动执行一项任务
+		如何: 3件事:
+		 1. 任务函数: 让定时器反复执行的任务
+		 2. 启动定时器: timer=setInterval(task, interval)
+			 让程序，每隔interval 毫秒自动执行一次task任务
+		 3. 停止定时器: clearInterval(timer)
+			 timer: 定时器的序号, 在内存中唯一标识定时器的整数
+				专门用于停止定时器
+				如何获得: 只能在启动定时器时获得。
+				何时: 只要一个定时器可能被停止，就要在启动时，先保存定时器序号
+				好的习惯: 在clearInterval之后，手动清除timer中残留的序号: timer=null;
+		 停止定时器: 2种情况:
+			1. 用户手动停止:
+			2. 定时器可自动停止: 
+				在任务函数中，设定临界值，如果没有达到临界值，则继续执行任务，否则，如果达到临界值，就自动调用clearInterval
+	 2. 一次性定时器: 
+		什么是: 让程序先等待一段时间，再执行一次任务。执行后，自动停止。
+		何时: 只要让程序延迟执行一件事时
+		如何: 3件事:
+		 1. task
+		 2. 启动定时器: timer=setTimeout(task,wait)
+			 让程序等待wait毫秒后，自动执行一次task，执行后自动停止
+		 3. 停止定时器: clearTimeout(timer)
+day42
+	正课: 
+	1. 定时器原理:
+	2. navigator:
+	3. event:
+	4. 页面滚动:
+	附加: 对话框特效
+
+	1. 定时器原理:
+	 定时器中的任务函数，必须等待主程序所有语句执行后，才能执行。
+	2. navigator:
+	 什么是: 保存浏览器配置信息的对象
+	 包括: 
+		.cookieEnabled: 判断当前浏览器是否启用cookie
+		 什么是cookie: 在客户端持久存储用户私密数据的小文件
+			为什么: 内存中所有数据都是临时的! 程序关闭，内存中一切变量都释放!
+			何时: 只要希望在客户端持久保存数据，都用cookie
+		.plugins: 包含浏览器所有插件信息的集合
+		 什么是插件: 为浏览器添加新功能的小软件
+			如何判断是否安装指定插件: 
+		.userAgent: 保存浏览器名称和版本号的字符串
+		 何时: 只要判断浏览器名称和版本号
+
+	4. event: 
+	 什么是事件: 人为触发的，或浏览器自动触发的页面内容状态的改变。
+	 什么是事件处理函数: 当事件发生时，自动执行的函数。
+	 如何绑定: 3种: 
+		1. 在HTML中绑定: 
+		 绑定: <ANY on事件名="js语句">
+		 当事件发生时: 自动执行js语句
+		 问题: 不符合内容与行为分离的原则，不便于维护和重用
+		 但是: 在组件开发中，反而要求内容，行为和样式集中定义在一个小组件内，自成体系。
+		2. 在js中绑定, 每个事件只能绑定一个处理函数: 
+		 ANY.on事件名=function(){ ... }
+		 当事件发生时: ANY.on事件名() //this->ANY
+		 问题: 用赋值方式绑定事件处理函数
+		3. 在js中绑定，每个事件可绑定多个处理函数:
+		 ANY.addEventListener('事件名',handler)
+			在浏览器中为ANY元素的指定事件，添加一个事件监听对象。将事件监听对象加入到浏览器的监听队列中。
+			触发事件时: 浏览器会遍历监听队列中的每个监听对象，找到触发事件元素上对应事件的监听对象，调用其处理函数
+		 移除事件监听:
+		 ANY.removeEventListener('事件名',handler)
+		 说明: handler必须是绑定时使用的原函数对象
+		 强调: 如果一个处理函数，有可能被移除，则不能使用匿名函数绑定。应使用有名的函数绑定
+
+	 DOM事件模型: 
+		什么是: 从事件触发到处理函数执行，所经过的过程
+		3个阶段: 
+		 1. 捕获capture: 由外向内，记录各级父元素上绑定的事件处理函数。——仅记录，不触发!
+		 2. 目标触发: 优先触发实际点击的元素上绑定的处理函数
+		 3. 冒泡执行: 由内向外，按捕获阶段记录的处理函数的倒序，依次执行父元素上的处理函数。
+
+	 事件对象: 
+		什么是: 当事件发生时，自动创建的，封装事件信息的对象
+		何时: 只要希望获得事件信息，或修改事件的默认行为时
+		如何获取: 事件对象默认总是以处理函数第一个参数，自动传入
+		如何使用: 
+		 1. 取消冒泡: e.stopPropagation()
+		 2. 利用冒泡: 
+			优化: 尽量减少事件监听的个数
+			 为什么: 浏览器查找事件监听，采用的是遍历的方式
+							事件监听多，浏览器查找就慢
+			 何时: 如果对多个子元素绑定相同事件时，都要利用冒泡
+			 如何: 只要在父元素绑定一次，所有子元素共用即可!
+				2个难题: 
+				 1. 获得目标元素:
+					 目标元素: 最初实际触发事件的当前元素
+					 如何获得: 
+						错误: this->父元素
+						正确: e.target
+				 2. 筛选目标元素:
+					 比如: 通过nodeName, class, 内容。。。
+		 3. 阻止默认行为: 
+			何时: 只要事件的默认行为不是想要的
+			如何:  e.preventDefault();
+			何时: 
+			 1. 用a当按钮时，a会自动向地址栏中添加#锚点地址。
+			 2. 提交表单时，如果验证没通过，可阻止提交
+				自定义表单提交: 
+				 input button + onclick + form.submit
+				 input submit + form.onsubmit事件 + e.preventDefault()
+			 3. HTML5中拖拽API: 首先要阻止浏览器默认的拖拽行为
+		 4. 鼠标坐标: 3组:
+			1. 相对于屏幕左上角: e.screenX,  e.screenY
+			2. 相对于文档显示区左上角: e.clientX,  e.clientY
+			3. 相对于当前元素左上角:  e.offsetX,   e.offsetY
+
+	4. 页面滚动: 
+	 事件: window.onscroll
+		获得页面滚动过的高度: body顶部超出文档显示区顶部的距离
+			scrollTop=document.documentElement.scrollTop
+							||document.body.scrollTop;
+	 滚动API: 
+		window.scrollTo(left, top)
+		window.scrollBy(left的增量,top的增量)
+day45
+	正课:
+	1. 什么是jQuery
+	2. 如何使用jQuery
+	3. 查找
+
+	1. 什么是jQuery
+	 第三方的 执行DOM操作的 极简化的 函数库
+	 第三方: 下载
+	 执行DOM操作: 学习jQuery还是在学DOM
+	 极简化: 对DOM操作的终极简化
+	 函数库: jQuery用函数解决一切问题，不再使用属性方式
+
+	 为什么: 2个原因:
+		1. 是DOM操作的终极简化: 4个方面
+		 1. 增删改查
+		 2. 事件绑定
+		 3. 动画
+		 4. ajax
+		2. 解决了大部分浏览器兼容性问题:
+		 凡是jQuery允许使用的，都没有浏览器兼容性问题
+		
+	2. 如何使用:
+	 3步: 
+		1. 上官网，看是什么
+		2. 上官网，看快速入门案例
+		3. 看手册
+	 下载: 版本: 
+		1.x: 兼容旧版本浏览器，体积稍大
+			压缩: .min.js 删除所有注释和缩进，且极简化变量名
+					体积小, 可读性差 —— 生产环境中
+			未压缩: .js 具有完备的注释和缩进，且具有见名知义的变量名
+					体积大，可读性好 —— 开发环境中
+		2.x: 不再兼容旧浏览器，体积变小
+		3.x: 不再兼容旧浏览器，且功能更强大: 
+		 新特性: 
+			1. for...of...代替each
+			2. requestAnimationFrame()
+			3. 支持Promise
+			4. 废弃bind, unbind, delegate, undelegate
+			5. 所有代码运行在严格模式下
+	 在网页中加载jquery: 2种:
+		1. 将jQuery.js下载到网站本地文件夹，用相对路径加载
+		2. CDN网络: 
+		 内容分发网络: 根据客户端到网络中一台服务器的网络状况，自动选择最优的服务器下载资源。
+		 何时: 生产环境中，共享的库/框架
+		 如何: 不用下载资源到本地服务器
+					而是直接使用CDN地址，引用网络中的资源
+		强调: 都要先引入jQuery.js，再编写自定义js脚本
+
+	 原理: 引入jQuery.js后，发生了什么:
+		jQuery.js向全局添加了一种新类型jQuery:
+		 1. 构造函数: 用来创建jQuery类型的子对象
+		 2. 原型对象: 用来保存所有jQuery类型的子对象共有的成员方法
+		要想使用jQuery简化版API，必须先创建jQuery类型的子对象。
+		为什么: 普通DOM对象不是jQuery类型的子对象，无法使用jQuery原型中的简化版API
+		如何创建: 3种:
+		 1. 用选择器查找DOM元素，再将找到的DOM元素保存到新创建的jQuery对象中
+			 var jQuery对象=jQuery("selector")
+				1. 用选择器查找符合条件的DOM元素
+				2. 将找到的DOM元素保存到新创建的jQuery对象中
+		 2. 直接将已经到手的DOM元素封装到新建的jQuery对象中
+			var jQuery对象=$(DOM对象);
+
+	 总结: 专门封装找到的DOM对象的类数组对象
+
+	jQuery API三大特性:
+	 1. 一个函数两用: 没给新值，默认读取原值
+									 给了新值，则变为修改操作
+	 2. 自带遍历效果: 对整个jQuery类数组对象调用简化版API，等效于自动对jQuery对象中每个DOM对象分别调用简化版API
+
+	3. 查找: 
+	1. 按选择器查找: 
+	 jQuery支持全部css的选择器, 且额外增加了个别选择器
+	 基本选择器: 同CSS
+	 层次选择器: 同CSS
+	 子元素过滤选择器: 同CSS
+	 基本过滤选择器(位置过滤):  jQuery中新增
+		:first/last    :eq/gt/lt(i)  :even/odd
+	 属性过滤: 同CSS
+	 可见性:   :hidden   :visible
+
+	var bool=$(...).is("selector")
+	 判断任意元素是否符合selector的要求！
+day46
+	正课:
+	1. 查找
+	2. 修改
+	3. 按节点间关系查找
+	4. 添加/删除/替换/克隆
+	5. 事件绑定
+
+	jQuery API三大特性:
+	 1. 一个函数两用: 没给新值，默认读取原值
+									 给了新值，则变为修改操作
+	 2. 自带遍历效果: 对整个jQuery类数组对象调用简化版API，等效于自动对jQuery对象中每个DOM对象分别调用简化版API
+	 3. 大多数API都返回正在操作的jQuery对象本身
+
+	1. 查找:
+	 内容过滤: jQuery新增:
+		:contains(文本) 以元素的文本内容作为筛选条件
+		:has(选择器) 以元素的子元素特征作为筛选条件
+		:parent 非空的元素
+		:empty 空元素
+	 可见性过滤:
+		:hidden 选择所有隐藏的元素
+		 只能选择: display:none   input type="hidden"
+		:visible
+	 表单元素过滤: 
+		 :input 选择所有表单元素,包括:input select textarea button
+		 :type: 每种type都有对应的选择器:
+			 :text  :password  :checkbox  :radio   :submit ...
+	 状态过滤: :disabled  :checked  :selected  :enabled
+	2. 修改:
+	 内容: 
+		HTML代码片段: $(...).html()      .innerHTML
+		纯文本内容: $(...).text()          .textContent
+		表单元素的内容: $(...).val()       .value
+		清空内容: $(...).empty()
+	 属性: 
+		HTML标准属性: $(...).attr("标准属性名"[,"值"])
+			$(...).attr({
+				标准属性:值,
+				标准属性:值,
+			})
+		状态属性: $(...).prop("状态属性"[,bool])
+		自定义扩展属性: 
+			$(...).data("属性名",值)        .dataset.属性名
+	 样式: 
+		1. 获取或修改内联样式: $(...).css("css属性名",值)
+			问题: 一次只能修改一个css属性的值
+			解决: 1. 链式操作: 
+				2. 一个css同时修改多个css属性:
+				 $(...).css({
+					 css属性名:值,
+					 css属性名:值,
+				 })
+			强调: .css()在修改时，自动修改内联样式
+							 在获取时，自动获取计算后的样式
+		2. 用class批量应用样式:
+		 $(...).addClass("...")
+		 $(...).removeClass("...")
+		 $(...).hasClass("...")
+
+		 $(...).toggleClass("...")
+			等效于: 
+					if($btn.hasClass("down"))
+				$btn.removeClass("down")
+			else
+				$btn.addClass("down");
+	3. 按节点间关系查找: 
+	 1. 父子:
+		$(...).parent()
+		$(...).children(["selector"])
+		 $(...).find("selector")
+		$(...).children().first()   .firstElementChild
+		$(...).children().last()   .lastElementChild
+	 2. 兄弟: 
+		$(...).next()
+			$(...).nextAll()
+		$(...).prev()
+			$(...).prevAll()
+		$(...).siblings(["selector"])
+
+	$(...).index() 查找任意元素在当前父元素下的下标位置
+
+	4. 添加/删除/替换/克隆
+	添加: 
+	 1. 用HTML代码片段创建新元素:
+		var $a=$("<a href='url'>text</a>");
+	 2. 将新元素添加到DOM树
+		末尾追加
+		$parent.append($a) //return $parent
+		$a.appendTo($parent) //return $a
+		开头插入
+		$parent.prepend($a) 
+		$a.prependTo($parent)
+		在当前元素前后插入
+		$child.after($a)  将a插入到child之后
+		$child.before($a) 将a插入到child之前
+
+	删除: $().remove()
+	替换:
+	 $(旧).replaceWith($新) //return $旧
+	 $新.replaceAll(旧)  //return $新
+	克隆:
+	 $().clone() 浅克隆: 仅克隆属性和样式，不克隆行为
+	 $().clone(true)  深克隆: 即克隆属性和样式，又克隆行为
+
+	jQuery中$的原理: 举例说明，你阅读过的常用库/框架的代码部分
+	 $是一个工厂函数, 内部自动new jQuery创建jQuery类型的子对象.
+	 3种情况: 
+		1. 参数为选择器时:
+		 先查找DOM元素，再将找到的DOM元素保存在新创建的jQuery对象中
+			优化(Speed-up): 
+				1. 如果选择器是id，则自动调用getElementById
+				2. 如果选择器是标签名,则自动调用getElementsByTagName
+				3. 如果选择器是class,则自动调用getElementsByClassName
+				4. 如果选择器复杂，自动调用querySelectorAll
+		2. 参数为DOM元素:
+		 直接将DOM元素保存到新创建的jQuery对象中
+		3. 参数为HTML代码片段:
+		 用html代码片段创建一个/多个新DOM元素，再将创建的DOM元素保存到新创建的jQuery对象中
+	4.参数为function时
+
+	5. 事件绑定: 
+	 jQuery中共有几种事件绑定方式，有什么不同: 
+	 1. bind/unbind() 代替addEventListener/removeEventListener
+		 unbind() 三种重载: 
+			unbind("事件名",处理函数): 移除当前元素指定事件上的一个指定的处理函数
+			unbind("事件名"): 移除当前元素指定事件上所有处理函数
+			unbind(): 移除当前元素上所有事件的处理函数
+	 2. one() 只触发一次，触发后自动解绑
+	 3. live/die() 已被废弃, 将所有元素的所有事件处理函数，都集中绑定在document根节点上
+	 4. delegate/undelegate() 其实就是利用冒泡
+		$parent.delegate("selector","事件名",function(){
+			this->e.target->目标元素
+		执行操作!
+		})
+		鄙视: 简述jQuery中事件委托的原理
+		$parent.bind("事件名",e=>{
+			e.target->目标元素
+			if($(e.target).is(selector))
+			执行操作!
+		})
+		总结: bind vs delegate(利用冒泡)
+		 1. 绑定位置: bind直接绑在目标元素(子元素上)
+								delegate(利用冒泡) 绑在父元素上
+		 2. 监听个数: bind 监听个数多
+								delegate(利用冒泡) 监听个数少
+		 3. 动态生成子元素:
+				 delegate(利用冒泡) 动态生成的新子元素可自动获得父元素上的事件处理函数
+				 bind  动态生成的新子元素必须反复绑定
+	 5. on/off()
+		on("事件名",处理函数) 代替bind()
+		on("事件名","选择器",处理函数) 代替delegate()
+	 6. 终极简化: 
+		对常用的事件，进行了终极简化:
+		 $(...).事件名(处理函数)
+day47
+	正课:
+	1. 事件:
+	2. 动画:
+	3. 类数组对象操作:
+	4. 添加自定义函数:
+
+	1. 事件: 
+	 1. 页面加载后自动执行: 2种:
+		1. DOMContentLoaded: 仅当dom内容(html和js)加载完就提前触发：
+			$(document).ready(function(){...})
+			简写: $().ready(function(){...})
+				更简化: $(function(){...})  =>  $(()=>{...})
+		2. 等待网页所有内容(html,css,js,图片)加载完成，才触发: 晚
+			window.onload=function(){...}
+	 2. 鼠标事件:
+		mouseover   mouseout : 进出子元素，同样反复触发父元素的处理函数
+		mouseenter  mouseleave : 进出子元素，不再反复触发父元素的处理函数
+		hover等于同时绑定鼠标进入和移出事件
+		 hover(鼠标进入, 鼠标移出)
+			强调: 代替的是: mouseenter和mouseleave
+		 其实可以更简化: 
+			 如果鼠标进入或移出事件，可统一为一个函数，只需要传入一个函数即可。即响应鼠标进入，又响应鼠标移出事件
+
+	 3. 模拟触发: 
+		$(...).事件名() 调用该处理函数
+		 $(...).trigger("事件名") 
+
+	2. 动画: 
+	简单动画: 3种:
+	 1. 显示隐藏: .show()  .hide()   .toggle()
+		 说明: 没有参数时，默认使用display控制显示隐藏，所以，不带动画效果
+		 带动画效果:  .show(ms)
+		 问题: 
+			1. 效率: 用定时器实现的动画效果，效率低
+			2. 效果是写死的，不便于维护
+		 解决: 用transtion 代替 动画API
+	 2. 上滑下滑: .slideUp()   slideDown()  slideToggle()
+	 3. 淡入淡出: .fadeIn()    fadeOut()   fadeToggle()
+	万能动画: 
+	 $(...).animate({
+		 目标样式
+	 },ms)
+	 强调: animate只支持单个数值的属性
+	 问题: 
+		1. 不支持颜色动画
+		2. 用定时器实现的动画效果
+
+	排队和并发: 
+	 并发: 多个css属性同时变化
+		放在一个animate内的多个css属性，是并发变化
+	 排队: 多个动画效果，先后顺序执行
+		对同一个元素，先后调用多个动画API，则默认是排队执行
+	动画结束后自动执行:
+	 $(...).动画API(......, callback)
+		 callback会在动画结束后，自动执行
+		 callback中的this，自动指当前正在播放动画的DOM对象
+	停止动画: 
+	 $(...).stop()
+		问题: 默认仅停止队列中当前正在播放的一个动画!
+		解决: 停止当前动画并清空队列:  .stop(true)
+	选择/判断一个元素是否正在播放动画: 
+	 :animated
+
+	3. 类数组对象操作: 
+	 $(...).each( (i,elem)=>{    .forEach()
+		 elem->当前正在遍历的元素->DOM
+		 对elem执行任何操作
+	 })   
+	 鄙视: $(...).each()  vs   $.each(obj, fn)
+		1. 存储位置: 
+			$(...).each() 保存在jQuery类型的原型对象中
+			$.each()  定义在jQuery构造函数上
+		2. 调用方式: 
+			$(...).each() 只能用jQuery类型的子对象调用
+			$.each()  让任何类数组对象都可享用each
+
+	 $(...).index()    indexOf()
+		$("选择器").index(DOM/jQ)
+		 在左边的结果集合中，找右边的DOM或jQ元素的位置i
+		$("选择器").index("选择器")
+		 在右边的结果集合中，找左边的选择器对应元素的位置i
+		$("选择器").index() 在当前元素的父元素内，找当前元素的位置i
+
+	4. 添加自定义函数:
+	 如果jQuery的API不够用时:
+	 如何添加: 
+		向jQuery.fn中添加新函数=function(){
+			//this->将来调用该函数的jQuery类型的子对象
+		}
+		强调: 向jQuery原型对象中添加新函数，首先要验证是否已经引入了jQuery类型
+day48
+	正课:
+	1. 官方插件:jQuery UI
+	2. 第三方插件: 
+	3. ***封装自定义插件: 
+
+	1. 官方插件:jQuery UI
+	 插件/组件: 具有独立样式和功能的小部件
+		为什么: 复用!
+		何时: 只要在项目中，发现反复使用的功能和样式，都可封装为插件, 反复使用
+	jQuery UI: 
+	强调: jQuery UI依赖于jQuery，必须先引入jQuery，再引入jQuery UI
+	 1. 效果:
+		1. 重写了animate方法，支持颜色动画
+		2. 为简单动画API，提供了更多的动画效果
+		3. 重写了addClass/removeClass/toggleClass，添加了动画效果
+	 2. 交互
+	 3. 部件:
+		用法: 3步: 
+		 1. 按部件的约定，定义HTML内容
+		 2. 引入部件的css, js，应先引入jquery
+		 3. 在自定义脚本中找到部件的父元素，调用部件API
+			 有些API需要设置参数
+		原理: 侵入:
+		 部件按自身的需要，隐式自动向HTML中添加class和行为
+	 1. accordion
+	 2. autocomplete
+	 3. datepicker
+	 4. dialog
+
+	2. 第三方插件:
+	validation:
+	fileUpload:
+	wysiwyg:
+day49
+	正课:
+	1. 第三方插件:
+	 Fileupload
+	 Wysiwyg
+	2. ***封装自定义插件
+	3. Ajax
+	4. *****跨域请求
+
+	1. 第三方插件:
+	 fileupload:
+		1. 普通文件上传:
+		 html: form method=“post” enctype=”multipart/form-data” action=”xxx.php”
+			 单击提交按钮时，已经将文件上传到服务器
+		 php: apache隐式自动将上传的文件，保存在tmp目录下
+	获得文件的基本信息($_FILES[“name”])，验证或保存
+	将tmp目录中临时存储的文件，转储到目标目录下
+		2. ajax上传:
+	$.ajax({
+		type:”post”,
+				url:”xxx.php”,
+		data: new FormData($(“#form”)[0]),
+		contentType:false,
+				processData:false
+	})
+		3. 上传插件:
+
+	 Wysiwyg: 富文本编辑器: rich text editor
+	 
+	 扩展: masonry
+
+	2. 封装自定义插件:
+	 前提: 必须使用HTML，css和js的方式已经实现了插件的效果
+	 如何: 2种:
+		1. jQuery侵入方式: 
+		 如何定义插件: 
+			1. css文件封装插件样式: 
+	2. 提前约定页面的HTML结构
+	3. 在jQuery的原型对象中添加插件函数
+		插件函数中2件事:
+		 1. 侵入class和data-*扩展属性
+		 2. 为拥有data-*扩展属性的元素添加事件
+		 使用插件四步:
+			 引入插件的css: 
+			 定义页面结构: 
+			 引入jquery和插件js
+			 调用方式: $(父元素).插件函数()
+		2. bootstrap方式: 
+		 如何定义插件: 
+		 1. css文件封装插件样式:
+			 2. 提前约定页面的HTML结构
+			 3. 手动添加class和data-*属性
+			 4. 在插件的js文件中，查找data-*属性的元素，绑定事件
+		 使用插件四步: 
+			引入插件的css: 
+	定义页面结构, 选择要用的css样式类
+	为元素添加自定义扩展属性，从而添加行为
+	引入插件的js:
+
+	3. jquery中的ajax: 
+	 $.ajax({
+		type:“get/post”,
+		url:”xxx.php”,
+		data: 查询字符串/对象/new FormData(),
+		dataType: “json” 
+	}).then(data=>{
+		… …
+	})
+	其中:
+	 data: 即支持查询字符串，又支持对象结构
+	dataType: 可省略
+		省略dataType, 则jquery ajax函数可根据服务端header的响应 头设置，自动决定是否调用JSON.parse
+
+	 更简化: 
+	 $.get(“url”[,data]).then()
+		 $.getJSON()
+		 $.getScript()
+	 $.post(“url”[,data]).then()
+
+	 更简化: 获得一段HTML片段，并填充到指定父元素下
+	 $(父元素).load(“url”)
+		 $.get(“url”).then(html=>{ $(html).appendTo($父元素)})
+
+	4. *****跨域请求:
+	 跨域:请求的发起网页地址origin和请求的目标地址不一致:
+		 3种: 协议不同, 一级/二级域名不同, 端口号不同
+	 问题: xhr对象禁止发起跨域请求的
+	 解决: 不是所有元素/对象都禁止跨域
+		link  script   img   iframe … 都支持跨域
+	方法一: script (可加载并执行js脚本)
+		 请服务端返回一条可执行的js语句，填充要返回的数据
+		 用script去请求服务端，获得可执行的js语句
+		 专业名词: JSONP JSON with padding (填充式json)
+		实现一: 将处理数据的语句，直接定义到服务器端
+		缺点: 众口难调
+		实现二: 2步:
+	1.	在客户端提前定义处理函数，接收一个参数
+	2.	将调用函数的语句放在服务器端返回
+		缺点: 函数名写死！
+		实现三: 3步:
+	1.	在客户端提前定义处理函数，接收一个参数
+	2.	将函数名以查询字符串参数的形式传递给服务器端
+	3.	服务器端获得函数名，将其和要返回的数据拼接为一条js语句
+		
+		特殊: 动态发起跨域请求:
+	1.	动态创建script并追加到body结尾, 并将script元素保存在公共的变量中
+	2.	在处理函数结尾，自动删除保存的script元素
+		
+		jQuery中跨域:
+	$.ajax({type:”get”,url:”xxx.php”,datatype:”jsonp”}).then(处理函数！)
+
+	 方法二: 服务器端设置允许跨域
+		其实: 服务器端一句话可解决跨域:
+		 header(“Access-Control-Allow-Origin: * ”)
+day52
+	今天学习的内容
+	chengtao@tedu.cn
+	1:简介课程安排
+	(a)	js/dom/jq 复习
+	(b)	html5(十个新特性 canvas;视频;音频)
+	(c)	bootstrap(响应式布网布框架)
+	(d)	Nodejs(效率)
+	2:html5新特性(十)----(项目后台)
+		(1)新的语义标签
+		(2)增强型表单*
+		(3)音频和视频
+		(4)Canvas绘图
+		(5)SVG绘图
+		(6)地理定位
+		(7)拖动API
+		(8)Web Worker
+		(9)Web Storage
+		(10)Web Socket
+		3增强型表单
+		3.1 新input type <input type=?>
+		 H4:text;checkbox;password;radio;submit;reset;File;
+		 H5:email;url;number;search;color;date;month;week
+		3.2 新的表单元素
+		 H4:input;button;select;textarea
+		 H5:datalist;progress;meter;output
+		3.3:html5新特性---datalist(数据列表)
+	<datalist id=”list3”>        datalist本身不可见
+		<option>xxx</option>
+		<option>yyy</option>
+	</datalist>
+	<input type=”text” list=”list3”/> 
+	datalist为input提供输入建议列表
+
+		3.4: html5新特性---progress(进度条)
+		 <progress></progress>  左右晃动进度条
+		 <progress value=”0.5” /> 具有指定进度值进度条
+
+		 练习:使用定时器+进度条实现一个可以动态前进的进度条,
+	到100%停止.
+		3.4: html5新特性---meter(刻度尺) 
+		 Meter：用于标示一个值所值的范围:不可接受(红色),可以接受(黄色),非常优秀(绿)
+		 薪水: 
+	<meter min=”最小值” max=”最大值” low=”下限” high=”上限”
+	最佳值=”” value=”当前值”>
+	练习:使用定时器+meter实现可以动态变化的刻度尺，观察颜色变化..
+	3.5: html5新特性---output
+	output:输出，语义标签,没有任何外观样式，样式等同于span
+	 商品单价: 3.50
+	 购买数量: <input type=”number” value=”1”>
+	 小计:<output>7.00</output>
+
+	3.6:html5新特性—(表单元素新属性)
+	H4:type;id;value;name;style;readyonly;disabled;checked
+	H5:
+	(1)	placeholder 占位符
+	(2)	autofocus   自动获取输入焦点
+	(3)	multiple    允许输入框中输入多个值，用逗号分值
+	(4)	form       用于把输入域放置在表单外部
+	<form id=”f3”></form>
+	<input type=”text” form=”f3” />
+	(5)	required    必填空
+	(6)	maxlength   字符串最大长度
+	(7)	minlength   字符串最小长度
+	(8)	min        指定数值最小值
+	(9)	max        指定数值最大值
+	(10)	pattern     指定输入内容符合正则表达式
+
+
+		 login.html login.js 
+
+	作业1:  搜索下载 图形验证码功能php程序
+	作业2：分析上传图片功能
+day53
+	今天学习的内容
+	1:复习昨天知识重点
+	2:作业1:
+	学子商城
+	**Canvas项目(鱼妈妈鱼宝宝)
+	**视频项目(回家)
+	3:今天的目标
+		3.1 html5新特性--视频与音频  (重点)
+			 Flash被H5取代
+			 Flash绘图(AS/Flex)         canvas/svg
+			 Flash动画            ->     canvas/svg 定时器
+			 Flash视频和音频播放  ->     video/audio
+			 Flash 客户端存储     ->      webstorage
+	 3.2:H5新特性—视频播放
+		 <video src=”x.mp4”></video>
+		 <video>
+			 <source src=”x.mp4”></source>
+			 <source src=”x.ogg”></source>
+			 <source src=”x.webm”></source>
+			 您的浏览器版本太低，请升级
+		 </video>
+		 它本身是一个300*150的inline-block元素
+			
+	成员属性
+	autoplay 	是否自动播放
+	controls 		是否显示控件
+	muted 		是否静音
+	loop        是否循环播放
+	poster		在播放第一帧画面之前广告(图片)
+	preload		视频加载策略
+		auto:		预加载一定时长视频和元数据
+				metadata:	仅预加载元素数(尺寸，时长，第一帧画面)
+				none:		不加载任何内容
+		 ##js对象属性
+			currentTime  当前播放时长
+			duration     总时长
+			paused:     当前视频是否处理暂停状态
+			volume（0~1）  音量
+	playbackRate: 回放速率:  大于1快播 小于1慢放
+		 #js 成员方法
+	play()     播放视频
+	pause()    暂停视频播放
+		 #js 事件
+	onplay    当视频开始播放触发事件
+	onpause   当视频暂停播放触发事件
+
+	 
+	练习1:不使用video自带控件,自定义播放暂停按钮
+			鼠标移出视频区域隐藏按钮，鼠标移入，显示按钮
+	练习2:视频暂停就显示广告，只要播放广告隐藏
+
+
+		3.3:H5新特性—音频
+		 <audio src=”x.mp3”></audio>
+		 <audio>
+				<source src=”x.mp3” />
+				<source src=”x.wav” />
+		 </audio>
+		 它默认300*30的inline-block元素，但是没有controls属性，
+	 则display:none;
+		 成员属性
+	autoplay 	是否自动播放
+	controls 		是否显示控件
+	muted 		是否静音
+	loop        是否循环播放
+	preload		视频加载策略
+		auto:		预加载一定时长视频和元数据
+				metadata:	仅预加载元素数(尺寸，时长，第一帧画面)
+				none:		不加载任何内容
+		 ##js对象属性
+			currentTime  当前播放时长
+			duration     总时长
+			paused:     当前视频是否处理暂停状态
+			volume（0~1）  音量
+	playbackRate: 回放速率:  大于1快播 小于1慢放
+		 #js 成员方法
+	play()     播放视频
+	pause()    暂停视频播放
+		 #js 事件
+	onplay    当视频开始播放触发事件
+	onpause   当视频暂停播放触发事件
+
+		3.4 html5 新特性—canvas绘图 (重点)
+		网页中的实时走势图,抢红包,网页游戏,地图应用..
+		(1)SVG 绘图    2D矢量绘图技术，2000年出现,后纳入h5
+		(2)Canvas绘图  2D位图绘图技术，H5提出
+		(3)WebGL绘图  3D绘图技术，尚未纳入H5标准
+
+	Canvas绘图难点所在:
+	(1)坐标系
+	(2)单词比较多
+
+		 3.5 html5 新特性—canvas
+		 Canvas画布:画布是H5提供的绘图基础
+		 <canvas width=”500” height=”400”>
+				您的浏览器版本太低，请升级
+		 </canvas>
+		 Canvas标签在浏览器中默认是300*150的inine-block,画布宽度高度属性只能用js/属性来赋值.
+		 不能用CSS样式赋值.
+		 每个画布上有且只有一个”画笔”对象—使用该对象来绘图
+		 var ctx = canvas.getContext(“2d”);  得到画布的画笔对象
+		 
+			
+		 (1)使用canvas绘制矩形(长方形)
+			 矩形定位点在自己左上角
+			 ctx.lineWidth = 1;        描边宽度(边线宽度)
+			 ctx.fillStyle = “#999”;      填充样式
+			 ctx.strokeStyle = “#000”;   描边样式
+			 ctx.fillRect(x,y,w,h);       填充矩形
+			 ctx.strokeRect(x,y,w,h);    描边矩形
+			 ctx.clearRect(x,y,w,h);     清除矩形范围内所有图形
+
+			 练习:左上角 右上角  左下角 右下角 居中
+			 绘制5个矩形，大小100*80 填充，颜色不同
+
+			练习2：在画布上描边一个可以左右移动100*80矩形
+	提示:使用定时器，先清除画布上己有内容,重新绘制一个 
+	上下移动    y不停修改
+	右下角45度  x,y不停修改
+
+	(2)使用canvas绘制文本
+	ctx.textBaseline = “alphabetic”  文本基线
+	 ctx.font = “12px sans-serif”;    文本大小和字体
+	 ctx.fillText(str,x,y);            填充一段文本
+	 ctx.strokeText(str,x,y)         描边一段文本
+	 ctx.measureText(str);         测量文本宽度
+	 
+		
+	练习:左上角 右上角 左下角 右下角 居中
+			左右移动文字
+
+
+
+
+
+	作业1：商品分页显示 product_list.html
+day54
+	今天学习的内容
+	1:复习上周html5新特性
+	2:作业(学子商城登录/分页)
+	3:今天的目标
+		 3.2:canvas绘制---(重点)路径
+	path:由多个坐标点组成任意形状，路径不可见，可用于
+	“描边”,”填充”.
+	#复杂图形依靠路径
+	ctx.beginPath();    开始一条新路径
+	ctx.closePath();    闭合当前路径
+	ctx.moveTo(x,y);   移动到指定点
+	ctx.lineTo(x,y);     从当前点到指定点画直线
+	ctx.arc(cx,cy,r,start,end);         绘制圆拱型
+	cx,cy 圆心
+	r    半径
+	start,end         开始角度和结束角度
+	#圆弧度  0~2*Math.PI
+	#角度=>弧度      n*Math.PI/180=>弧度
+	ctx.stroke();       描边
+	ctx.fill();          填充
+
+	 
+	 
+	练习:创建一个函数 openMouth(),画右侧图形
+	练习:创建一个函数 closeMouth(),画左侧图形
+	练习:定时器，每隔1S，交替调用上述两个函数
+			
+		 3.3:canvas绘制---(重点)图像
+			canvas 属于客户端技术，图片保存服务器，所以浏览器先下载，再绘制图片，且等待图处下载完成.
+			var p3 = new Image();
+			p3.src = “x.jpg”;      #下载指定图片
+	p3.onload = function(){ #当图片下载成功后触发事件
+		 console.log(p3.width);
+		 ctx.drawImage(p3,x,y);   //绘制原始大小图片
+		 ctx.drawImage(p3,x,y,w,h); //拉伸图片
+	}
+		3.4:canvas绘制---(重点)图像->变形
+		 canvas绘图中有变形技术同，可以针对某一个图形/图像在绘制过程中进行变形:rotate();translate();平移原点
+		 ctx.rotate(弧度); 旋转绘制图像以画布原点为轴心.
+		 ctx.translate(x,y); 将画布原点平移到指定位置
+		 ctx.save();       保存画笔当前所有状态值
+		 ctx.restore());    恢复画笔上一次保存时所有状态值
+		 练习:在画布中心位置绘制一个旋转飞机，以自己为中心旋转
+		 练习:画二架飞机，右上角飞机比中心飞机旋转速度快一倍
+
+
+		 3.5:svg绘制—(重点)
+		 
+	位图:由一个一个像素点组成，每个点各有自己颜色，色彩细腻，但放大会失真.
+	矢量图:由一条一条线条组成，每个线条有自己颜色和方向，可以无限缩放，但细节不够丰富
+		 
+		 
+		canvas绘图	svg绘图
+	类型	2D位图	2D矢量图
+	如何绘制图	使用JS代码绘图	使用标签绘图
+	事件绑定	每个图形不是一个元素，无法直接绑定事件.	每个图形都是元素，可以直接绑定事件监听
+	应用场合	游戏,特效	地图
+
+		 3.6:SVG诞生于2000年，早期作为XML扩展应用出现，H5标准把常用
+		 SVG标签采纳为标准，但有些被废弃.
+		 svg使用方式
+		 <svg></svg>       	本身是一个300*150的inline-block
+		 <rect></rect>      	矩形
+		 <circle></circle>    	圆形
+		 <elipse></elipse>   	椭圆
+		 <line></line>       	直线
+		 <polyline></polyline>多边形
+
+
+
+		 作业1:了解第三方绘制工具库
+					 two.js    echart.js 百度
+		 作业2:产品分页列表  js写完
+		 作业3:上传文件
+day55
+	今天学习的内容
+	1:复习昨天知识重点
+	2:作业
+	 2.1:学子商城分页
+	 2.2:大鱼小鱼
+	 2.3:第三方canvas库 two.js echart.js
+		 https://two.js.org  
+		 http://echarts.baidu.com/index.html
+	3:html5新特性-SVG绘图
+	 3.1:HTML5新特性—矩形
+		 <rect width=”” height=”” x=”” y=”” fill=”” fill-opacity=””
+	stroke=”” storke-opacity=””></rect>
+	练习1:在SVG画布上正则央创建300*30矩形柱子，
+					 初始化淡红色(#faa)填充，和深以(#800)边框
+					 都半透明,鼠标悬停，变为不透明
+					提示:修改属性setAttribute();
+		 练习2：绘制两个柱子，初始高度1,使用定时器修改高度
+						 一个高度 300停止，另一个变为150停止.
+		 练习3:使用ajax从服务器端异步获取一段json数据
+					 [{"label":"部门1","value":"190",,}]
+					 获取四个部门数据，根据这些数据动态创建统计图
+
+		3.3:HTML5新特性—圆形
+		 <circle r=”” cx=”” cy=”” ></circle>
+			练习1:左上角右上角 左下角右下角 居中绘制5个圆
+			练习2:在svg画布上随机绘制30个实心圆，大小随机，
+			位置随机，填充颜色随机，透明度随机,
+			点击某个圆之后，它慢慢变大，变淡,直至消失
+			从DOM树删除
+
+	 
+		作业1：学子商城分页
+		作业2: 仿网易音乐
+		作业3: 自学上传文件
+day56
+	今天学习的内容
+	1:复习昨天知识重点
+	2:作业
+	3:今天的目标
+		3.1:html5新技术--svg (重点)—椭圆 
+		<ecllipse  rx=”” ry=””  cx=”” cy=””  />
+		rx:水平半径
+		ry:垂直半径
+		3.2:html5新技术--svg (重点)—直线 
+		<line x1=”” y1=”” x2=”” y2=”” stroke=”” stroke-width=””..></line>
+		3.3:html5新技术--svg (重点)—折线 
+		<polyline  points=”x,y x,y x,y ...” ></polyline>
+		3.4:html5新技术--svg (重点)—文本 
+		<text text-size=”” fill=””...>文本内容</text>
+		3.5:html5新技术--svg (重点)—图像 
+		<image xlink:href=”x.jpg” x y width height></image>
+		3.6:html5新技术--svg (重点)—渐变对象
+		 <defs>
+			 <linearGradient id=”r2” x1=”0%” y1=”0%” x2=”100%” y2=”0%”>
+				<stop offset=”0%” stop-color=”green”>
+				<stop offset=”50%” stop-color=”yellow”>
+				<stop offset=”100%” stop-color=”red”>
+		 </defs>
+		 <rect width=”400” height=”200” fill=”url(#r2)”
+
+		4.x:html5新特性--地理定位(实现需要联网)
+		Geolocation:地理定位,使用js获得当前浏览器所在地理坐标(经度，纬度，海拨，速度)数据，用于实现LBS应用(Location Base Service),如饿了么，高德导航...
+		获取地理定位类型
+		(1)浏览器自带对象geolocation[实现不了]
+		(2)百度地图,腾讯地图[准确度高]
+		
+		手机浏览器如何获取定位信息
+	(1)	首选手机中GPS芯片与卫星通信，定位精度在米
+	(2)	次选手机通信基站进行定位，定位精度在公里
+		PC浏览器如何获取定位信息
+	(3)	 IP地理解析反向查找..
+
+		html5提供了一个新对象，用于获取当前浏览器定位信息
+		 window.navigator.geolocation{};
+		 getCurrentPosition:fn获取定位
+		 
+		 百度地图:
+		 (1)百度地图开发者 http://lbsyun.baidu.com/
+		 (2)注册百度开发者帐户 手机
+		 (3)创建一个网站:为网站申请访问密钥  AccessKey
+			 网站名称[abc123]
+			 [....]
+		 (4) AccessKey
+		 (5)开放示例
+			 //加载百度API指定密钥
+			 <script src="http://api.map.baidu.com/api?
+			 v=2.0&ak=申请密钥">
+			 </script>
+			 var map = new BMap.Map("container");
+	// 创建地图实例  
+	var point = new BMap.Point(116.404, 39.915);
+	// 创建点坐标  
+	map.centerAndZoom(point, 15);
+	// 初始化地图，设置中心点坐标和地图级别
+
+
+		 5.x:html5新特性—拖动API（拖动上传图片）
+		 Drag & Drop :拖动和释入
+		 HTML5为拖动行为提供7个事件，分为两组
+		 拖动的源动(会动)可以触发3个事件
+		 dragstart   拖动开始
+		 drag       拖动中
+		 dragend    拖动结束
+		 拖动的目标对象(不动)可以触发4个事件
+		 dragenter  拖动进入
+		 dragover   拖动悬停在上方
+		 dragleave  拖动离开
+		 drop      拖动释放
+		练习:使用拖动事件的源对象和目标对象，完成"拖动删除效果"
+		 
+		 提示:在刚开始拖动时(src.ondragstart) 记录被拖动源对id
+					释放(target.ondrop)根据此id找源对象。执行删除操作
+					div.removeChild(c);
+
+
+		6.x:html5新特性之八—Web Worker  代码3行
+		程序:Program 可以被CPU执行的代码，存储在外存中
+		进程:Process 指程序被调用内存，分配执行空间，随时供CPU调用
+		线程:Thread 线程是进程内执行代码的基本单位
+		
+		 
+		并发和并行:线程在中工作时并发状态运行.
+		并发:宏观上看同时执行，微观上看依次执行
+		并行:多个程序运行多核CPU
+		
+		chrome浏览器中线程模型
+		一个chorme进程内部，多个线程可以“并发”向web服务器发起http请求，以获得所需资源
+		--资源请求线程
+		还有一个线程负责所有内容绘制和js代码执行
+		--UI主线程
+		
+
+		作业1: 学子商城删除/更新/详细
+day57
+	今天学习的内容
+	1:复习昨天重点
+	2:作业
+		2.1:上传文件---(重点)
+			 上传文件web项目通常使用功能:上传头像,邮件附件,上传商品图片,上传docx文档,喜玛拉雅，斗鱼...
+			 上传原理:图
+			 上传文件类型：指定任意类型/指定特定类型(jpg/png/gif)
+			 上传文件方式:
+			 (1)表单同步提交  --简单,用户感受差
+			 (2)ajax上传      --复杂,用户感受好(拖动,预览图片)
+			 (3)第三方js工具库—剪切
+
+		2.2:游戏(食物)
+		2.3:学子商城产品 删除 更新 详细
+	删除:有一定危险操作
+	(1)	DELETE FROM xz_laptop WHERE lid = 3  极少
+	(2)	给表添加一列 是否失效  expire  ‘1’=>失效,’0’=>正常
+	(3)	秘籍:软件项目有一个极特殊用户(超级管理员)
+					拥有软件项目中所有权利,
+					如果特殊的要求,超级管理员可以删除数据
+	如何操作
+	(1)	添加列 xz_laptop 产品表
+	expire 是否失效
+	类型  ENUM(‘1’,’0’)
+	ALTER TABLE xz_laptop ADD expire ENUM('1','0') DEFAULT '0'
+	(2)	php  product_del.php  11:45—11:55
+	获取要删除产品编号
+		 使用正则表达式验证
+		 创建sql语句执行
+		 操作系统日志添一条操作记录
+		
+	3:今天的目标
+		3.1:web worker  	
+day58	
+	今天学习的内容
+	1:复习昨天的项目
+	2:今天的目标:
+	学子商城 [更新/详细/搜索/添加]
+
+
+	作业1:学子商城 产品添加/用户分页
+day59
+	今天学习的内容
+	1:复习上周知识重点
+	2:今天的目标
+		2.1:项目[学子商城]
+		2.2:html5新特性
+	day60
+	今天学习内容
+	1:复习学子商城项目
+	2:今天学习的内容
+		2.1:html5 三个新特性—web Worker/web Storage/web Socket
+		2.2: html5 三个新特性—web Worker—理论多，代码少3行 
+	程序:保存在外存中代码  1.html/1.css/1.js
+	进程:将程序调入内存中并且分配空间,在内存中运行程序称为 “进程”.
+	线程:处理进程内存，用于执行代码
+	并发:“宏观上看同时执行””微观上看依次交替执行”
+	并行:同时执行
+	chrom:中线程模型:请求资源线程—多个
+									 运行js代码,渲染页面内容-1个
+	<button>按钮1</button>
+	<script src=”1.js”></script>
+	<button>按钮2</button>
+	解决方案:创建一个并发新线程，让它来执行耗时js任务
+	代码:
+	var w1 = new Worker(参数运行js地址);
+	#浏览器不允许Worker线程中操作(代码)不能有任何DOM和BOM对象.
+	原因:浏览器只允许UI线程操作DOM/BOM，若多个线程同时来操作DOM和BOM页面混乱.所以类似JQUERY也不能使用Worker中.
+
+	(*)UI线程发送数据给Worker
+		woker(收)
+		onmessage = function(e){e.data}
+		ui(发)
+		var w6 = new Worker(“6.js”);
+		w6.postMessage(stringmsg);
+	(*)Worker线程发送数据UI
+	UI(收数据)
+		 var w6 = new Woker(“6.js”);
+		 w6.onmessage = function(e){
+			e.data..
+	}
+	Woker(发数据)
+	 postMessage(执行结束);
+
+
+	练习:在HTML中有一个input,再添加按钮按钮"开始计算累加和"
+	,点击按钮时，创建一个Worker线程计算出用户输入数字
+			的累加和，下一个div显示计算结果input用户输入数字
+			button  开始计算累加和 div 显示计算结果
+	 
+	项目中worker使用
+	1:只要js中有DOM和BOM代码不能使用Worker
+	2:Worker适合执行耗时JS任务, 复杂计算，加密和解密..
+
+		2.3: html5 三个新特性—web Storage
+		 在浏览器中存储当前用户专用数据:访问历史，内容定制，样式定制
+		 在客户端存储数据可以使用技术
+	(1)	Cookie技术：浏览器兼容性好;操作复杂;不能超4KB
+	document.cookie="uid=10";   保存一对数据cookie
+	document.cookie;           读取cookie数据
+	(2)Flash存储:依赖于Flash播放器
+	(3)H5 webstroage  :不能超过8MB,操作简单
+	(4)IndexDB       :可存大量数据，不是标准技术
+		 
+		 
+	Session:会话.“一个操作过程称为会话”
+	浏览器从打开某个网站的第一个页面开始（会话开始），中间可以打开多个页面(会话进行中)，直到关闭浏览器(会话结束),整个过程称为一次”会话”.
+		 webstorage 为浏览器提供二个对象
+	(1)	window.sessionStorage:类数组对象
+	作用:在同一个会话中所有页面之间共享数据,将数据保存sessionStorage中只限本次会话使用.
+	如:当前登录用户编号/权限列表/购物车信息/昵称
+	注意:安全性高数据不要存储sessionStorage
+			只要安全性高数据不要存储客户端
+	保存数据
+	sessionStorage[key] = val;   //key数据名val 数据值
+	sessionStorage.setItem(key,val);
+	获取数据值
+	var val = sessionStorage[key];
+	var val = sessionStorage.getItem(key);
+	其它
+	sessionStorage.removeItem(key);  删除一对数据
+	sessionStorage.clear();           清空所有数据
+	sessionStorage.length;           数据个数
+	sessionStorage.key(i);            获取第i个数据名
+		 (2)window.localStorage
+				保存数据在磁盘上，可供此次会话以及及后续的会话中的页面共同使用,即使浏览器关闭也不会消失—永久存在：
+				作用:当前客户端对应所有会中共享数据,如:主机位置
+	保存数据
+	localStorage [key] = val;   //key数据名val 数据值
+	localStorage.setItem(key,val);
+	获取数据值
+	var val = localStorage [key];
+	var val = localStorage.getItem(key);
+	其它
+	localStorage.removeItem(key);  删除一对数据
+	localStorage.clear();           清空所有数据
+	localStorage.length;           数据个数
+	localStorage.key(i);            获取第i个数据名
+				
+				练习:
+				创建index.html     首页
+					有一个下拉菜单,”请选择您喜欢的主题”,”蔚兰天空”,
+	”芭比公主”,”暗默主题”,各对应一个class名;
+			 .blue{background:#ddf,color:#33a}
+			 .pink{background:#fdf,color:#a3a}
+			 .dark{background:#333,color:#eee}
+		 option value=”pink”
+	 document.body.className = pink
+		 用户选中 select.onchange 
+				创建 usercener.html 用户中心
+					打开此页面即可应用index.html中一样的主题样式,
+				启使重新启动浏览器，直接访问usercener.html仍是
+				之前选中的主题.
+
+			 localStorage中若数据发生修改，会触发事件 onstorage事件，
+		 可以监听此事件，实现监视localStorage数据修改.
+
+		2.4: html5 三个新特性—web Socket
+			 HTTP协议:属于”请求-响应”，只有客户端发起请求消息，服务器
+			 才会返回响应消息，没有请求就没有响应，一个请求，只能得到一
+			 个响应，在些场景中不适合”实时走势图”
+			 解决方案:”长轮询-心跳请求”—定时器+ajax
+			 websocket协议:属于”广播-接收”模块，客户端连接到服务器不再断开，永久连接双方随时向对方发送消息.
+			 ws:服务器端:php/java/node.js
+			 ws:客户端:php/java/html5 提供对象
+			
+	使用html5创建ws协议客户端
+	//连接ws服务器
+	var socket = new WebSocket(“ws://127.0.0.1:9001”);
+	//向服务器发送数据
+	socket.send(stringMes);
+	//接收服务器数据
+	socket.onmessage = function(e){e.data}
+	//断开到服务器连接
+	socket.close();
+
+		3.1:Bootstrap [css 与js框架 响应式布局]—(栅格布局系统)
+		3.2:什么是响应式网页
+			 1G: 只能通话
+			 2G: 可以通话，短信
+			 2.5G: GPRS  可以通话，短信，上网 --WML
+			 3G: IOS/Android(Linux) 可以通话，短信，上网，视频 - HTML
+			 4G:
+			 5G:...
+		3.3:Responsive Web Page:响应式网页/自适应的网页2010年提出,
+			 一个网页，会自动根据用户浏览设备不同，自动必变布局,
+			 可以被PC/PAD/PHONE 正常浏览
+		3.4:响应式网页必备
+		 (1)流式布局                 float:left;
+		 (2)可以改变尺寸图片文字     font-size:1em;
+		 响应式布局不足:代码更加复杂，不适合大型网页
+		3.5:如果测试网页
+		 (1)使用真实物理设备
+		 (2)使用第三方模拟器软件
+		 (3)使用chrome 内置设备模拟器
+		3.5:如何编写响应式网页
+			 (1)声明viewport元标签
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+	viewport 元标签
+	早期3G手机为浏览器大尺寸网页，只能强行页面缩小,
+	导致图片/文字/链接
+	IOS提出”视口”概念:虚拟窗口，大小与设备相同，如果
+	浏览大尺雨网页，滑动.
+	Android 也借鉴该概念
+			 #width=device-width   视口宽度=设备宽度
+			 # initial-scale=1        表示初始化视频大小1原始大小
+			 #user-scalable=no      用户是不顺可以调整视频大小
+			 (2)使用流式布局
+				 实现方法:float:left
+	(3)所有容器使用相对尺寸，不用绝对尺寸
+	.container{
+		/*width:500px;*/
+		width:50%;
+	}
+	(4)所有文字使用相对尺寸，不用绝对尺寸
+	body{
+		/*font-size:12px;*/
+		font-size:2em;
+	}
+	(5)所有图片使用相对尺寸，不用绝对尺寸
+	 img{
+	width:120px;
+	width:25%;
+	}
+				 (6)（最重要原则）使用CSS3 Media Query技术
+
+		 3.6: CSS3 Media Query技术
+				Media:指浏览网页的设备,如screen(pc/pad/phone),print,tv,tty.
+				Media Query:查询当前浏览网页设备类型，以及特性(对比度，尺尺，手持方向等),而选择性执行某些css代码，而忽略另外一些.
+				 媒体查询使用方法两种
+	(1)	根据媒体查询结果执行不同的css文件
+					<link  media=”screen”    href=”1.css”/>
+					<link  media=”print”     href=”2.css”/>
+	(2)	根据媒体查询结果执行css片段中不同部分
+
+
+	作业1：学子商城,产品添加
+Day60
+	今天学习内容
+	1:复习学子商城项目
+	2:今天学习的内容
+		2.1:html5 三个新特性—web Worker/web Storage/web Socket
+		2.2: html5 三个新特性—web Worker—理论多，代码少3行 
+	程序:保存在外存中代码  1.html/1.css/1.js
+	进程:将程序调入内存中并且分配空间,在内存中运行程序称为 “进程”.
+	线程:处理进程内存，用于执行代码
+	并发:“宏观上看同时执行””微观上看依次交替执行”
+	并行:同时执行
+	chrom:中线程模型:请求资源线程—多个
+									 运行js代码,渲染页面内容-1个
+	<button>按钮1</button>
+	<script src=”1.js”></script>
+	<button>按钮2</button>
+	解决方案:创建一个并发新线程，让它来执行耗时js任务
+	代码:
+	var w1 = new Worker(参数运行js地址);
+	#浏览器不允许Worker线程中操作(代码)不能有任何DOM和BOM对象.
+	原因:浏览器只允许UI线程操作DOM/BOM，若多个线程同时来操作DOM和BOM页面混乱.所以类似JQUERY也不能使用Worker中.
+
+	(*)UI线程发送数据给Worker
+		woker(收)
+		onmessage = function(e){e.data}
+		ui(发)
+		var w6 = new Worker(“6.js”);
+		w6.postMessage(stringmsg);
+	(*)Worker线程发送数据UI
+	UI(收数据)
+		 var w6 = new Woker(“6.js”);
+		 w6.onmessage = function(e){
+			e.data..
+	}
+	Woker(发数据)
+	 postMessage(执行结束);
+
+
+	练习:在HTML中有一个input,再添加按钮按钮"开始计算累加和"
+	,点击按钮时，创建一个Worker线程计算出用户输入数字
+			的累加和，下一个div显示计算结果input用户输入数字
+			button  开始计算累加和 div 显示计算结果
+	 
+	项目中worker使用
+	1:只要js中有DOM和BOM代码不能使用Worker
+	2:Worker适合执行耗时JS任务, 复杂计算，加密和解密..
+
+		2.3: html5 三个新特性—web Storage
+		 在浏览器中存储当前用户专用数据:访问历史，内容定制，样式定制
+		 在客户端存储数据可以使用技术
+	(1)	Cookie技术：浏览器兼容性好;操作复杂;不能超4KB
+	document.cookie="uid=10";   保存一对数据cookie
+	document.cookie;           读取cookie数据
+	(2)Flash存储:依赖于Flash播放器
+	(3)H5 webstroage  :不能超过8MB,操作简单
+	(4)IndexDB       :可存大量数据，不是标准技术
+		 
+		 
+	Session:会话.“一个操作过程称为会话”
+	浏览器从打开某个网站的第一个页面开始（会话开始），中间可以打开多个页面(会话进行中)，直到关闭浏览器(会话结束),整个过程称为一次”会话”.
+		 webstorage 为浏览器提供二个对象
+	(1)	window.sessionStorage:类数组对象
+	作用:在同一个会话中所有页面之间共享数据,将数据保存sessionStorage中只限本次会话使用.
+	如:当前登录用户编号/权限列表/购物车信息/昵称
+	注意:安全性高数据不要存储sessionStorage
+			只要安全性高数据不要存储客户端
+	保存数据
+	sessionStorage[key] = val;   //key数据名val 数据值
+	sessionStorage.setItem(key,val);
+	获取数据值
+	var val = sessionStorage[key];
+	var val = sessionStorage.getItem(key);
+	其它
+	sessionStorage.removeItem(key);  删除一对数据
+	sessionStorage.clear();           清空所有数据
+	sessionStorage.length;           数据个数
+	sessionStorage.key(i);            获取第i个数据名
+		 (2)window.localStorage
+				保存数据在磁盘上，可供此次会话以及及后续的会话中的页面共同使用,即使浏览器关闭也不会消失—永久存在：
+				作用:当前客户端对应所有会中共享数据,如:主机位置
+	保存数据
+	localStorage [key] = val;   //key数据名val 数据值
+	localStorage.setItem(key,val);
+	获取数据值
+	var val = localStorage [key];
+	var val = localStorage.getItem(key);
+	其它
+	localStorage.removeItem(key);  删除一对数据
+	localStorage.clear();           清空所有数据
+	localStorage.length;           数据个数
+	localStorage.key(i);            获取第i个数据名
+				
+				练习:
+				创建index.html     首页
+					有一个下拉菜单,”请选择您喜欢的主题”,”蔚兰天空”,
+	”芭比公主”,”暗默主题”,各对应一个class名;
+			 .blue{background:#ddf,color:#33a}
+			 .pink{background:#fdf,color:#a3a}
+			 .dark{background:#333,color:#eee}
+		 option value=”pink”
+	 document.body.className = pink
+		 用户选中 select.onchange 
+				创建 usercener.html 用户中心
+					打开此页面即可应用index.html中一样的主题样式,
+				启使重新启动浏览器，直接访问usercener.html仍是
+				之前选中的主题.
+
+			 localStorage中若数据发生修改，会触发事件 onstorage事件，
+		 可以监听此事件，实现监视localStorage数据修改.
+
+		2.4: html5 三个新特性—web Socket
+			 HTTP协议:属于”请求-响应”，只有客户端发起请求消息，服务器
+			 才会返回响应消息，没有请求就没有响应，一个请求，只能得到一
+			 个响应，在些场景中不适合”实时走势图”
+			 解决方案:”长轮询-心跳请求”—定时器+ajax
+			 websocket协议:属于”广播-接收”模块，客户端连接到服务器不再断开，永久连接双方随时向对方发送消息.
+			 ws:服务器端:php/java/node.js
+			 ws:客户端:php/java/html5 提供对象
+			
+	使用html5创建ws协议客户端
+	//连接ws服务器
+	var socket = new WebSocket(“ws://127.0.0.1:9001”);
+	//向服务器发送数据
+	socket.send(stringMes);
+	//接收服务器数据
+	socket.onmessage = function(e){e.data}
+	//断开到服务器连接
+	socket.close();
+
+		3.1:Bootstrap [css 与js框架 响应式布局]—(栅格布局系统)
+		3.2:什么是响应式网页
+			 1G: 只能通话
+			 2G: 可以通话，短信
+			 2.5G: GPRS  可以通话，短信，上网 --WML
+			 3G: IOS/Android(Linux) 可以通话，短信，上网，视频 - HTML
+			 4G:
+			 5G:...
+		3.3:Responsive Web Page:响应式网页/自适应的网页2010年提出,
+			 一个网页，会自动根据用户浏览设备不同，自动必变布局,
+			 可以被PC/PAD/PHONE 正常浏览
+		3.4:响应式网页必备
+		 (1)流式布局                 float:left;
+		 (2)可以改变尺寸图片文字     font-size:1em;
+		 响应式布局不足:代码更加复杂，不适合大型网页
+		3.5:如果测试网页
+		 (1)使用真实物理设备
+		 (2)使用第三方模拟器软件
+		 (3)使用chrome 内置设备模拟器
+		3.5:如何编写响应式网页
+			 (1)声明viewport元标签
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+	viewport 元标签
+	早期3G手机为浏览器大尺寸网页，只能强行页面缩小,
+	导致图片/文字/链接
+	IOS提出”视口”概念:虚拟窗口，大小与设备相同，如果
+	浏览大尺雨网页，滑动.
+	Android 也借鉴该概念
+			 #width=device-width   视口宽度=设备宽度
+			 # initial-scale=1        表示初始化视频大小1原始大小
+			 #user-scalable=no      用户是不顺可以调整视频大小
+			 (2)使用流式布局
+				 实现方法:float:left
+	(3)所有容器使用相对尺寸，不用绝对尺寸
+	.container{
+		/*width:500px;*/
+		width:50%;
+	}
+	(4)所有文字使用相对尺寸，不用绝对尺寸
+	body{
+		/*font-size:12px;*/
+		font-size:2em;
+	}
+	(5)所有图片使用相对尺寸，不用绝对尺寸
+	 img{
+	width:120px;
+	width:25%;
+	}
+				 (6)（最重要原则）使用CSS3 Media Query技术
+
+		 3.6: CSS3 Media Query技术
+				Media:指浏览网页的设备,如screen(pc/pad/phone),print,tv,tty.
+				Media Query:查询当前浏览网页设备类型，以及特性(对比度，尺尺，手持方向等),而选择性执行某些css代码，而忽略另外一些.
+				 媒体查询使用方法两种
+	(1)	根据媒体查询结果执行不同的css文件
+					<link  media=”screen”    href=”1.css”/>
+					<link  media=”print”     href=”2.css”/>
+	(2)	根据媒体查询结果执行css片段中不同部分
+
+
+	作业1：学子商城,产品添加
+Day61
+	今天学习的内容
+
+	1:复习昨天知识重点
+	2:游戏(食物/大鱼)
+		游戏玩法:大鱼后面跟小鱼在游动,大鱼负责吃食物,小鱼跟大鱼
+						 大鱼吃过食物以后，喂小鱼
+						 小鱼长时间不吃食物颜色红,黄,浅黄,白
+		游戏角色:
+		背景:大图片
+		海葵:canvas中路径实现
+		食物:二张图片,蓝色黄色
+		#如何创建食物
+		(1)创建文件 game/js/fruit.js 
+		(2)修改html 加载fruit.js
+		(3)修改game/js/fruit.js   添加二个方法 类/init/draw
+		(4)修改game/js/main.js  添加食物对象并且调用对应方法
+
+		#通用小技巧
+		 平滑由小变大过程,向上浮动平滑
+		 deltaTime 二帧绘制时间间隔
+		 
+	3:今天新的目标
+		3.1:自定义响应式布局(重点)
+		 (1)声明viewport 视频
+		 (2)流式布局
+		 (3)所有容器.文字.图片:相对尺寸不同绝对尺雨
+		 (4)使用CSS3 Media Query
+		3.2: CSS3 Media Query查询方式
+		 (1)根据媒体查询结果执行不同css文件(少)
+		 (2)根据媒体查询结果执行不同css片段(多)
+			 @media screen and (min-width:768px) and (max-width:991px){
+		 选择器{样式设定}
+	}
+
+		 
+				 
+	 
+		3.4:Bootstrap 全局样式
+		
+	bootstrap: 起步/引导程序
+		2.5:Twitter Bootstrap 框架
+		 #官方网站 http://www.bootcss.com/
+		 Bootstrap是一个HTML/CSS/JS 框架,用于开发响应式布局，移动设备优先项目.
+		 (1)起步
+		 (2)全局CSS样式(重要—{栅格布局})
+		 (3)组件
+		 (4)js插件(图片轮播)
+		 (5)定制—自定义bootstarp 样式
+		 提示:Bootstrap 知识点不难,1000+单词记忆
+		 
+		 
+		 2.6:起步
+		 下载 css fonts  js
+		 基本模板
+	<html lang="zh-CN">
+	language:指定当前网页所使用自然语言,如zh-CN zh-hk en-US ja
+	作用两个:为浏览器的翻译功能确定基础语言，为读屏软件确定基础发音
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	扩展HTTP响应头消息
+	指定IE浏览器的兼容性-仅IE浏览器支持可以识别
+	网景<==>微软 IE
+	IE 6  内核6
+	IE 7  内核6/7
+	IE 8  内核6/7/8
+	IE 9  内核6/7/8/9
+	IE 10 内核6/7/8/9/10
+	IE 11内核6/7/8/9/10/11
+
+	html5shiv.js
+	第三方编写的js文件，让老IE兼容html5新标签... header..
+	respond.js
+	第三方编写的js文件,让老IE兼容 CSS3 Media Query
+
+		2.7:Bootstrap 全局样式—按钮
+		 .btn					按钮的基础样式
+		 .btn-default			白底黑字的按钮
+		 .btn-danger/warning/success/info/primary 五种颜色的按钮
+		 .btn-lg/sm/xs           按钮四种大小
+		 .btn-block              块级按钮
+
+	2.8:Bootstrap 全局样式—图片
+			.img-rounded    圆角图片
+			.img-circle       圆形图片
+			.img-thumbnail   缩略图
+			.img-responsive  响应式图片
+			
+	2.9:Bootstrap 全局样式—文本
+	.text-danger/success/warning/info/primary  文字颜色
+	.bg-danger/success/warning/info/primary   背景颜色
+	.text-left/center/right/justify              对齐方式
+	.text-uppercase/lowercase/capitalize
+
+	2.10:Bootstrap 全局样式—列表
+	.list-unstyle   去除提示符号
+	.list-inline     行内列表
+
+
+		作业1:家里WIFI,使用手机访问自己PC电脑APACHE
+		192.168.10.10
+		作业2:依据图片响应式网页
+Day62
+	今天学习的内容
+	1:复习昨天知识重点(HTTP/HTTPS协议)
+	2:大鱼
+		大鱼组件部分:[眼睛/身体/尾巴]
+		眼睛:睁(时间长)闭(时间短)
+		身体:8张图片
+		尾巴:8张图片
+		小技巧：多长时间切换到下一张图片
+		var index = 0; 1 2 3 ... 7    图片数组下标
+		var start = 0;             计时开始
+		var end = 1000;          结束时间(切换下一个图片)
+		
+	#驱向移动
+		#碰撞检测
+	3:今天的目标
+		3.1:Bootstrap 全局样式-(屏幕分类)
+			(1)大型PC屏幕            lg    w>=1200px
+			(2)中等PC屏幕            md   1200px>w>992px
+			(3)小型PAD屏幕           sm   992px>w>768px
+	(4)超小PHONE屏幕        xs    768px>x
+
+		3.2:Bootstrap 全局样式-表格
+			.table
+			.table-bordered   带边框的表格
+			.table-striped     隔行变色
+			.table-hover      带悬停变色
+			.table-responsive  响应式表[添加特殊要求]
+
+			
+	Bootlint 是Bootstrap官方提供HTML检测工具，检测出网页中常见的HTML/CSS错误，还能检测class层级结构错误!
+
+		3.3:Bootstrap 全局样式-栅格(重点)
+			网页布局可用方法:
+	(1)	TABLE布局
+	好处：简单易控制
+	不足: 语义错误,页面渲染效率低
+	(2)	DIV+CSS布局
+	好处: 语义正确,页面渲染效率高
+	不足: 不容易控制
+			(3)Bootstrap 栅格
+				 好处:相对简单易于控制，渲染效率高，支持响应式
+				 不足:页面简单
+
+		 使用方法:
+	(1)	最外层必须使用容器
+	div.container和div.container-fluid
+	(2)	容器里可以放置任何内容，若想使用栅格，必须div.row
+	.container > .row [行]
+	(3)	一个.row中不能放置其他内容,只能放置 .col,列中可以放置其它内容
+	.container > .row > .col
+	(4)	 Bootstrap中行默认12均等分，每个列必须指定行中占比
+	(5)	 栅格系统针对不同屏幕提供不同列
+	.col-lg-1/2/3.../12
+	.col-md-1/2/3../12
+					.col-sm-1/2./3../12
+					.col-xs-1/2./...12
+	(6)	可以使用”列偏移”实现指定列及其后的列向右偏移的效果.
+	如果不足12列居右对齐
+				 .col-lg-offset-1/2...12
+				 .col-md-offset-1/2...12
+				 .col-sm-offset-1/2...12
+				 .col-xs-offset-1/2...12
+	(7)	需要注意不同屏幕下列的适全性问题
+	.col-xs-*    适用于xs/sm/md/lg 屏幕
+				 .col-sm-*   适用于 sm/md/lg  屏幕
+				 .col-md-*   适用于 md/lg 屏幕
+				 .col-lg-*    适用于 lg 屏幕
+	(8)	一个列可以指定在不同屏幕下的宽度占比
+	div.col-xs-12/.col-sm-9/.col-md-6
+				 div.col-xs-12/col-md-6
+				 常见错误:  div.col-xs-6/.col-md-6
+	(9)	一个列可以指定特定的屏幕隐藏
+					.hidden-xs  仅在xs屏幕下隐藏
+					.hidden-sm 仅在sm屏幕下隐藏
+					.hidden-md 仅在md屏幕下隐藏
+					.hidden-lg  仅在lg 屏幕下隐藏
+					.hidden
+
+
+			作业1:栅格布局系统 上二节课四张图片
+			作业2:小鱼
+Day63
+	今天学习的内容
+	1:复习昨天重点内容
+	2:大鱼碰撞检测/小鱼/碰撞检测
+		2.1:大鱼吃食物(果实)
+		问题:碰撞检测
+		通常解决问题:计算二个元素之间距离
+		1大鱼   15食物[30其中15个食物活动]-->循环
+		0-14 <-->大鱼   <=30 个像素  吃了食物
+		问题：食物被大鱼吃食物
+		alive[i]=false;
+		2.2:小鱼
+		位置,角度,身体,尾巴,眼睛
+	3:今天目标
+		3.1:Bootstrap 栅格式系统
+		3.2:Bootstrap 表单
+		 (1)默认表单
+			 <form>
+					 <div class=”form-group”>
+						 <label class=”control-label”>用户名</label>
+						 <input type=”text” class=”form-control”/>
+						 <span class=”help-block”>用户名格式:6~12位</span>
+					 </div>
+			 </form>
+		 (2)行内表单
+				<form>
+					 <div class=”form-inline”>
+						 <input type=”text” class=”form-control”/>
+						 <span class=”sr-only”>用户名格式:6~12位</span>
+					 </div>
+			 </form>
+		 (3)水平表单
+			 水表表单=表单+栅格系统
+			 
+		默认栅格系统	水平表单
+	最外层元素	div.container	form.form-horizontal
+	行	div.row	div.form-group
+	列	div.col-*-*	div.col-*-*
+		 <form class=” form-horizontal”>
+			 <div class=”form-group”>
+				 <div class=”col-*-*”>
+							 <label class...
+	</div>
+			 </div>
+		 </form>
+
+		3.3:Bootstrap 组件—(下拉菜单:字体图标:导航条-重点)
+		下拉菜单三级结构
+		 <div class=”dropdown”>
+			 <a href=”#” data-toggle=”dropdown”>触发元素</a>
+			 <div/ul class=”dropdown-menu”>隐藏元素</div/ul>
+		 </div>
+
+		3.4: Bootstrap 组件—(字体图标)
+		 web项目中常用图标字体
+		 (1)FontAwesome – 675 个免费图标
+		 (2)Glyphicons   - 800  个收费图标
+		 服务器字体使用
+		 (1)web 服务器项目目录下必需有字体文件
+		 (2)css中声明一个新的字体文件，并且指定下载位置
+			 @font-face {
+				 font-family: 'Glyphicons Halflings';
+				 src: url('../fonts/glyphicons-halflings-regular.eot');
+				 src: url('../fonts/glyphicons-halflings-regular.eot?#iefix')   
+	}
+		 (3)声明一个基础class 使用字体
+			 .glyphicon{
+					font-family: 'Glyphicons Halflings';
+	} 
+		 (4)在html页面中输入图标对应编码
+
+		 练习:
+			 主页(小房子),用户,配置,汉堡包,刷新
+			 打分(星号),我喜欢(心形),发邮件,拍照
+			 定位,购物车,放大镜,删除(垃圾箱),加号,
+			 减号,叉号,前进,后退,播放,暂停,停止,快进
+
+		 3.5: Bootstrap 组件—(进度条)
+		 .progress > .progress-bar
+		 
+		 3.6: 面包屑 .bread-crum /徽章/巨幕/水井
+		 
+		 4.1:Bootstrap第四部分:jquery插件---折叠(手风琴)
+			 <a data-toggle=”collapse” href=”my-target1”>触发元素</a>
+			 <button data-toggle=”collapse” data-target=”my-target1”>触发元素</button>
+			 <div id=”my-target1” class=”collapse in”>展开收起元素</div>
+		 4.2: Bootstrap第四部分:jquery插件---响应式导航条
+		 
+		 
+		 作业1:参数intel 首页使用bootstrap实现
+Day64
+		今天学习的内容
+	1:复习上周重点
+	2:弹幕
+		 1:html
+			 <canvas id=”can1”/> 显示弹幕文字
+			 <canvas id=”can2”/> 视频画在画布上
+			 (1)视频按照图片绘制画布上 ctx2.drawImage();
+			 (2)创建定时器[]/循环绘制视频
+			 (3)视频元素动态创建追加 body最后子元素并且隐藏
+		 2:js
+		 3:目录结构
+			 index.html
+				js/ video.js             完成:视频显示
+					 data.js             完成:弹幕
+					 公共函数库文件
+				res/1.mp4             视频文件
+	3:今天的目标
+		3.1:Bootstrap  js插件---(导航条)
+			 
+	.navbar-toggle 媒体查询:屏幕宽度大于768px 就隐藏
+	.navbar-collapse 媒体查询:屏幕宽度大于768px 绝对定位在
+	.navbar-header内;否则相对定位.navbar-header
+			
+			#练习1:导航条
+			#练习2:大小小，小小大，页脚
+
+		3.2:Bootstrap 定制—less(重点)
+		3.3:样式语言分类
+		 (1)静态样式语言
+			 CSS可以直接被浏览器解析，但是作为一门语言，CSS并不完整，
+			 数据类型,变量,运算符,函数,继承 导致样式的可维护性差.
+		 (2)动态样式语言
+			 第三种:Sass/SCSS/Styles/Less 在CSS的基础之上添加动态编程语言，必需特性，如：数据类型,变量,运算,函数,继承,提高了样式可维护性.
+	需要注意:浏览器只能识别CSS,所有动态样式语言代码必需转换CSS,转换过程(编译) 
+		 
+		3.4:less样式语言
+		 http://lesscss.cn
+		 Less是一门CSS预处理语言—它扩展了CSS语言，增加变量，函数，等新特性.使CSS更易于维护和扩展.
+		3.5:less两种使用方法
+		(1)在客户端使用—学习(效率差)
+	编写一个x.less
+	在HTML中引入x.less文件，同时再引入LESS编译程序:
+	less.js
+	客户端请求html,下载x.less以及less.js 在客户端运行js文件
+	less编译为css
+	会减慢客户端样式的呈现速度
+		(2)在服务器端使用-Less(必需掌握)
+			编写x.less
+			在开发电脑安装less编译环境(Nodejs/lessc),执行x.less编译x.css
+			再编写html文件，引入编译结师法x.css
+	客户端发出请求html/下载css
+
+		3.6:LESS语法
+	(1)Less支持所有CSS语法
+	(2)Less支持多行/单行注释
+		/**/ 多行注释
+		//   单行注释—推荐使用(注释内容不会编译css文件)
+	(3) Less 支持(变量)
+		 定义:@变量名:值;
+		 使用:color:@变量名;
+		 变量可以取值为任何合法样式值
+	(4)Less 支持变量和常量算术运算
+		+ - * / %
+	(5)less支持一个选择器中”混入”另一个选择器的样式
+		选择器1{...}
+		选择器2{..   选择器1}
+	(6)less在样式混入时可以指定参数
+		选择器1(@参数1,@参数2..){}
+		选择器2{选择器1(值1,值2...)}
+	(7)less支持样式嵌套
+		选择器1{
+			选择器2{
+	}
+	}
+	 上述代码会被编译为:
+	 选择器1{}
+	 选择器 2{}
+Day65
+	今天学习的内容
+	1:复习昨天重点
+	2:视频项目
+		 <video src=”” autoplay loop controls muted poster=””
+	preload=””></video>
+	#video 弱  [不能对视频加密/视频丢失]
+	#video 弱 直播不行
+	#强 微信 小程序 公众号 [pc/pad/ios/android]
+	2.1:同层播放 (苹果手机)
+	当点击视频播放,IOS手机默认行为,自动将视频弹出在一个独立，
+	窗口播放.(二个窗口)
+	解决问题:同一层窗口播放视频
+	在<video>标签中添加二个属性
+	webkit-playsinline="true"   (IOS)让频视在小窗口内播放，
+	能不同跳出全屏播放
+	playsinline="true"         (IOS)微信浏览器支持小窗口内播放
+	x5-video-player-type="h5"  (Android)同层播放
+
+	示例:
+	<video webkit-playsinline="true" playsinline="true" 
+	x5-video-player-type="h5" ></video>
+
+	解决问题: 全屏设置如果不设置如下属性，横屏会错位
+	x5-video-player-fullscreen="true" 
+	全屏设置对过监听resize事件实现 (Android )
+	x5-video-orientation="portraint">
+
+	2.2:video 专用样式
+	object-fit:选项 
+	(1)	fill默认  失真
+	(2)	contain   包含(留白)
+	(3)	conver    覆盖(调整视频比例)
+		 2.3:video 事件
+				(1)canplaythought  可以播放视频，视频全部加载完成
+					#iphone 点击播放
+					#android 可以加完成触发事件
+				(2)ended  播放结束
+		 
+			 作业1:
+			 项目: fly(h5视频项目(故事)) 微信公众号、小程序
+			 玩:将fly保存你电脑->无线上网
+									 你手机->无线上网
+				 电脑->火狐浏览器->http://192.160.10.1/fly/index.html
+				 火狐生成二维码
+				 手机->微信扫描
+	3:今天的目标
+		3.1:Bootstrap 定制—(LESS 重点)
+		3.4:less样式语言
+		 http://lesscss.cn
+		 Less是一门CSS预处理语言—它扩展了CSS语言，增加变量，函数，等新特性.使CSS更易于维护和扩展.
+		3.5:less两种使用方法
+		(1)在客户端使用—学习(效率差)
+	编写一个x.less
+	在HTML中引入x.less文件，同时再引入LESS编译程序:
+	less.js
+	客户端请求html,下载x.less以及less.js 在客户端运行js文件
+	less编译为css
+	会减慢客户端样式的呈现速度
+		(2)在服务器端使用-Less(必需掌握)
+			编写x.less
+			在开发电脑安装less编译环境(Nodejs/lessc),执行x.less编译x.css
+			再编写html文件，引入编译x.css
+	客户端发出请求html/下载css
+
+		3.6:LESS语法
+	(1)Less支持所有CSS语法
+	(2)Less支持多行/单行注释
+		/**/ 多行注释
+		//   单行注释—推荐使用(注释内容不会编译css文件)
+	(3) Less 支持(变量)
+		 定义:@变量名:值;
+		 使用:color:@变量名;
+		 变量可以取值为任何合法样式值
+	(4)Less 支持变量和常量算术运算
+		+ - * / %
+	(5)less支持一个选择器中”混入”另一个选择器的样式
+		选择器1{...}
+		选择器2{..   选择器1}
+	(6)less在样式混入时可以指定参数
+		选择器1(@参数1,@参数2..){}
+		选择器2{选择器1(值1,值2...)}
+	(7)less支持样式嵌套(***)
+		选择器1{
+			选择器2{
+	}
+	}
+	 上述代码会被编译为:
+	 选择器1{}
+	 选择器 2{}
+
+		3.7:通过修改Bootstrap的less源文件实现定制
+		 达到三个目标
+		 (1)瘦身:删除不需要样式
+		 (2)粗粒度定制
+			 只需要修改variables.less中定的变量值即可
+		 (3)细粒度定制 针对某个组件细节修改
+			 修改组件对应less文件.  dropdown.less
+		 
+		 3.8:如何实现定制
+		 (1)下载并且安装nodejs – (js解析器)
+			 在命令行  node –v  可以看到版本信息
+		 (2)下载less编译程序
+			 e:\node_modules\less\bin\lessc
+			 示例:
+			 e:\node_modules\less\bin\lessc  x.less  x.css
+
+		 3.9 定制Bootstrap 
+		 (1) 查找software/bootstrap/less
+		 (2) e:\node_modules\less\bin\lessc  less/bootstrap.less  bootstrap.css
+
+		4.0:Nodejs
+		 面试题:用户在浏览器中输入 www.taobao.com直到看到页面之间发生了什么?
+		 (1)操作系统访问网络DNS服务器，把域名转换IP地址
+		 (2)浏览器发起HTTP请求
+		 (3)淘宝服务器接收请求消息，查找指定资源[默认index.html]
+			 可能访问数据库，构建并且返回HTTP响消息
+		 (4)浏览器接收响应
+		 (5)浏览器缓存接收响应消息，并解析和渲染内容
+
+		4.1:静态网页和动态网页
+		 静态:网页内容任何人在任何时间访问都是不变的
+					HTML/CSS/JS/视频/音频
+		 动态:网页内容不同人在不同时间访问可能是不同的
+					JSP/PHP/ASP.NET/Node.JS
+		 
+		 JSP     = HTML+JAVA  功能强大可靠，适合大型企业级项目
+		 PHP    = HTML+PHP   简单易用,适合互联网项目
+		 ASP.NET = HTML+C#     易用,适合windows 平台
+						 30w==2w+0.5w+20w+10w
+		 Node.JS = HTML+”JS”    性能好,适合服务器端IO密集型项目,
+													 不适合CPU密集型项目
+		 
+		 CPU密集项目:滴滴打车,天气预报,大数据分析,大数据计算..
+		 IO密集项目:查询,修改,删除,查询,查询,修改
+			
+			 
+		 4.2:Nodejs    
+			 Node.js不是JS,是一种软件开发平台，它的竞争对象JSP/PHP/ASP.NET,历史第一次有一种语言可以通吃前后端.
+			 网站：阿里云镜像
+			 https://npm.taobao.org/mirrors/node/
+			 版本:0.12(16年初)  4.x(16年中)  6.x(16年底)
+			 LTS:Long Term Support
+			 Current:最新版本
+		4.3:Node运行的两种方式
+	(1)交互模块---简单了解(测试新功能)
+		 REPL:输入一行代码执行一行
+		 注意:交互模自带输出功能,不必一定要 console.log()
+		 node 回车  进入交互模式
+		 .exit        退出
+			(2)脚本模块—正式项目中使用
+				把要执行所有语句编写一个文本文件中(后缀任意，没有),一次性提交node解析器执行.
+				node 完整路径/x.js 回车
+				提交:只要安装成node.js,重启webstorm,ws可以自动发现node.exe解析，新的项目和文件编写一定UTF-8
+
+				练习:创建04_node.js ,打印九九乘法表，以脚本模式运行在ws中
+				故障:运行 nodejs 进程不能正常工作
+				原因:创建文件夹 node。js/03_node.js
+				建议:所有目录名称,不要有中文,不要有空格
+			 
+			 4.4:面试题:如何自学一门新语言
+			 (1)了解背景 – 百度百科（事件驱动/非阻塞IO）
+			 (2)搭建开发环境,编写HelloWorld
+			 (3)数据类型—重点
+			 
+	前端JS中数据类型
+	(1)	基本/原生/值类型
+	string/number/boolean/null/undefined
+	(2)引用类型
+		ES对象类型:Error/Data/Math/Array/RegExp/Object/....
+		BOM:window;docuemnt,location,event,screen,....
+		DOM:Element,Attribute,.....
+		用户自定义对象类型:{}
+	前端NODE JS中数据类型
+	(1) 基本/原生/值类型
+	string/number/boolean/null/undefined
+	(2)引用类型
+		 ES对象类型:Error/Data/Math/Array/RegExp/Object/....
+		 用户自定义对象类型:{}
+		 Node.JS 第三方对象:十万多 https://www.npmjs.com/
+			 
+			 (4)变量和常量
+					var age = 20;
+					const PI = 3.14;
+			 (5)运算符 
+					算术运算符
+					比较运算符
+					逻辑运算符
+					位算运算符
+					赋值运算符
+					特殊运算符 . instanceof typeof 
+				(6)逻辑结构
+					循环结构:while do ..shile for(;;) for(..in..) for(..of..)
+					练习:创建05.js 声明一个保存5个学生成绩的数组,
+							 使用三种for循环依次打印出每个成绩
+					选择结构:if..else  switch..case
+					练习:创建一个变量 var path = “/index”;
+					使用二种选择结构,判断path的值为哪一种
+					 (/index;/search;/login) 调用不同执行函数
+				(7)通用小程序
+	练习:打印出100以内所有质数
+	(8)函数和对象
+				(9)常用的组件，第三方工具库,框架
+				(10)实际小项目
+				
+				
+	Modal: 模态框
+	Model: 模型
+	Module:模块
+
+				4.5:nodejs中特有概念—模块---(重点)
+					 一个项目中多个”模块”,订单模块，用户模块，支付模块....
+					 node.js按照功能不是，可以把函数，对象分别保存不同文件或目录下，这些目录和文件在node.js称为一个“模块”
+					 04_node.js  05.js 
+				##注意:Node.JS每个一个模块都是一个独立构造函数，
+					Node.JS解析器自动为每一个.js文件添加如下代码.
+					(function(exports,require,module,__filename,__dirname){
+							 exports:{} 用于声明向外部导出自己成员
+							 require:fn 用于导入其它的模块，并且创建指定模块对象
+							 module: 当前模块对象
+							 __filename
+							 __dirname
+	var i = 10;
+							 var j = 11;
+							 console.log(i+j);
+	});
+					
+	Node.js 模块中exports和module.exports对象区别是什么?
+	二者都可以用于向外导出自己内部成员，
+	但:实际向外导出成员 module.exports
+		 exports 对应一个引用
+				 每个模块都可以使用自己require();引入另一个模块—底层本质是创建指定模块一个对象实例.
+				 08_data.js  声明二个变量一个函数 ->导出一个变量一个函数
+				 09_app.js   引入
+
+
+
+	今日作业2:
+	仿写node.js提供一个模块:url
+	创建模块MyUrl.,向外导出一个方法
+	resolve(url);该方法接收参数如http://www.jd.com:80/admin
+	返回对象:
+	{
+			protocol:"http",
+			server:"www.jd.com",
+			port:80,
+			path:"/admin"
+	}
+Day66
+	今天学习的内容
+	1:复习昨天重点
+	2:作业 
+	3:今天的目标
+	练习1:创建文件模块 circle.js 其中常量PI,
+			 声明二个方法 getSize(r)        求面积
+										getPerimiter(r);   求周长
+			 创建主模块 02_app.js 调用其公开二个方法
+	练习2:创建文件模块 arrayutils.js
+			 包含一个sum(arr); 返回数组值和,
+			 包含一个avg(arr); 返回数组值平均值
+			 创建主模块 03_app.js 调用其公开二个方法
+		3.1:nodejs 模块-目录模块
+			自定义模块的两种形式
+	(1)文件模块
+				创建一个JS文件,如m3.js,导出其公开数据，
+				其它模块可以require("./m3");引入
+	(2)目录模块
+				 方式一:创建一个目录,假设m4,其中创建index.js文件，导
+								出需要公开数据。其它模块引入
+								var m = require(“./m4”);
+				 方式二:创建一个目录,假设m5,其中创建5.js文件，导出需要
+							 公开数据数据,创建package.json文件 main指定启动
+	文件 5.js 其它模块引入
+								var m = require(“./m5”);
+				 方式三:创建一个目录,必须名为 node_modules 
+				 ,其中再创建目录模块,假设 m6 其中创建 package.json
+				 文件，其中声明 main属性指定默认执行启动js,如6.js，
+				 其中导出需要公共数据，其它模块引入
+				 require(“m6”);
+				 
+					
+								
+		文件模块	目录模块(方式三)
+	程序结构	m1.js	node_modules
+			 m2
+				 package.json
+				 2.js
+	模块名称	m1	m2
+	导出数据	module.exports	module.exports
+	导入模块	var m = require(“./m1”);	var m = require(“m2”);
+		 
+		 练习1:创建二个目录模块,circle,rectangle都对外公开两个方法size(); perimeter();返回指定图形面积和周长
+	最后在最外层主模块中引入上述二个模块四个方法
+	circle.size(r); circle.perimeter(r);
+	rectangle.size(w,h);
+	rectangle.perimeter(w,h);
+
+		3.2:nodejs 原生模块-->(重点)
+		 Node.js 解析引擎自带
+		 
+		3.3: Node.js 原生模块—Buffer(缓冲区)
+			 Buffer:缓冲区,本质上是一块内存区域，用于暂存以后要用到数据
+			 (数字,字符串,二进制图片/音频/视频),该区域称为“缓存”
+			 
+	#分配置一个指定大小缓冲区  1024字节
+	建议：缓冲区大小不超过 512KB   512*1024
+			var buff1 = Buffer.alloc(1024);
+	#使用一个数组创建缓冲区
+			var buff2 = Buffer.from([1,2,3]);
+	#使用一个字符串创建缓冲区
+	var buff4 = Buffer.from(“abc”);
+	#将一个缓冲区内容转换字符串{如果缓冲区数据是字符串}
+	var str = buff4.toString();
+
+		3.4: Node.js 原生模块—QueryString
+			 querystring模块用于处理HTTP请求URL中查询字符串
+			 var obj = qs.parse(str);   把查询字符串解析js对象
+			 var str = qs.stringify(obj) 把js对象转换为查询字符串
+			 
+	3.5: Node.js 原生模块—URL
+		 url模块用于解析一个HTTP请求地址，获取其中各个部分
+		 var obj = url.parse(str);    把一个URL地址为js对象
+		 var obj = url.parse(str,true); 功能同上，并且把其中查询字符串转换
+														js obj
+	3.6: Node.js 原生模块—fs—(重点)
+		 文件:在node.js 我们系统文件或者目录统称为文件
+		 fs 模块提供对文件和目录进行，增删改查，读定文件内容
+	(1)	同步读写文件(阻塞)
+	#同步读取文件内容 var data = fs.readFileSync(fileName);
+	#同步向文件写内容 fs.writeFileSync(fileName,data);
+	 注意:(1)如果当前写入文件并不存在，自动创建一个
+				a.txt
+				(2)如果当前写入目录并不存在，报错
+				d:/abc/a.txt
+				(3)如果当前文件己经存在内容，清空
+	#同步向文件追加内容
+	fs.appendFileSync(fileName,data);
+
+	练习:使用上述方法，实现文件复制操作
+	./public/data.log-->backup_data.log
+	(2)	异步读写文件(非阻塞)
+	#异步读取数据  fs.readFile(fileName,function(err,data){ });
+								 函数:文件读取完成后调用
+								 err:读取文件不存在，权限不足,
+								 自动创建错误对象 
+					 #异步写数据    fs.writeFile(fileName,data,function(err){})
+													函数:文件写结束调用
+					 #异步追加数据  fs.appendFile(fileName,data,function(err){})
+													函数:文件追加结束
+	练习:使用非阻塞方法,实现public/data.txt文件,复制backup_data.txt
+
+	3.7: Node.js 原生模块--http
+		 HTTP 模块可用于编写基于HTTP协议客户端程序(即浏览器),也可以编写一个基于HTTP协议服务器(APACHE)
+		 APACHE[1000并发量]  nginx[28000]   IIS[微软]
+		 
+		 用http模块编写一个web服务器
+			(1)创建服务器对象        var server  = http.createServer();
+			(2)绑定监听端口 1-65535  server.listen(3000);
+			(3)接收客户端请求，      server.on(“request”,(req,res)=>{..})
+			(4)并且响应客户消息      res.end(str...);
+			
+	req:请求对象:保存客户端请求消息
+	req.url 请求url地址
+			res:响应对象:服务器发送数据客户端,修改响应格式
+			
+		 作业1:使用node.js创建服务器，根据客户端的请求地址不同
+			输出不同的html页面内容
+			http://127.0.0.1:3000/login.html
+			http://127.0.0.1:3000/admin.html
+			若请求资源不存在，则返回 404.html
+Day67
+	今天学习内容
+	1:复习昨天的内容
+		模块:
+		A:自定义模块
+	文件模块:m.js app.js
+	目录模块:node_modules/m6/
+					Package.json main:”./6.js”
+					Var m = require(“m6”);
+		B:原生:Buffer/url/querystring/fs/http
+					 同步(阻塞)
+	var data = fs.readFileSync(fileName);
+	fs.writeFileSync(filename,str);
+	fs.appendFileSync(filename,str);
+						异步(非阻塞)
+							fs.readFile(filename,(err,data)=>{});
+							fs.writeFile(filename,str,(err)=>{});
+							fs.appendFile(filename,str,(err)=>{});
+		C:第三方
+		同步和异步:程序工作方式
+		同步：程序1另程序2,一个等待一个工作
+		异步: 程序1另程序2,一个工作一个工作
+		
+	2:作业
+	3:今天的目标
+		3.1:node.js 原生模块 http
+		三个常用对象:
+	(1)	server 代表服务器对象
+	(2)	req    (request)请求对象，保存客户端很多信息
+	req.url        	客户请求地址
+	req.method   		客户请求方式
+	req.httpVersion 	HTTP版本
+	req.headers    	请求头
+	(3)	res    (response)响应对象，保存服务器端向客户发送数据
+	res.statusCode = 200;
+	res.setHeader(); 设置响应头
+	res.write();     向客户端输入响应消息主体
+	res.end();      通知客户端，响应消息结束(只能一次)
+		 常见错误:程序端口被占用
+		 listen EADDRINUSE :::3000
+		 解决：查找前面程序停止即可
+		 
+		 练习1:创建动态web服务器，接收客户请求，若客户端请求地址为
+	/register.html 则向客户端输出 register.html网页
+	<form action="/register.do">
+	uname []
+	upwd []
+	[注册]
+	</form>
+	练习2:如果用户请求地址 /register.do 则解析url中查询字符串,
+	把客户端提交uname和upwd追加写入文件中 user.log ,并且向客户
+	端输出 "注册成功"
+
+	3.2:node.js 第三方模块 (mysql/express)
+	3.3:SQL语句的分类
+	DDL:数据定义语句  CREATE/DROP/ALTER…
+	DCL:数据控制语句  GRANT…
+	DML:操作操作语句 INSERT/UPDATE/DELETE
+	DQL:查询语句     SELECT
+	3.4:使用node.js访问mysql服务器
+			为了精简NODE.JS解析器，官方没有提供访问任何数据库相关模块,
+	必须使用工具 npm 下载第三方模块,在www.npmjs.org 搜索关键字
+	Mysql 可以得到相关模块，每个模块使用说明.
+			
+			示例:下载
+			npm install mysql  简写  npm i mysql
+			
+		3.5:mysql模块使用步骤
+		(1)复制模块 node_modules  day03根目录下
+		(2)加载mysql模块        const mysql = require(“mysql”);
+		(3)创建到数据库服务器连接
+														var conn = mysql.createConnection({})
+	(4)发送sql语句并且获取服务器返回结果
+										 conn.query(sql,(err,result)=>{});
+		(5)关闭连接             conn.end();
+
+	练习1:删除xz库xz_user表操作 uid=1
+				DELETE FROM xz_user WHERE uid = ${uid}
+	练习2:使用http模块和mysql模块
+	创建动态web服务器，接收如下请求url
+	/login.html   服务器向客户端返回 login.html
+	/login.do     服务器接收客户提交 uname/upwd ?
+							 在数据查询 xz_user 返回 "登录成功"
+																			 "用户名或密码有误"
+	/userlist.do  服务器查询数据库所有用户信息,在一个
+	table中向客户输出
+	/register.html 用户注册表单[uid,uname,upwd,age]
+	/register.do   用户注册
+
+	作业1:学子商城:后台phpnodejs
+	后台管理员登录写完.[数据库表不动]
+Day68
+	今天学习的内容
+	1:复习昨天知识重点
+		node.js 
+		什么是node.js:运行服务器端开发平台
+		模块:
+	(1)	自定义模块
+	a:文件模块 m.js  app.js var m = require(“./m”);
+	b:目录模块 node_modules/m6/package.json/6.js
+						 app.js  var m = require(“m6”);
+	(2)	原生模块
+	buffer/fs/http/url/querystring
+	var obj = url.parse(str,true);
+	fs.readFile(fileName,(err,data)=>{})
+	fs.writeFile(fileName,data,(err)=>{})
+	fs.appendFile(fileName,data,(err)=>{})
+	(3)	第三方模块
+	mysql
+			 var conn = mysql.createConntion({});
+			 var sql = “SELECT id FROM xz WHERE uid = ?”;
+			 占位符:安全【网络攻击手段-SQL注入】
+			 conn.query(sql,[10],(err,result)=>{
+		if(err)throw err;
+		conn.end();
+	});
+	2:作业
+	3:今天的目标
+		3.1: nodejs第三方模块express (重点)
+		下载express 模块 
+	npm i express				http高级模块
+	npm i body-parser			处理post请求
+	npm i cookie-parser			处理cookie
+	npm i express-session		处理session
+	npm i cors					跨域
+
+	 3.2:express模块
+		 使用官方提供HTTP模块可以创建一个web服务器应用，但此模块
+	非常底层，要处理各种情形，比较繁琐。推荐使用HTTP高层模块，
+	express—第三方模块，是一个基于node.js http模块的高层模块，简化
+	服务器端开发。
+	(1)	下载模块 npm i express
+	(2)	将模块内容复制项目中 day04/node_modules
+	(3)	加载相应模块  http/express
+	(4)	创建express对象，再创建服务器对象，并且绑定监听端口
+	var app = express();
+	var server = http.createServer(app);
+	server.listen(3000);
+
+	常规语法规则:
+	app.get(请求地址,回调函数);
+	#接收客户请求 GET /index.html
+	app.get(“/index.html”,(req,res)=>{});
+	#接收客户请求 POST /index.html
+	app.post(“/index.html”,(req,res)=>{});
+
+	示例:
+	以前:login.php   参数 数据库  json
+			$.get(“login.php”,…..);
+	现在:app.get(“/login.do”,(req,res)=>{
+			 参数 数据库 json
+	});
+	$.get(“/login.do”…..);
+	3.1:express req和res对象
+	res.sendFile(__dirname+文件绝对路径); =fs.read+res.write+res.end
+	res.send(向客户端返回html字符串响应);
+	res.json(obj); =setHead()+JSON.parse()+res.write()+res.end()
+	3.2:express GET 请求 接收参数二种方法
+		#GET /login.do?uid=10&uname=tom
+		app.get(“/login.do”,(req,res)=>{
+			//express为每一个req对象添加属性query
+			req.query.uid;
+			req.query.uname;
+	});
+	#GET /login.do/12/tom
+	app.get(“/login.do/:uid/:uname”,(req,res)=>{
+		//express 为每个req对象添加一个params 属性
+		req.params.uid
+		req.params.uname
+	});
+	3.4:为了项目提高效率创建连接池
+		(1)创建连接池
+	var pool = mysql.createPool({…}); host;user;password;
+	connectionLimit:5   连接池中活动连接5个 
+	建议范围：5~25
+	1亿(PV/1day)= 8小时=28800秒=10-100=34/s
+	100000000/28800/100=
+		(2)所有应用程序 租连接
+		 pool.getConnection((err,conn)=>{
+		 });
+	(3)归还连接  conn.release();
+	练习:get /del/301  删除指定用户编号记录
+		 3.5:请求方式:HTTP协议
+				请求方法:用于标识此次请求的目的
+				GET    表示客户端想”获得”指定资源
+				POST   表示客户端想”上传/添加”指定数据给服务器，
+	请求数据在请求主体中
+				PUT    表示客户端想”放置”数据在服务器
+				DELETE 表示客户端想”删除”服务器上指定资源
+		 3.6:发送请求
+			 浏览器发送GET请求
+				 地址栏输入url回车/表单GET/AJAX GET/超链接/js跳转/img src
+			 浏览器发送POST请求
+				 表单POST/AJAX POST
+			 浏览器发送DELETE请求
+				 AJAX-DELETE
+			 浏览器发送PUT请求
+				 AJAX-PUT
+				
+		 3.7:学子商城后台->登录/产品分页/删除/更新/详细
+												 /用户分页/删除/更新/详细
+		 3.8:目录结构
+				nodejsadmin
+						node_modules/…放在第三方模块
+						app.js       程序入口
+						public       静态资源
+								 product_list.html  10
+								 css              10
+								 js               10
+								 img…..           100
+
+		 3.9: app.js  项目入口程序
+	1:加载对应模块    
+		http;express;mysql;body-parser;cookie-parser;express-session;
+			2:先创建连接池
+	3:创建express 对象
+	4:配置第三方模块
+	5:指定静态资源目录  public
+
+
+		 3.10:跨域请求
+	从一个域名下资源访问另一个域名下资源
+	示例:
+	www.tmooc.cn/index.js -->ajax->  www.tts.cn/index.php
+	跨域:
+	1:域名不同       tmooc.cn/index.js        tts.com/index.php
+	2:协名不同       http://tmooc.cn/index.js  https:/tmooc.cn/index.php
+	3:端口不同       http://tmooc.cn:80       http://tmooc.cn:8080
+	4:主机名与IP不同 http://127.0.0.1         http://localhost
+
+	跨域有允许访问程序
+	 link->css  script->src    img->src …
+	跨域不允许访问程序
+	 ajax->xhr 禁止跨域
+
+
+	学子商城后台跨域
+
+	apache/htdocs/nsadmin/product_list.html
+											/css js img
+	用户访问地址:http://127.0.0.1/nsadmin/product_list.html
+	ajaxnodejs/app.js
+	访问服务器:http://127.0.0.1:3000/product_list
+Day69
+	今天学习内容
+	1:总结node.js
+	1.1:node.js 运行于服务器端开发平台
+	 1.2:node.js与前端js区别 数据类型
+			node.js第三方模块
+			前端js:DOM/BOM
+	1.3:模块:文件或者目录称为模块
+			文件模发起人node.js自动化
+	(function(exports,module,require,__dirname,__filename){
+			//自己代码
+	});
+			exports:向外导出成员
+			module:当前模块对象
+	require:fn 引入其它模块并创建指定模块对象
+	__dirname:当前文件模块目录绝对路径
+	__filename:
+		1.4:exports 和 module.exports 
+			 exports = modules.exports 底层操作
+		1.5:模块分类
+			 1:自定义模块
+					#文件 m.js  exports.  app.js  var m = require(“./m”);
+					#目录 node_modules/m6/package.json
+								app.js    require(“m6”);
+	2:原生模块
+		 Buffer 
+		 url   解析url地址: url.parse(str,true)
+		 http  创建http服务器/客户端
+				 var server =  http.createServer();
+				 server.listen(3000);
+				 server.on(“request”,(req,res)=>{})
+		 fs    
+		 同步:阻塞
+			var data = fs.readFileSync(fileName);
+			fs.writeFileSync(fileName,data);
+			fs.appendFileSync(fileName,data);
+		 异步:非阻塞
+			fs.readFile(fileName,(err,data)=>{});
+			fs.writeFile(fileName,data,(err)=>{});
+			fs.appendFile(fileName,data,(err)=>{})
+		 querystring 解析查询字符串
+	3:第三方模块
+		mysql
+		1:创建连接池
+		var pool = mysql.createPool({connectionLimit:25});
+	 2:pool.getConnection((err,conn)=>{});
+	 3:conn.query(sql,[id],(err,result)=>{
+	 if(err)throw err;
+	});
+				4:select  result.length
+	 express:
+	 var app = express();
+	 var server = http.createServer(app);
+	 server.listen(3000);
+	 
+	 app.get(请求地址”/list”,(req,res)=>{});
+	 req.query.uid
+	 req.body.uid  需要第三方插件
+	 res.send(html);
+	 res.sendFile(绝对路径+发送文件);
+	 res.json({…});
+
+
+	2:学子商城->实现更多的功能[跨域]
+	模块一:后台管理员登陆
+	(1)	客户端资源
+	所有静态资源放在 apache/htdocs/nodeadmin 
+	请求地址 http://127.0.0.1/nodeadmin/index.html
+	(2)	服务器端程序node.js
+	请求地址 http://127.0.0.1:3000/adminlogin
+	程序工作流程
+	1:启动node.js 服务器
+	2:启动apache 服务器(mysql启动)
+	3:客户请求     apache nodeadmin/index.html  
+	4:发送登录请求 http://127.0.0.1:3000/adminlogin
+
+
+	注意事项:
+	如果客户端跨域请求服务器资源为了保存session工作正确
+	需要在ajax请求添加属性
+	xhrFields:{withCredentials:true}
+
+
+
+
+
+
+
+
+	#-----------------------------------------------------------------------
+	 项目:{跨域}
+	 两台web服务器   {nodejs  服务器业务功能}
+										{apaceh 服务器接收请求响应html静态资源}
+	 一台数据库服务器 {数据   mysql服务器}
+
+	 扩展思路与知识储备
+
+	 (1)项目瓶颈:数据库
+		 原理:数据库中数据保存在磁盘上的某一组文件
+		 解决一:提供SQL查询效率
+					 SELECT uid,uname,age FROM xz_user;
+					 数据库对象:索引 提高查询效率[select];
+	降低更新效率[update/delete/insert]
+					 什么项目用:索引 查询多更新少
+					 索引为什么快:工作原理
+					 美团快递:送餐{死心眼}  数据库默认工作方式
+					 美团快递:送餐{机灵}   
+						ALTER TABLE xz_user ADD INDEX (uname)
+						SELECT uid FROM xz_user WHERE uname = “tom”;
+						400w-没有加索引之前 查询一条记录 2s
+						400w->加索引之后      查询一条记录 0.00002s
+
+		 解决二:主从数据库服务器{一个服务器负责写数据<主>}
+														{多个从服务器负责读数据<从>}
+		 解决三:内存级数据库服务器{NOSQL} 极高数据读写 Redis
+						数据库读写速度太高->数据库压力太大{出问题} cpu 100%
+						社区:php/mysql    在线人数   t_online   2 服务器down
+						$phpcount = 1;  ->redis ++ --  效率很好
+						
+	tts:学生登录   8:45~9:30   ->mysqlRedis
+						微博/微信    微博[点赞]   120 Redis
+
+	(2)提高项目{PV Page View} 高性能服务器/页面静态化
+	 Nginx/
+	(3)安全角度
+			 SQL   注入       node.js  ?
+			 XSS   攻击 脚本  oa[报销/申请办公用品/审批]  [确认]
+												document.all.readonly = true
+			 过滤用户所有输入值/所有危险字符串判断
+			 DDOS 攻击 向某个网站发送大量垃圾 防火墙
+			 解决:网店->天猫->阿里云   6G/s
+		(4)数据分析数据挖掘(大数据/人工智能)
+	钱一组新技术集合(hadoop/hbase/mapredure/hive…)
+	15T分析用户行为->记录-(存储hadoop)
+			 分析mapredure –》
+			 ….
+	人工智能:网易课堂:吴恩达
+Day70
+	今天学习的内容
+	1:复习昨天内容
+		复习node.js 
+		原理:node.js对文件模块自动代码添加
+				(function(){})
+		五个参数: 
+		exports        
+	module.exports
+	exports.age = 10;        向外导出变量
+	module.exports.age = 10;
+	module.exports = {name:”tom”};   ok
+	exports = {name:”tom”};          error
+		require();
+	2:今天的目标
+		2.1: 中间件-(路由级中间件)
+		 Express 是一个自身功能极简，完全是中间件构成web框架
+		 从本质上讲一个express应用就是由中间件组成系统.
+		2.2:中间件(Middleware)是一个函数,它可以访问请求对象和响应对象
+		(req request,res response),可以控制请求-响应流程,有一个参数
+		next变量 下一个中间件
+		2.3:中间件功能包括
+	执行任何代码
+	修改请求和响应对象
+	终结请求-响应循环  [拦载器]
+	调用下一个中间件
+		2.4:中间件分类
+	应用级中间件(***)
+	路由级中间件(***)
+	错误处理中间件
+	内置中间件
+		2.5:标准语法
+	app.use(url,(req,res,next)=>{
+		 
+	});
+	url:拦载地址(触发地址)
+	req:请求对象
+	res:响应对象
+	next:调用下一个中间件或路由
+
+
+
+
+
+
+		 2.6:路由中间件
+	路由 = 请求方法+请求地址+处理函数
+	示例: app.get(“/list”,(req,res)=>{…})
+
+	语法
+			var router = express.Router();   //创建路由中间件对象
+			router.get(“/find”,(req,res)=>{});
+	router.post(“/list”,(req,res)=>{});
+	module.exports = router;
+
+	app.use(“/user”,router); 
+
+	http://127.0.0.1:3000/user/find
+	http://127.0.0.1:3000/user/list
+
+	(1)创建三个路由文件
+	router/userRouter.js     保存所有用户功能
+	router/orderRouter.js    保存所有订单功能
+	router/productRouter.js  保存所有产品功能
+
+	app.js
+	var userRouter = require(“./router/userRouter”);
+	var orderRouter = require(“./router/orderRouter”);
+	var productRouter = require(“./router/productRouter”);
+
+	app.use(“/user”,userRouter);
+	app.use(“/order”, orderRouter);
+	app.use(“/product”, productRouter);
+
+	http://127.0.0.1:3000/user/list
+	http://127.0.0.1:3000/order/list
+		2.7: 项目
+		 课程准备
+		 知识点{思维导图/github}
+	JS 基础[原型/原型链;闭包;ES6;面试题]
+	dom/bom
+	JQuery
+	Canvas[小鱼大鱼]
+	Node.js
+	Vue[概念背]
+	Rect[概念背]
+		 项目
+	参考www.codeboy.com/pro
+	最少二个{特效多,精彩效果} 原生版/vue版
+	功能不用太多;细致
+	微信登录/微博登录
+	动画
+	商城:购物车/多选产品
+
+		2.8: 打包工具 webpack-----(演示)
+			
+			 webpack是一款流行打包工具，将各种资源
+	(.coffee/.less/.sass/图片)作为模块进行处理，生成一个或一组文件
+
+			 安装配置使用
+			 (1)创建目录     E:\>mkdir webpack-test
+			 (2)进入指定目录 E:\>cd webpack-test
+			 (3)初始化目录   E:\webpack-test>cnpm init
+			 (4)询问一些问题:按回车选择默认值  自动生成文件
+			 package.json
+			 package name: (webpack-test)  包名
+	version: (1.0.0)               版本
+	description:                  描述
+	entry point: (index.js)          入口程序
+	test command:               测试指令
+	git repository:                git仓库地址
+	keywords:                   关键字
+	author:                     作者
+	license: (ISC) MIT             MIT
+			 Is this ok? (yes)               yes
+			 
+	如果下载npm第三方模块:
+	采用淘宝镜像
+	1:全局安装cnpm
+	 npm install -g cnpm --registry=https://registry.npm.taobao.org
+	2:再安装其它工具 将npm 切换 cnpm
+	 
+
+
+	 
+
+
+
+
+
+
+
+			(5)安装依赖工具
+				cnpm install webpack -save-dev
+			 (6)全局安装webpack 指令直接操作
+					cnpm install webpack -g
+
+	1:创建test.js文件
+	 webpack test.js   test.bundle.js
+		 webpack word.js  word.bundle.js
+	2:创建1.css文件
+		 webpack word.js  word.bundle.js
+	3:安装二个css加载模块
+		 cnpm install css-loader
+		 cnpm install style-loader
+		 webpack word.js  word.bundle.js
+	4:监控项目,实时修改/过程/哪些模块
+		 webpack word.js  word.bundle.js  --progress
+		 webpack word.js  word.bundle.js  --watch
+
+
+
+	 错误集锦:
+		1:node.js  404
+		原因1:node.js 服务器出错故障/没有启动
+		原因2:请求地址不正确
+				服务器:     app.post(“/userupdate”,(req,res)=>);
+				客户端:ajax type:”POST”
+									url:”http://127.0.0.1:3000/userupdate”
+	
