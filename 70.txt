@@ -8618,6 +8618,149 @@ day74
 		⑥执行npm install
 		⑦执行npm start
 
+day75
+		项目总结：
+		技术：vue vue-router vue-resource
+		bootstrap/fonts jquery jquery-flot 跨域
 
-	
+		vue {{}} v-model @click lifecycle
+		vue-router spa 跳转 嵌套
+		vue-resource
+
+	一、Angular概述
+	   what
+		是由Google和开源社区共同维护的一个js的框架
+	   where
+		网页版的微信 。。
+		数据操作为主的SPA，也包括使用ionic来实现移动端的app，网页应用程序。。。
+	   why
+		09年angular就诞生了 angularJS
+		angular采用强类型检查机制的ts
+		angular采用了很多优秀的工具，提高开发速度 网页性能 (rxjs/zone.js/immutable.js)
+		angular采用组件化的开发方式
+	   how？
+		工作方式
+			通过组件来构造模板内容
+			通过服务来封装常用的功能
+			通过注入器来注入需要用到的模块或者服务
+		搭建环境
+		方式1：
+		npm install -g @angular/cli
+		ng new my-app
+		cd my-app
+		ng serve --open
+				
+		方式2：
+		下载模板项目
+		https://github.com/angular/quickstart
+
+		解压缩quickstart-master.zip
+		cd quickstart-master
+		npm install 
+		npm start
+
+	vscode的基本使用
+	npm start开发服务器启动流程
+		（index.html-> my-app --> src/app/app.component.ts --> template）
+
+	工程的目录结构：
+	src
+	  --app
+	    --app.component.ts 根组件
+	    --app.module.ts  根模块
+	  main.ts 指定要启动哪个模块
+	  index.html 首页
+	  styles.css 全局样式类
+
+
+	二、组件的创建和使用
+		组件的本质是可被反复使用的，带有特定功能的视图
+
+		Vue:
+			Vue.component('my-header',{
+				template:``
+			})
+			<my-header></my-header>
+			.vue
+
+		Angular
+		   1、组件的创建
+			①在src/app创建一个文件夹demo01
+			②在demo01文件夹中创建demo01.component.ts
+			③创建组件类
+			import {Component} from '@angular/core'
+			
+			@Component({
+			  //指定在模板中调用组件的方式
+			  selector:'demo01'，
+			  template:``
+			})
+
+			export class Demo01Component{}
+
+		   2、组件的使用
+			①在模块中声明组件类
+			 找到app.module.ts
+			 import {Demo01Component} from './demo01/demo01.component'
+
+			 declarations:[Demo01Component]
+			②使用
+			<demo01></demo01>
+			
+
+			装饰器： decorator 
+				是用来指定当前的类是什么类型
+				比如 @Component 组件类 @NgModule 模块类
+
+			元数据：metaData 
+				是用来告诉angular如何来处理当前的类
+				比如 selector 是用来告诉angular当前这个类在模板中要怎么调用 
+
+		   练习：(:- 17:30)
+			在app/demo02文件夹中demo02.component.ts
+
+			要求demo02渲染一个无序列表（3个列表项 test01 test02 test03）
+			在根组件中调用demo02
+
+	三、angular指令的使用
+
+	Vue中指令：
+	v-for v-if v-else-if v-else
+	v-bind v-on v-model 
+	v-show v-html....
+
+	Angular中的指令：
+	  1、循环指令 ngFor
+	  <any v-for="tmp in list"></any>
+	  <any v-for="(tmp,index) in list">
+	  </any>
+	  
+	  <any 
+	  *ngFor="let tmp of list;let myIndex=index">
+	  </any>
+
+	  2、选择指令
+	  <any v-if="expression"></any>
+	  根据表达式执行结果的真假来决定是否要挂载到DOM
+
+	  <any *ngIf="expression"></any>
+
+
+	每日练习：
+		app/demo03
+		demo03.component.ts
+
+		在这个组件类中，创建一个对象数组 stuList(有5个对象),每一个对象都包含score/name/age
+
+		将stuList中的每一个对象的数据 渲染在table中。
+
+
+
+
+
+
+
+
+
+
 	
