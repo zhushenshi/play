@@ -8757,6 +8757,205 @@ day75
 
 
 
+一、ng中常见的指令
+	指令扮演的角色是 为了让模板内容具有更多的可能性（添加额外的功能）
+	注意事项：不能在一个元素上 同时调用多个结构型指令
+		解决思路：Angular的<ng-container>是一个分组元素，但它不会污染样式或元素布局，因为 Angular 压根不会把它放进 DOM 中
+	1、循环指令
+		*ngFor
+	2、选择指令
+		*ngIf
+		<ng-container></ng-container>可以解决在一个标签中使用多个指令的问题。
+
+		多重分支判断
+		<div [ngSwitch]="answer">
+		  <p *ngSwitchCase="'a'">A</p>
+		  <p *ngSwitchCase="'b'">B</p>
+		  <p *ngSwitchDefault></p>
+		</div>
+
+	3、属性绑定
+	vue: v-bind:src  :src
+  	 <any [prop]="expression"></any>
+	 将表达式执行的结果 绑定给 指定的元素的属性
+
+	 动态样式绑定：
+	<p [ngStyle]="{color:myColor}">
+	  it is a paragraph
+	</p>
+	 动态样式类绑定：
+	<span [ngClass]="{myRed:false}">
+	    it is a span element
+	</span>
+	
+	4、事件绑定
+	vue: @click v-on:click
+	<any (EventName)="handleEvent()">
+	</any>
+	
+	5、双向数据绑定
+	方向1：从数据到视图
+	方向2：将表单元素操作的结果 绑定指定的数据
+	Vue:v-model
+	Angular:
+	准备工作：
+		①app.module.ts
+		②import {FormsModule} from '@angular/forms'
+		③ @NgModule({
+		    imports:[FormsModule]
+		 })
+	
+	<input [(ngModel)]="uname"/>
+
+	（:- 14:35）
+	练习：app/demo06 demo06.component.ts
+	渲染的模板内容：button/p
+	功能：在点击button时，启动一个定时器，让p的透明度0~0.1~0.2~..1 
+
+	①组件的创建和使用
+	②ngStyle 事件绑定 
+
+	监听模型数据的变化：
+	<!--扩充：如何在angular中监听模型数据的变化-->
+	<input type="text" 
+	[(ngModel)]='uAddress'
+	(ngModelChange)="handleChange()"
+	/>
+
+
+ 总结：
+	*ngFor
+	*ngIf *ngSwitchCase *ngSwitchDefault
+
+	ngStyle ngClass
+	()
+	[]
+	[(ngModel)]
+
+	
+二、ng中自定义指令
+
+	Vue自定义指令
+		Vue.directive('change',{
+			bind:function(el,bindings){
+			 //el指调用该指令的元素
+			 //bindings.value
+			},
+			update:function(){},
+			unbind:function(){}
+		})
+
+		v-change
+
+	Angular中自定义指令
+
+   1、创建一个指令类
+	import {Directive} from '@angular/core'
+
+	@Directive({selector:'[test]'})
+
+	export class TestDirective{
+		...
+	}
+   2、使用
+     ①先到模块中声明
+	import {TestDirective} from '***'
+	@NgModule({
+	  delcarations:[TestDirective]
+	})
+     ②使用
+     <any test></any>
+
+   补充：组件和指令的关系
+   组件就是一个带有模板的指令
+
+   进阶：如何在自定义指令类中 获取调用指令的元素？
+   import {ElementRef} from '@angular/core'
+
+   constructor(myEL:ElementRef){
+    //myEL.nativeElement
+   }
+
+
+三、ng中常见的过滤器(管道)
+  Vue 
+	<any>{{expression | myFilter(1,2)}}</any>
+
+
+  Angular管道使用语法：
+  <any>{{expression | myPipe:''}}</any>
+  <any>{{expression | myPipe1:'' | myPipe2:'':''}}</any>
+
+  uppercase  lowercase date number slice
+
+
+四、ng中自定义过滤器(管道)
+
+  declarations: 指令、管道、组件
+
+  Vue创建一个自定义过滤器：
+	Vue.filter('myCurrency',function(value,arg1){
+		return '操作后的结果'
+	})
+
+	{{expression | myCurrency(1)}}
+
+  管道（过滤器）的本质：带有参数带有返回值的方法
+  1、创建一个管道类
+	①test.pipe.ts
+	②
+	import {Pipe,PipeTransform} from '@angular/core'
+	③指定装饰器和元数据
+	@Pipe({
+	  name:'myUppercase'
+	})
+	④实现管道类
+	export class TestPipe implments PipeTransform{
+	  transform(value:any,...args:[]):any{
+	    return '处理后的结果'
+	  }
+	}
+
+  2、使用
+   ① 到模块中声明
+    app.module.ts
+    import {TestPipe} from '...'
+    @NgModule({
+      declarations:[TestPipe]
+    })
+   ② 调用
+	和内置的管道是一样的用法
+
+
+angular开发整体框架涉及到8个部分：
+
+模块：angular开发基本单位
+
+组件：带有模板的指令/可被反复使用的带有特定功能的视图
+
+模板：增强后的html标签 h1 *ngFor *ngIf {{}} 
+
+数据绑定: [] () [(ngModel)] *ngFor..
+
+元数据: metaData 告诉angular如何来处理当前这个类
+
+指令：是为了扩展html的功能
+
+依赖注入：将当前所需要用到的东西 拿到当前这个类中去使用的过程，为了降低耦合度
+
+服务
+
+每日一练：
+	自定义管道
+	练习：app/demo09_lianxi
+	实现一个自定义的管道，在数据中有一个sex 0/1
+
+	h2 sex 0 | true/false--》女/girl
+	h2 sex 1 | --》男/boy  
+	
+	需要一个过滤器，根据管道传递来的数据，以及参数true/false来决定显示(true->中文 false->英文)
+
+
 
 
 
