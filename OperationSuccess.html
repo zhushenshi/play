@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">  
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="shortcut icon" href="./favicon.ico">
+    <title>19理财</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+  <title>Document</title>
+	  <script type="text/javascript">
+	function   getQueryString(name) {
+      var url = location.href;
+      var lastIndex=url.lastIndexOf("?");
+      url="?"+url.substring(lastIndex+1);
+      var pattern=new RegExp('[?&]'+name+'=([^&]*)');
+      url.match(pattern);
+      return RegExp.$1=='String'?'':RegExp.$1		
+    };
+		  function  back() {
+      if (window.myBack) {
+        window.myBack.goRootVC(this.backType)
+      } else {
+        // alert('serActionBarBg')
+      }
+    }
+		var backType = this.getQueryString('backType')
+    this.back()
+	</script>
+	<style type="text/css">
+		.operationSuccess{
+		  position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #fff;
+		}
+  .success{
+		text-align: center;
+    padding-top: 40px;
+	}
+    img{margin-bottom: 20px;} 
+      
+    p{
+      font-size:16px;
+      color: #000;
+      font-weight: 500;
+			}
+	</style>
+ </head>
+ <body>
+	  <div class="operationSuccess">
+    <div class="success">
+      <img id="backImg" src="./img/d0.png" width="40%" click="back()" />
+      <p>操作完成,点击返回</p>
+  </div>
+  </div>
+ </body>
+</html>
