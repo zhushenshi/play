@@ -40,8 +40,15 @@
 					console.log(this.numbers)
 				this.items[index]="hello";
 									console.log(this.items)
-				this.duxiang.name="hello";
+				if(index==0){
+									this.duxiang.name="hello";
 					console.log(this.duixiang)
+				}else if(index==1){
+									this.duxiang.name="hellohello";
+					console.log(this.duixiang)
+				}else{
+					//....
+				}
 
           // WHY: 更新数据，view层未渲染，但通过console这个数组可以发现数据确实更新了
            //if (typeof(this.numbers[index]) === "undefined" ) {
