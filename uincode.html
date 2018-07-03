@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.capture事件修饰符</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+<script type="text/javascript">
+function tounicode(str){
+	let s=""
+	for(i=0;i<str.length;i++){
+		s+=str.charCodeAt(i).toString(16)
+	}
+	return s;
+}
+function tohanzi(num){
+	let res=""
+	for(i=0;i<num.length;i+=4){
+		res+=String.fromCharCode(parseInt(num.slice(i,i+4),16))
+	}
+	return  res
+}
+</script>
+</body>
+
+</html>
