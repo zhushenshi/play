@@ -9,20 +9,42 @@
 </head>
 <body>
 <script type="text/javascript">
-function tounicode(str){
+function tounicode1(str){
 	let s=""
 	for(i=0;i<str.length;i++){
 		s+=str.charCodeAt(i).toString(16)
 	}
 	return s;
 }
-function tohanzi(num){
+function tohanzi1(num){
 	let res=""
 	for(i=0;i<num.length;i+=4){
 		res+=String.fromCharCode(parseInt(num.slice(i,i+4),16))
 	}
 	return  res
 }
+
+
+//另一种方法
+function tounicode(str){
+	let s=""
+	for(i=0;i<str.length;i++){
+		s+=str.charCodeAt(i).toString(16)
+		s=s+(i==str.length-1?'':",")
+	}
+	return s;
+}
+var a=tounicode("张三tom和123456你好ABF")
+console.log(a);
+function tohanzi(str){
+	let res=""
+	var arr=str.split(",");
+	for(let i=0;i<arr.length;i++){
+		res+=String.fromCharCode(parseInt(arr[i],16))
+	}
+	return  res
+}
+console.log(tohanzi(a))
 </script>
 </body>
 
