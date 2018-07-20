@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script type="text/javascript">
+		var str="20180702161852"
+		function toDate(str){
+			//contact(连接符号) 默认-
+			//type 时间类型 			//默认,年月日时分秒
+			//1,2018.07.09，年月日
+			//2,月日
+			//3,2018.07.09 12:04年月日时分
+
+			let res=""
+			let contact=arguments[1]?arguments[1]:"-"
+			let type=arguments[2]?arguments[2]:1
+			console.log(type)
+			if(contact=="."||"-"||"_"||"/"||"\\"){
+			res=Type==2?"":(str.slice(0,4)+contact)+str.slice(4,6)+contact+str.slice(6,8)
+			}else{
+				res=Type==2?"":(str.slice(0,4)+"年")+str.slice(4,6)+"月"+str.slice(6,8)+"日"
+			}
+			switch(type){
+				case 1,2://2018年7月20日
+					res+="";
+					break;
+				case 2://2018年7月20日
+					res+="";
+					break;
+				case 3://2018年7月20日 12:04
+					res+=" "+str.slice(8,10)+":"+str.slice(10,12)
+					break;
+				default://2018年7月20日 12:04:20
+					res+=" "+str.slice(8,10)+":"+str.slice(10,12)+":"+str.slice(12,);
+			}
+			console.log(res)
+			return res
+		}
+		toDate("-")
+
+
+
+	</script>
+ </body>
+</html>
