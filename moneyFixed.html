@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script type="text/javascript">
+	
+function moneyFormat(num){
+  if((num+"").trim()==""){
+   return"";
+  }
+  if(isNaN(num)){
+   return"";
+  }
+ num=new Number(num)
+ num=num.toFixed(2)
+    var re =/(-?\d+)(\d{3})/
+    while(re.test(num)){
+     num =num.replace(re,"$1,$2")
+    }
+  return num;
+}
+commafy("1216546511.0191240")
+//commafy(900)
+//commafy(9000)
+//commafy(90000)
+//commafy(900000)
+//commafy(9000000)
+//commafy(90000000)
+//commafy(900000000)
+	</script>
+ </body>
+</html>

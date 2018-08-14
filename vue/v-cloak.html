@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-cloak</title>
+    <style type="text/css">
+
+    </style>
+    <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.js"></script>
+</head>
+<style type="text/css">
+[v-cloak] {
+  display: none;
+}
+</style>
+<body>
+
+<div id="app" v-cloak>
+	{{msg}}
+</div>
+<script type="text/javascript">
+setTimeout(() => {
+    var v=new Vue({
+        el: '#app',
+				created() {
+					setTimeout(()=>{
+						this.msg="1111"
+					},3000)
+				},
+        data: {
+            msg: 'hello'
+        }
+    })
+},2000)
+</script>
+</body>
+
+</html>
