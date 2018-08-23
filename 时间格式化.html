@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+    var SimpleDateFormat = function (pattern) {
+        var reg = /[\-\/\.]/g;
+        var format = new RegExp ("^[ymd]+" + reg.source + "[ymd]+" + reg.source + "[ymd]+$", "i");
+        if (!format.test (pattern))
+        {
+            throw new Error ("the pattern paramters is not legal !");
+        }
+        this.pattern = pattern;
+        this.reg = reg;
+        this.spliter = pattern.replace (/[ymd]/gi, '').substr (1);
+    }
+     
+    SimpleDateFormat.prototype.format = function (date)
+    {
+        if (!(date instanceof Date))
+        {
+            throw new Error ("the date paramter is not Date type.");
+        }
+        var spliter = this.spliter;
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        var day = date.getDate();
+        return year + spliter + month + spliter + day;
+    }
+     
+    SimpleDateFormat.prototype.parse = function (str)
+    {
+        var pattern = this.pattern;
+        var reg = new RegExp ("^" + pattern.replace (/[ymd]/gi, '\\d') + "$");
+        if (!reg.test (str))
+        {
+            throw new Error ("the str paramter could not be pattered.");
+        }
+        var tempDate = str.split (this.spliter);
+        return new Date (tempDate[0], tempDate[1], tempDate[2]);
+    }
+     
+    var d1 = new SimpleDateFormat ("yyyy-MM-dd");
+    console.log (d1.parse ("2014-05-17"));
+    console.log (d1.format (new Date()));
+</script>
+</head>
+<body>
+</body>
+</html>
