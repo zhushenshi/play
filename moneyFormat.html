@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+function moneyFormat(val) {
+  if(val == undefined || val == ''){
+    val = 0
+  }
+  val = val.toString().replace(/\$|\,/g,'');
+  if(isNaN(val)) {
+    val = "0";  
+  } 
+  let sign = (val == (val = Math.abs(val)));
+  val = Math.floor(val*100+ 0.50000000001);
+  let cents = val%100;
+  val = Math.floor(val/100).toString();
+  if(cents<10) {
+     cents = "0" + cents
+  }
+  for (var i = 0; i < Math.floor((val.length-(1+i))/3); i++) {
+      val = val.substring(0,val.length-(4*i+3))+',' + val.substring(val.length-(4*i+3));
+  }
+  console.log(((sign)?'':'-') + val + '.' + cents)
+  return (((sign)?'':'-') + val + '.' + cents);
+}
+	moneyFormat("40.666",true)
+	moneyFormat("40.665",true)
+	moneyFormat("40.664",true)
+	moneyFormat("40.660",true)
+	moneyFormat("40.66",true)
+	moneyFormat("40.65",true)
+	moneyFormat("40.66000",true)
+
+  </script>
+ </body>
+</html>
