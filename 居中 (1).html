@@ -66,12 +66,6 @@
 		margin-top: -100px;    /* 高度的一半 */
 		margin-left: -100px;    /* 宽度的一半 */	
 	}
-
-	/*  */
-
-.nine{position:absolute;;display:block;top:0;right:0;bottom:0;left:0;text-align:center;background:rgba(0,0,0,.5);border:1px solid red;}
-.nine:before{content:'';display:inline-block;vertical-align:middle;height:100%;}
-.nine .con{display:inline-block;vertical-align:middle;width:60px;height:60px;line-height:60px;color:red;background:yellow;}
 	</style>
  </head>
  <body>
@@ -102,18 +96,11 @@
 	<div style="display:table-cell;vertical-align:middle;text-align:center;width:300px;height:300px;border:1px solid red;">
 		<div style="border:1px solid red;width:200px;height:200px;display:inline-block;"></div>
 	</div>
-	<h1>999</h1>
-	<div style="position:relative;width:300px;height:300px;background:#ccc;">
-		<div class="nine">
-			<div class="con"></div>	
-		</div>
+	<h1>
+		第七种 使用css3的display:-webkit-box属性
+	</h1>
+	<div style="display:-webkit-box;-webkit-box-pack:center;-webkit-box-align:center;width:500px;height:500px;border:1px solid blue;">
+		<div style="width:90px;height:90px;background:yellow;color:black;"></div>
 	</div>
-		<p>
-			使用css3的display:-webkit-box属性，再设置-webkit-box-pack:center/-webkit-box-align:center.seven{             width:90px;             height:90px;             display:-webkit-box;             -webkit-box-pack:center;             -webkit-box-align:center;        background:yellow;             color:black;}
-		</p>
-
-		<p>
-			最简单的一种使行内元素居中的方法，使用line-height属性.six{             width:100px;             height:100px;             line-height:100px;             text-align:center;             background:gray;  }这种方法也很实用，比如使文字垂直居中对齐
-		</p>
  </body>
 </html>
